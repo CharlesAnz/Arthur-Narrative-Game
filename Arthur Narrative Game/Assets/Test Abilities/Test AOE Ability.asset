@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a40401784437aa48bf06c3387427385, type: 3}
+  m_Name: Test AOE Ability
+  m_EditorClassIdentifier: 
+  name: Test AOE ability 1
+  description: Explodes in a sphere
+  icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  buffList: []
+  doesDamage: 0
+  doesHealing: 0
+  abilityValue: 5
+  cooldown: 10
+  cooldownTimer: -798.6823
+  areaSize: 3
+  aoeType: 0
+  targetType: 2
+  origin: {x: 3.8521345, y: -0.44, z: -13.491111}
+  selfOrigin: 0
+  targets: []
