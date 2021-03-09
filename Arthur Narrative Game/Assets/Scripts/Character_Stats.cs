@@ -31,7 +31,11 @@ public class Character_Stats : MonoBehaviour
     //Method for taking damage, damage is subtracted by the amount of armor and damage min is 0
     public void TakeDam (float damage)
     {
-        damage -= armor.GetValue();
+        if (armor.GetValue() > 0)
+        { 
+            damage -= armor.GetValue(); 
+        }
+        
         damage = Mathf.Clamp(damage, 0, int.MaxValue);
 
         curHP -= damage;

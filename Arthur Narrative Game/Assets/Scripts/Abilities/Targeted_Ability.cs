@@ -5,8 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Ability", menuName = "Ability/Targeted")]
 public class Targeted_Ability : Ability
 {
-    [SerializeField]
-    TargetType targetType;
+
+    public float maxDistance;
 
     public override void Use(GameObject user)
     {
@@ -22,7 +22,7 @@ public class Targeted_Ability : Ability
         if (targetType == TargetType.Self)
         {
             //ability does thing to itself
-            addBuff(user.GetComponent<Character_Stats>());
+            HitEffects(user.GetComponent<CharacterCombat>());
             return;
         }
 
@@ -31,45 +31,57 @@ public class Targeted_Ability : Ability
 
         if (Physics.Raycast(ray, out hit, 100))
         {
-            CharacterCombat character = hit.collider.GetComponent<CharacterCombat>();
+            CharacterCombat targetCharacter = hit.collider.GetComponent<CharacterCombat>();
 
-            if (character != null)
+            float distance = Vector3.Distance(targetCharacter.transform.position, user.transform.position);
+            
+            if(maxDistance > 0)
             {
-
+                if (distance > maxDistance) return;
+            }
+            
+            if (targetCharacter != null)
+            {
                 switch (targetType)
                 {
                     case TargetType.Ally:
                         //ability affects targeted ally
-                        if (character.tag == "Ally" || character.tag == "Player")
+                        if (targetCharacter.tag == "Ally" || targetCharacter.tag == "Player")
                         {
                             Debug.Log("We hit: " + hit.collider.name + " " + hit.point);
+                            HitEffects(targetCharacter);
                         }
                         break;
 
                     case TargetType.Enemy:
                         //ability affects targeted enemy
-                        if (character.gameObject.tag == "Enemy")
+                        if (targetCharacter.gameObject.tag == "Enemy")
                         {
-                            Debug.Log("We hit: " + hit.collider.name + " " + hit.point);
+                            Debug.Log("We hit: " + hit.collider.name + " at " + hit.point);
+                            HitEffects(targetCharacter);
                         }
                         break;
 
                     case TargetType.Any:
                         //ability affects targeted character
-                        Debug.Log("We hit: " + hit.collider.name + " " + hit.point);
+                        Debug.Log("We hit: " + hit.collider.name + " at " + hit.point);
+                        HitEffects(targetCharacter);
 
-                        break;
-
-                    default:
-                        //defaults to self
                         break;
                 }
             }
         }
-        
-
     }
 
+    private void HitEffects(CharacterCombat target)
+    {
+        if (doesDamage)
+            user.GetComponent<CharacterCombat>().AbilityHit(target.GetMyStats(), abilityValue);
 
+        if (doesHealing)
+            user.GetComponent<CharacterCombat>().AbilityHeal(target.GetMyStats(), abilityValue);
+
+        addBuff(target.GetMyStats());
+    }
 }
 

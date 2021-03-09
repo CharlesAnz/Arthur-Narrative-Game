@@ -10,11 +10,9 @@ public class Aoe_Ability : Ability
     [SerializeField]
     private AOEType aoeType;
 
-    [SerializeField]
-    private TargetType targetType;
-
     //public float endPoint;
 
+    [HideInInspector]
     public Vector3 origin;
 
     public bool selfOrigin = false;
@@ -58,15 +56,18 @@ public class Aoe_Ability : Ability
             {
                 Debug.Log(target + " was hit at coordinates: " + origin);
                 if(doesDamage)
-                    user.GetComponent<CharacterCombat>().AbilityHit(target.GetMyStats());
+                    user.GetComponent<CharacterCombat>().AbilityHit(target.GetMyStats(), abilityValue);
+
+                if (doesHealing)
+                    user.GetComponent<CharacterCombat>().AbilityHeal(target.GetMyStats(), abilityValue);
+
+                addBuff(target.GetMyStats());
             }
 
         }
 
         targets.Clear();
     }
-
-
 
     private void CheckCone()
     {
@@ -143,7 +144,7 @@ public class Aoe_Ability : Ability
         Collider[] collidersNear = null;
 
         if (aoeType == AOEType.Cube) 
-            collidersNear = Physics.OverlapBox(origin, new Vector3(areaSize, areaSize, areaSize));
+            collidersNear = Physics.OverlapBox(origin, new Vector3(areaSize /2, areaSize /2, areaSize /2 ));
 
         else if (aoeType == AOEType.Sphere)
             collidersNear = Physics.OverlapSphere(origin, areaSize);

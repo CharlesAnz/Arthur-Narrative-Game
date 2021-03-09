@@ -15,3 +15,4 @@ public class BufforDebuff
 
     public bool ramping;
 }
+public enum StatBuffs { Damage, Armor, MoveSpeed, AttackSpeed, Health }

@@ -50,11 +50,16 @@ public class CharacterCombat : MonoBehaviour
 
     public Character_Stats GetMyStats(){ return myStats; }
 
-    public void AbilityHit(Character_Stats targetStats)
+    public void AbilityHit(Character_Stats targetStats, float mod)
     {
-        //Debug.Log(targetStats + " was hit by an ability");
-        //tells attack target's stats that they take damage
-        targetStats.TakeDam(myStats.damage.GetValue());
+        //tells target's stats that they take damage equal myStats damage variable
+        targetStats.TakeDam(myStats.damage.GetValue() + mod);
+    }
+
+    public void AbilityHeal(Character_Stats targetStats, float healAmount)
+    {
+        //tells target's stats that they heal for healAmount HP
+        targetStats.Heal(healAmount);
     }
 
     void ManageBuffs()
@@ -79,7 +84,10 @@ public class CharacterCombat : MonoBehaviour
                             myStats.attackSpeed.AddModifier(buff.amount);
                             break;
                         case StatBuffs.Health:
-                            myStats.TakeDam(buff.amount);
+                            if (buff.amount < 0)
+                                myStats.TakeDam(buff.amount);
+                            else
+                                myStats.Heal(buff.amount);
                             break;
                         case StatBuffs.Damage:
                             myStats.damage.AddModifier(buff.amount);
@@ -87,6 +95,8 @@ public class CharacterCombat : MonoBehaviour
                         case StatBuffs.MoveSpeed:
                             myStats.moveSpeed.AddModifier(buff.amount);
                             break;
+
+                            
                     }
                     //do something here every interval seconds
                     nextTime = Mathf.FloorToInt(Time.time) + 1;

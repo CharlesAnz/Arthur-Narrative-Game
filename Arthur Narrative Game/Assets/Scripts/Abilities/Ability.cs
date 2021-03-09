@@ -24,6 +24,8 @@ public class Ability : ScriptableObject
     //[HideInInspector]
     public float cooldownTimer = 0;
 
+    [SerializeField]
+    protected TargetType targetType;
 
     protected Camera cam;
 
@@ -31,9 +33,10 @@ public class Ability : ScriptableObject
     {
         Debug.Log(interactor.name + " is using " + name);
         user = interactor;
+
     }
 
-    public void addBuff(Character_Stats statsAffected)
+    protected void addBuff(Character_Stats statsAffected)
     {
         foreach (BufforDebuff buff in buffList)
         {
@@ -53,7 +56,10 @@ public class Ability : ScriptableObject
                     statsAffected.attackSpeed.AddModifier(buff.amount);
                     break;
                 case StatBuffs.Health:
-                    statsAffected.TakeDam(buff.amount);
+                    if(buff.amount < 0)
+                        statsAffected.TakeDam(buff.amount);
+                    else
+                        statsAffected.Heal(buff.amount);
                     break;
                 default:
                     break;
@@ -69,7 +75,7 @@ public class Ability : ScriptableObject
 
 public enum TargetType { Self, Ally, Enemy, Any }
 
-public enum StatBuffs { Damage, Armor, MoveSpeed, AttackSpeed, Health }  
+  
 
 
 
