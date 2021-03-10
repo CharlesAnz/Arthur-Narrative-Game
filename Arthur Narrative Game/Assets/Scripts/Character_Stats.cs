@@ -47,6 +47,23 @@ public class Character_Stats : MonoBehaviour
         }
     }
 
+    //Method for taking damage not affected by armor
+    public void TakePureDam(float damage)
+    {
+        if (damage < 0)
+            damage = Mathf.Abs(damage);
+
+        damage = Mathf.Clamp(damage, 0, int.MaxValue);
+
+        curHP -= damage;
+        Debug.Log(gameObject + " takes " + damage + " damage");
+
+        if (curHP <= 0)
+        {
+            Die();
+        }
+    }
+
     public void Heal(float amount)
     {
         amount = Mathf.Clamp(amount, 0, int.MaxValue);

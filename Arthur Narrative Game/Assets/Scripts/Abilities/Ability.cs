@@ -57,7 +57,7 @@ public class Ability : ScriptableObject
                     break;
                 case StatBuffs.Health:
                     if(buff.amount < 0)
-                        statsAffected.TakeDam(buff.amount);
+                        statsAffected.TakePureDam(buff.amount);
                     else
                         statsAffected.Heal(buff.amount);
                     break;

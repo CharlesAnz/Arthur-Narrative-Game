@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a40401784437aa48bf06c3387427385, type: 3}
+  m_Name: Dragon's Breath
+  m_EditorClassIdentifier: 
+  name: Dragon's Breath
+  description: Shoots cone of flame in front of character
+  icon: {fileID: 0}
+  buffList:
+  - amount: -3
+    affects: 4
+    duration: 3
+    durationTimer: -0.00021243282
+    ramping: 1
+  doesDamage: 1
+  doesHealing: 0
+  abilityValue: 20
+  cooldown: 10
+  cooldownTimer: 1.8803899
+  targetType: 1
+  areaSize: 20
+  aoeType: 2
+  origin: {x: 4.034273, y: -0.03677669, z: -6.0553846}
+  selfOrigin: 1
+  targets: []

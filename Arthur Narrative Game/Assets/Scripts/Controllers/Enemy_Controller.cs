@@ -39,12 +39,18 @@ public class Enemy_Controller : MonoBehaviour
                 if(targetStats != null)
                 {
                     combat.Attack(targetStats);
+
+
+                    if (stats.abilities[0].cooldownTimer < 0)
+                        stats.abilities[0].Use(targetStats.gameObject);
                 }
-                
+
                 FaceTarget();
             }
+            
         }
         
+
     }
 
     //make sure to face target when attacking

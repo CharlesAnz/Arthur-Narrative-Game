@@ -85,7 +85,7 @@ public class CharacterCombat : MonoBehaviour
                             break;
                         case StatBuffs.Health:
                             if (buff.amount < 0)
-                                myStats.TakeDam(buff.amount);
+                                myStats.TakePureDam(buff.amount);
                             else
                                 myStats.Heal(buff.amount);
                             break;

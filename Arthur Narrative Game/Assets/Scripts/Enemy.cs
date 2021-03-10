@@ -45,7 +45,6 @@ public class Enemy : Interactable
             //and their attack cooldown allows it
             else if(hasInteracted && interactorCombat.GetAttackCooldown() <= 0)
             {
-                //Debug.Log(gameObject + " is interacting with " + interactor);
                 float distance = Vector3.Distance(interactor.position, interactionTransform.position);
                 if (distance <= radius)
                 {
@@ -53,9 +52,9 @@ public class Enemy : Interactable
                     Interact(interactor.gameObject);
                 }
             }
-
-
         }
+
+        
     }
 
 }
