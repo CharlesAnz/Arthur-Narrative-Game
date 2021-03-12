@@ -21,6 +21,8 @@ public class Enemy_Controller : MonoBehaviour
         combat = GetComponent<CharacterCombat>();
         stats = GetComponent<Character_Stats>();
 
+        agent.updateRotation = false;
+
         agent.speed = stats.moveSpeed.GetValue();
     }
 
@@ -45,9 +47,9 @@ public class Enemy_Controller : MonoBehaviour
                         stats.abilities[0].Use(targetStats.gameObject);
                 }
 
-                FaceTarget();
             }
-            
+
+            FaceTarget();
         }
         
 
@@ -57,7 +59,7 @@ public class Enemy_Controller : MonoBehaviour
     void FaceTarget()
     {
         Vector3 direction = (target.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.y));
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5);
     }
 
@@ -65,5 +67,12 @@ public class Enemy_Controller : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.cyan;
+        Vector3 direction = transform.TransformDirection(Vector3.forward) * 2;
+        Gizmos.DrawRay(transform.position, direction);
     }
 }

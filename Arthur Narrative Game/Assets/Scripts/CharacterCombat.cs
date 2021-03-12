@@ -7,12 +7,19 @@ using UnityEngine;
 public class CharacterCombat : MonoBehaviour
 {
     Character_Stats myStats;
-    //Enemy focusedEnemy;
 
     float nextTime = 0;
-
-    public float attackSpeed;
+    public float attackSpeed; 
     private float attackCooldown = 0f;
+
+    const float combatCooldown = 5;
+    float lastAttackTime;
+
+    public event System.Action OnAttack;
+
+    public float attackDelay = 0.6f;
+
+    public bool InCombat { get; private set; }
 
 
     private void Start()
@@ -23,9 +30,16 @@ public class CharacterCombat : MonoBehaviour
 
     private void Update()
     {
+        
         attackSpeed = myStats.attackSpeed.GetValue();
 
         attackCooldown -= Time.deltaTime;
+
+        if(Time.time - lastAttackTime > combatCooldown)
+        {
+            InCombat = false;
+        }
+
         foreach(Ability ability in myStats.abilities)
         {
             ability.cooldownTimer -= Time.deltaTime;
@@ -40,11 +54,17 @@ public class CharacterCombat : MonoBehaviour
         //if attack not on cooldown
         if (attackCooldown <= 0f)
         {
-            //tells attack target's stats that they take damage
-            targetStats.TakeDam(myStats.damage.GetValue());
+            //tells attack target's stats that they take damage after small delay
+            StartCoroutine(DoDamage(targetStats, attackDelay));
+
+            if (OnAttack != null)
+                OnAttack();
+                
             //resets attack timer
             attackCooldown = 1f / attackSpeed;
-            //Keeps attacking target afterwards
+
+            InCombat = true;
+            lastAttackTime = Time.time;
         }
     }
 
@@ -168,6 +188,11 @@ public class CharacterCombat : MonoBehaviour
     public float GetAttackCooldown() { return attackCooldown; }
 
 
+    IEnumerator DoDamage (Character_Stats stats, float delay)
+    {
+        yield return new WaitForSeconds(delay);
 
+        stats.TakeDam(myStats.damage.GetValue());
+    }
 
 }

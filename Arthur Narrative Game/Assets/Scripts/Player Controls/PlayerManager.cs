@@ -15,13 +15,10 @@ public class PlayerManager : MonoBehaviour
     }
 
     #endregion
-
-    //No longer need "OnCharacterChange" due to having only 1 character
-    /*
+    
     public delegate void OnCharacterChange();
     public OnCharacterChange onCharacterChangeCallback;
     public GameObject player2;
-    */
     public GameObject player1;
     
 
@@ -33,46 +30,43 @@ public class PlayerManager : MonoBehaviour
     {
         activePerson = player1.GetComponent<Player_Controller>();
         player1.GetComponent<Player_Controller>().activeCharacter = true;
-        //player2.GetComponent<Player_Controller>().activeCharacter = false;
+        if (player2 != null) player2.GetComponent<Player_Controller>().activeCharacter = false;
     }
 
     void Update()
     {
-        #region PlayerChange
-        //No need to change characters so this is taken out
-
-        /*
         //press 1 on keyboard to switch to character 1
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             player1.GetComponent<Player_Controller>().activeCharacter = true;
-            //player2.GetComponent<Player_Controller>().activeCharacter = false;
+            if (player2 != null) player2.GetComponent<Player_Controller>().activeCharacter = false;
             activePerson = player1.GetComponent<Player_Controller>();
 
-            
+
             if (onCharacterChangeCallback != null)
             {
                 onCharacterChangeCallback.Invoke();
             }
-            
+
         }
 
         //press 2 on keyboard to switch to character 2
-        
-        
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            player1.GetComponent<Player_Controller>().activeCharacter = false;
-            player2.GetComponent<Player_Controller>().activeCharacter = true;
-            activePerson = player2.GetComponent<Player_Controller>();
 
-            if (onCharacterChangeCallback != null)
+        if (player2 != null)
+        { 
+            if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                onCharacterChangeCallback.Invoke();
+                    player1.GetComponent<Player_Controller>().activeCharacter = false;
+                    player2.GetComponent<Player_Controller>().activeCharacter = true;
+                    activePerson = player2.GetComponent<Player_Controller>();
+
+                    if (onCharacterChangeCallback != null)
+                    {
+                        onCharacterChangeCallback.Invoke();
+                    }
             }
         }
-        */
-        #endregion 
+        
 
         if (Input.GetKeyDown(KeyCode.Q))
         {

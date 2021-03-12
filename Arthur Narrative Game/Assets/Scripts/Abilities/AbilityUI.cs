@@ -23,7 +23,7 @@ public class AbilityUI : MonoBehaviour
 
 
         //Update the Inventory UI every time that the play switches characters
-        //playerManager.onCharacterChangeCallback += UpdateUI;
+        playerManager.onCharacterChangeCallback += UpdateUI;
 
         slots = abilityParent.GetComponentsInChildren<AbilitySlot>();
 

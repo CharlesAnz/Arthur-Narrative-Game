@@ -15,7 +15,7 @@ public class InventoryUI : MonoBehaviour
     void Start()
     {
         playerManager = PlayerManager.instance;
-        //playerInventory = playerManager.player2.GetComponent<Inventory>();
+        if (playerManager.player2 != null) playerInventory = playerManager.player2.GetComponent<Inventory>();
 
         //Update the Inventory UI every time that the inventory is modified
         playerInventory.onItemChangedCallback += UpdateUI;
@@ -27,7 +27,7 @@ public class InventoryUI : MonoBehaviour
         playerInventory.onItemChangedCallback += UpdateUI;
 
         //Update the Inventory UI every time that the play switches characters
-        //playerManager.onCharacterChangeCallback += UpdateUI;
+        playerManager.onCharacterChangeCallback += UpdateUI;
 
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();
 
