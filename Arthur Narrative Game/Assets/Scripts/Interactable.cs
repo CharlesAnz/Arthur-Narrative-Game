@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public float radius = 3f;
+    public float radius;
     public Transform interactionTransform;
 
     protected bool isFocus = false;
