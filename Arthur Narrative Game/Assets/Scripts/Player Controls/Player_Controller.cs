@@ -46,10 +46,14 @@ public class Player_Controller : MonoBehaviour
             {
                 //Left mouse button click move
 
-                movement.moveTarget.transform.position = new Vector3(hit.point.x, 1, hit.point.z);
+                movement.moveTarget.transform.position = new Vector3(
+                    hit.point.x, 
+                    movement.moveTarget.transform.position.y, 
+                    hit.point.z);
+
                 RemoveFocus();
 
-                movement.FollowTarget(movement.moveTarget.gameObject, (float)1.5);
+                movement.FollowTarget(movement.moveTarget.gameObject, (float)1.2);
 
                 
             

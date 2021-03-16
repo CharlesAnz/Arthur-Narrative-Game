@@ -7,7 +7,8 @@ using UnityEngine;
 public class CharacterCombat : MonoBehaviour
 {
     Character_Stats myStats;
-
+    CharacterAnimator anim;
+    
     float nextTime = 0;
     public float attackSpeed; 
     private float attackCooldown = 0f;
@@ -26,6 +27,7 @@ public class CharacterCombat : MonoBehaviour
     {
         myStats = GetComponent<Character_Stats>();
         attackSpeed = myStats.attackSpeed.GetValue();
+        anim = GetComponent<CharacterAnimator>();
     }
 
     private void Update()
@@ -54,6 +56,7 @@ public class CharacterCombat : MonoBehaviour
         //if attack not on cooldown
         if (attackCooldown <= 0f)
         {
+            if (anim != null) anim.characterAnim.SetTrigger("basicAttack");
             //tells attack target's stats that they take damage after small delay
             StartCoroutine(DoDamage(targetStats, attackDelay));
 
