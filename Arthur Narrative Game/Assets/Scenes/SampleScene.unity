@@ -430,6 +430,7 @@ GameObject:
   - component: {fileID: 362990470}
   - component: {fileID: 362990471}
   - component: {fileID: 362990464}
+  - component: {fileID: 362990465}
   m_Layer: 0
   m_Name: ArthurTestCharacter
   m_TagString: Player
@@ -486,6 +487,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterAnim: {fileID: 0}
+--- !u!54 &362990465
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362990461}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &362990466
 Transform:
   m_ObjectHideFlags: 0
@@ -1915,7 +1932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cadea39f4d43d04ebb91d8726698758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 13.06
+  lookRadius: 13.82
 --- !u!114 &909129333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1928,7 +1945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48feec6a314f1c54599daf0fe95856d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 4.5
+  radius: 4.16
   interactionTransform: {fileID: 909129331}
 --- !u!114 &909129334
 MonoBehaviour:
