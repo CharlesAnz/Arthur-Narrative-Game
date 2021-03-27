@@ -1107,3 +1107,42 @@ System memory in use after: 161.9 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1846.
 Total: 1.696800 ms (FindLiveObjects: 0.264800 ms CreateObjectMapping: 0.032200 ms MarkObjects: 1.382000 ms  DeleteObjects: 0.017200 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000902 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.733 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1269 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 161.8 MB.
+System memory in use after: 161.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1848.
+Total: 1.680500 ms (FindLiveObjects: 0.175700 ms CreateObjectMapping: 0.030100 ms MarkObjects: 1.451400 ms  DeleteObjects: 0.022100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 158225.335446 seconds.
+  path: Assets/Matt-Environment/Cutscene_timeline.playable
+  artifactKey: Guid(6bcf9139bb1b4fb428f681f209589a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Matt-Environment/Cutscene_timeline.playable using Guid(6bcf9139bb1b4fb428f681f209589a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f9c9c8ea6b6a2dcaf1e112ac6a56bcb') in 0.047404 seconds
+  Import took 0.050224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.717361 seconds.
+  path: Assets/Matt-Environment/Cutscene_timeline.playable
+  artifactKey: Guid(6bcf9139bb1b4fb428f681f209589a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Matt-Environment/Cutscene_timeline.playable using Guid(6bcf9139bb1b4fb428f681f209589a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f9c9c8ea6b6a2dcaf1e112ac6a56bcb') in 0.006221 seconds
+  Import took 0.008449 seconds .
+
