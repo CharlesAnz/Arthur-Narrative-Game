@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ae035edc32de447921400b0ecd43ed, type: 3}
+  m_Name: Self-Heal
+  m_EditorClassIdentifier: 
+  name: Self Heal
+  description: Heals Arthur for 10 HP and then 5 HP per sec for 5 seconds
+  icon: {fileID: 0}
+  buffList:
+  - amount: 5
+    affects: 4
+    duration: 5
+    durationTimer: -0.16784965
+    ramping: 1
+  doesDamage: 0
+  doesHealing: 1
+  abilityValue: 10
+  cooldown: 8
+  castTime: 1.15
+  cooldownTimer: -0.48376232
+  targetType: 0
+  maxDistance: 0

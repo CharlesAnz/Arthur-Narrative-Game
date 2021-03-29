@@ -20,30 +20,48 @@ public class Player_Movement : MonoBehaviour
 
     private void Update()
     {
+        if (GetComponent<CharacterCombat>().castTime > 0)
+        {
+            target = null;
+            agent.velocity = Vector3.zero;
+        }
         if (target != null)
         {
             agent.SetDestination(target.position);
             FaceTarget();
+            agent.acceleration = 12f;
+            agent.angularSpeed = 120f;
+        }
+
+    }
+
+    private void LateUpdate()
+    {
+        if (agent.velocity.sqrMagnitude > Mathf.Epsilon)
+        {
+            transform.rotation = Quaternion.LookRotation(agent.velocity.normalized);
         }
     }
 
-    /*
     public void MovetoPoint(Vector3 newPoint)
     {
-        moveTarget.transform.position = newPoint;
-        FollowTarget(moveTarget);
+        //moveTarget.transform.position = newPoint;
+        agent.updateRotation = true;
+        agent.SetDestination(newPoint);
+        //agent.angularSpeed = 1000000000000f;
+        //agent.acceleration = 1000000000000f;
     }
-    */
+    
     public void FollowTarget(Interactable newTarget)
     {
-        agent.stoppingDistance = newTarget.radius * 0.8f;
+        agent.stoppingDistance = newTarget.radius;
         agent.updateRotation = false;
         target = newTarget.interactionTransform;
     }
 
     public void FollowTarget(GameObject newTarget, float stopDistance)
     {
-        agent.stoppingDistance = stopDistance * 0.8f;
+        agent.stoppingDistance = stopDistance * 0.9f;
         agent.updateRotation = false;
         target = newTarget.transform;
         //Debug.Log("Target is: " + target);

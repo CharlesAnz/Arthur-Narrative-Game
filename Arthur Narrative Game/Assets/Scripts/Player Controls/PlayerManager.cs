@@ -20,7 +20,6 @@ public class PlayerManager : MonoBehaviour
     public OnCharacterChange onCharacterChangeCallback;
     public GameObject player2;
     public GameObject player1;
-    
 
     public Player_Controller activePerson;
 
@@ -30,11 +29,26 @@ public class PlayerManager : MonoBehaviour
     {
         activePerson = player1.GetComponent<Player_Controller>();
         player1.GetComponent<Player_Controller>().activeCharacter = true;
-        if (player2 != null) player2.GetComponent<Player_Controller>().activeCharacter = false;
+        
+        foreach(Ability ability in player1.GetComponent<Player_Stats>().abilities)
+        {
+            ability.cooldownTimer = 0;
+        }
+
+
+        if (player2 != null)
+        {
+            player2.GetComponent<Player_Controller>().activeCharacter = false;
+            foreach (Ability ability in player2.GetComponent<Player_Stats>().abilities)
+            {
+                ability.cooldownTimer = 0;
+            }
+        }
     }
 
     void Update()
     {
+        
         //press 1 on keyboard to switch to character 1
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -70,16 +84,42 @@ public class PlayerManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            activePerson.GetComponent<Player_Stats>().abilities[0].Use(activePerson.gameObject);
+            //activePerson.GetComponent<Player_Stats>().abilities[0].Use(activePerson.gameObject);
+            UseAbility(activePerson.GetComponent<Player_Stats>().abilities, 0);
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
-            activePerson.GetComponent<Player_Stats>().abilities[1].Use(activePerson.gameObject);
+            //activePerson.GetComponent<Player_Stats>().abilities[1].Use(activePerson.gameObject);
+            UseAbility(activePerson.GetComponent<Player_Stats>().abilities, 1);
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            activePerson.GetComponent<Player_Stats>().abilities[2].Use(activePerson.gameObject);
+            //activePerson.GetComponent<Player_Stats>().abilities[2].Use(activePerson.gameObject);
+            UseAbility(activePerson.GetComponent<Player_Stats>().abilities, 2);
         }
 
+    }
+
+
+    private void UseAbility(List<Ability> abilities, int i)
+    {
+        CharacterCombat combat = activePerson.GetComponent<CharacterCombat>();
+        CharacterAnimator anim = activePerson.GetComponent<CharacterAnimator>();
+
+        if (abilities[i].cooldownTimer > 0) return;
+        if (combat.castTime > 0) return;
+
+        if (anim != null)
+        {
+            if(i == 0) anim.characterAnim.SetTrigger("ability1");
+            else if(i == 1) anim.characterAnim.SetTrigger("ability2");
+            else if(i == 2) anim.characterAnim.SetTrigger("ability3");
+        }
+            
+        
+
+        abilities[i].Use(activePerson.gameObject);
+        combat.castTime = abilities[i].castTime;
+        combat.SetAttackCooldown(abilities[i].castTime);
     }
 }

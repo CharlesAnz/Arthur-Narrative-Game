@@ -6,6 +6,7 @@ using UnityEngine;
 public class Player_Controller : MonoBehaviour
 {
     public LayerMask moveMask;
+    
     public Interactable focus;
     PlayerManager playerManager;
 
@@ -34,6 +35,8 @@ public class Player_Controller : MonoBehaviour
             return; 
         }
 
+        if (GetComponent<CharacterCombat>().castTime > 0) return;
+
         if (EventSystem.current.IsPointerOverGameObject()) return;
 
         //shoots ray from mouse position, then moves player to target position
@@ -45,16 +48,16 @@ public class Player_Controller : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 100))
             {
                 //Left mouse button click move
-
+                RemoveFocus();
+                movement.MovetoPoint(hit.point);
+                /*
                 movement.moveTarget.transform.position = new Vector3(
                     hit.point.x, 
                     movement.moveTarget.transform.position.y, 
                     hit.point.z);
 
-                RemoveFocus();
-
                 movement.FollowTarget(movement.moveTarget.gameObject, (float)1.2);
-
+                */
                 
             
             }

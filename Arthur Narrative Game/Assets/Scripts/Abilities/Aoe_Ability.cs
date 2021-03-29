@@ -54,14 +54,9 @@ public class Aoe_Ability : Ability
 
             foreach (var target in targets)
             {
-                Debug.Log(target + " was hit at coordinates: " + origin);
-                if(doesDamage)
-                    user.GetComponent<CharacterCombat>().AbilityHit(target.GetMyStats(), abilityValue);
+                //Debug.Log(target + " was hit at coordinates: " + origin);
 
-                if (doesHealing)
-                    user.GetComponent<CharacterCombat>().AbilityHeal(target.GetMyStats(), abilityValue);
-
-                addBuff(target.GetMyStats());
+                OnAbilityUse.Invoke(target);
             }
 
         }

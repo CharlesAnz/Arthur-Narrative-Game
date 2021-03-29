@@ -1,6 +1,8 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Ability : ScriptableObject
 {
@@ -21,6 +23,8 @@ public class Ability : ScriptableObject
     [SerializeField]
     protected float cooldown;
 
+    public float castTime;
+
     //[HideInInspector]
     public float cooldownTimer = 0;
 
@@ -29,15 +33,32 @@ public class Ability : ScriptableObject
 
     protected Camera cam;
 
+    protected UnityEvent<CharacterCombat> OnAbilityUse;
+    
     public virtual void Use(GameObject interactor)
     {
         Debug.Log(interactor.name + " is using " + name);
         user = interactor;
 
+        if (doesDamage) OnAbilityUse.AddListener(Damage);
+        if (doesHealing) OnAbilityUse.AddListener(Heal);
+        if (buffList != null) OnAbilityUse.AddListener(addBuff);
     }
 
-    protected void addBuff(Character_Stats statsAffected)
+    private void Damage(CharacterCombat target)
     {
+        user.GetComponent<CharacterCombat>().AbilityHit(target.GetMyStats(), abilityValue);
+    }
+
+    private void Heal(CharacterCombat target)
+    {
+        user.GetComponent<CharacterCombat>().AbilityHeal(target.GetMyStats(), abilityValue);
+    }
+
+    private void addBuff(CharacterCombat target)
+    {
+        Character_Stats statsAffected = target.GetMyStats();
+
         foreach (BufforDebuff buff in buffList)
         {
             buff.durationTimer = buff.duration;

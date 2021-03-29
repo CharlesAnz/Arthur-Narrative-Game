@@ -22,7 +22,7 @@ public class Targeted_Ability : Ability
         if (targetType == TargetType.Self)
         {
             //ability does thing to itself
-            HitEffects(user.GetComponent<CharacterCombat>());
+            OnAbilityUse.Invoke(user.GetComponent<CharacterCombat>());
             return;
         }
 
@@ -49,7 +49,7 @@ public class Targeted_Ability : Ability
                         if (targetCharacter.tag == "Ally" || targetCharacter.tag == "Player")
                         {
                             Debug.Log("We hit: " + hit.collider.name + " " + hit.point);
-                            HitEffects(targetCharacter);
+                            OnAbilityUse.Invoke(targetCharacter);
                         }
                         break;
 
@@ -58,14 +58,14 @@ public class Targeted_Ability : Ability
                         if (targetCharacter.gameObject.tag == "Enemy")
                         {
                             Debug.Log("We hit: " + hit.collider.name + " at " + hit.point);
-                            HitEffects(targetCharacter);
+                            OnAbilityUse.Invoke(targetCharacter);
                         }
                         break;
 
                     case TargetType.Any:
                         //ability affects targeted character
                         Debug.Log("We hit: " + hit.collider.name + " at " + hit.point);
-                        HitEffects(targetCharacter);
+                        OnAbilityUse.Invoke(targetCharacter);
 
                         break;
                 }
@@ -73,15 +73,5 @@ public class Targeted_Ability : Ability
         }
     }
 
-    private void HitEffects(CharacterCombat target)
-    {
-        if (doesDamage)
-            user.GetComponent<CharacterCombat>().AbilityHit(target.GetMyStats(), abilityValue);
-
-        if (doesHealing)
-            user.GetComponent<CharacterCombat>().AbilityHeal(target.GetMyStats(), abilityValue);
-
-        addBuff(target.GetMyStats());
-    }
 }
 

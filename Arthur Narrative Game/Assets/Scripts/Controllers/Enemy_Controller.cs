@@ -44,7 +44,7 @@ public class Enemy_Controller : MonoBehaviour
 
 
                     if (stats.abilities[0].cooldownTimer < 0)
-                        stats.abilities[0].Use(targetStats.gameObject);
+                        stats.abilities[0].Use(gameObject);
                 }
 
             }

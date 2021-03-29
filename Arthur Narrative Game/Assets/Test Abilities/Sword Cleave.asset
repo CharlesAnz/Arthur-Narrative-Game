@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a40401784437aa48bf06c3387427385, type: 3}
+  m_Name: Sword Cleave
+  m_EditorClassIdentifier: 
+  name: Sword Cleave
+  description: 'Cleaves cone in front of arthur '
+  icon: {fileID: 0}
+  buffList:
+  - amount: -4
+    affects: 1
+    duration: 10
+    durationTimer: -0.017373156
+    ramping: 0
+  doesDamage: 1
+  doesHealing: 0
+  abilityValue: 30
+  cooldown: 10
+  castTime: 2.44
+  cooldownTimer: -14.14749
+  targetType: 2
+  areaSize: 5
+  aoeType: 2
+  origin: {x: 3.6466408, y: -0.03677669, z: -1.792336}
+  selfOrigin: 1
+  targets: []

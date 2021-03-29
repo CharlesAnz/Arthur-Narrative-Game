@@ -16,6 +16,8 @@ public class CharacterCombat : MonoBehaviour
     const float combatCooldown = 5;
     float lastAttackTime;
 
+    public float castTime;
+
     public event System.Action OnAttack;
 
     public float attackDelay = 0.6f;
@@ -34,10 +36,11 @@ public class CharacterCombat : MonoBehaviour
     {
         
         attackSpeed = myStats.attackSpeed.GetValue();
-
+    
         attackCooldown -= Time.deltaTime;
+        castTime -= Time.deltaTime;
 
-        if(Time.time - lastAttackTime > combatCooldown)
+        if (Time.time - lastAttackTime > combatCooldown)
         {
             InCombat = false;
         }
@@ -189,6 +192,7 @@ public class CharacterCombat : MonoBehaviour
     }
 
     public float GetAttackCooldown() { return attackCooldown; }
+    public void SetAttackCooldown(float newAttackCooldown) {  attackCooldown = newAttackCooldown; }
 
 
     IEnumerator DoDamage (Character_Stats stats, float delay)
