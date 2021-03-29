@@ -116,10 +116,6 @@ public class PlayerManager : MonoBehaviour
             else if(i == 2) anim.characterAnim.SetTrigger("ability3");
         }
             
-        
-
         abilities[i].Use(activePerson.gameObject);
-        combat.castTime = abilities[i].castTime;
-        combat.SetAttackCooldown(abilities[i].castTime);
     }
 }

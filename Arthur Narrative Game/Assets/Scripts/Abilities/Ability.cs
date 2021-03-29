@@ -39,10 +39,27 @@ public class Ability : ScriptableObject
     {
         Debug.Log(interactor.name + " is using " + name);
         user = interactor;
+    }
+
+    //Checks if the cooldown is below, if not then nothing happens
+    protected bool Setup(GameObject interactor)
+    {
+        if (cooldownTimer >= 0)
+        {
+            Debug.Log("Ability on cooldown");
+            return false;
+        }
+        cooldownTimer = cooldown;
+
+        CharacterCombat combat = interactor.GetComponent<CharacterCombat>();
+        combat.castTime = castTime;
+        combat.SetAttackCooldown(castTime);
 
         if (doesDamage) OnAbilityUse.AddListener(Damage);
         if (doesHealing) OnAbilityUse.AddListener(Heal);
         if (buffList != null) OnAbilityUse.AddListener(addBuff);
+
+        return true;
     }
 
     private void Damage(CharacterCombat target)

@@ -12,12 +12,7 @@ public class Targeted_Ability : Ability
     {
         base.Use(user);
 
-        if (cooldownTimer >= 0)
-        {
-            Debug.Log("Ability on cooldown");
-            return;
-        }
-        cooldownTimer = cooldown;
+        if (!Setup(user)) return;
 
         if (targetType == TargetType.Self)
         {

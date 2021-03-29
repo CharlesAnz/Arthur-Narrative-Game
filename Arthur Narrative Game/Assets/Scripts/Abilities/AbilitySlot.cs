@@ -22,7 +22,6 @@ public class AbilitySlot : MonoBehaviour
         icon.enabled = true;
 
         description.text = newAbility.description;
-
     }
 
     //clears inventory slot
@@ -41,7 +40,6 @@ public class AbilitySlot : MonoBehaviour
         if (ability != null)
         {
             ability.Use(playerController.gameObject);
-
         }
     }
 }

@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class Enemy : Interactable
 {
-    PlayerManager playerManager;
     Character_Stats myStats;
     CharacterCombat interactorCombat;
 
     private void Start()
     {
-        playerManager = PlayerManager.instance;
         myStats = GetComponent<Character_Stats>();
     }
     public override void Interact(GameObject interactor)

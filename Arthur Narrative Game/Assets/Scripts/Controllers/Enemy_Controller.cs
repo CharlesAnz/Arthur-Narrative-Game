@@ -5,30 +5,57 @@ using UnityEngine.AI;
 
 public class Enemy_Controller : MonoBehaviour
 {
-
     public float lookRadius = 10f;
+    const float locoAnimSmoothTime = 0.1f;
+
+    Enemy enemyInteractor;
 
     Transform target;
     NavMeshAgent agent;
     CharacterCombat combat;
     Character_Stats stats;
+    PlayerManager playerManager;
+
+    Animator enemyAnim;
 
     // Start is called before the first frame update
     void Start()
     {
-        target = PlayerManager.instance.player1.transform;
+        playerManager = PlayerManager.instance;
+
         agent = GetComponent<NavMeshAgent>();
         combat = GetComponent<CharacterCombat>();
         stats = GetComponent<Character_Stats>();
+        enemyAnim = GetComponentInChildren<Animator>();
+        enemyInteractor = GetComponent<Enemy>();
 
         agent.updateRotation = false;
 
         agent.speed = stats.moveSpeed.GetValue();
+
+        foreach (Ability ability in stats.GetComponent<Character_Stats>().abilities)
+        {
+            ability.cooldownTimer = 0;
+        }
+
+        target = playerManager.activePerson.transform;
     }
 
     // Update is called once per frame
     void Update()
     {
+        float speedPercent = agent.velocity.magnitude / agent.speed;
+        enemyAnim.SetFloat("speedPercent", speedPercent, locoAnimSmoothTime, Time.deltaTime);
+
+        if (GetComponent<CharacterCombat>().castTime > 0)
+        {
+            target = null;
+            agent.velocity = Vector3.zero;
+            return;
+        }
+
+        target = playerManager.activePerson.transform;
+
         float distance = Vector3.Distance(target.position, transform.position);
         if(distance <= lookRadius)
         {
@@ -40,11 +67,14 @@ public class Enemy_Controller : MonoBehaviour
                 Character_Stats targetStats = target.GetComponent<Character_Stats>();
                 if(targetStats != null)
                 {
-                    combat.Attack(targetStats);
-
-
-                    if (stats.abilities[0].cooldownTimer < 0)
+                    if (stats.abilities[0].cooldownTimer < 0 && combat.castTime < 0)
+                    {
+                        enemyAnim.SetTrigger("ability1");
                         stats.abilities[0].Use(gameObject);
+                    }
+
+                    enemyAnim.SetTrigger("basicAttack");
+                    combat.Attack(targetStats);
                 }
 
             }

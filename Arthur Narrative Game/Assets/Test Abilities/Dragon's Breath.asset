@@ -25,6 +25,7 @@ MonoBehaviour:
   doesHealing: 0
   abilityValue: 20
   cooldown: 10
+  castTime: 2.35
   cooldownTimer: 1.8803899
   targetType: 1
   areaSize: 20

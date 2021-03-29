@@ -16,6 +16,8 @@ public class Player_Movement : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+
+        agent.updateRotation = false;
     }
 
     private void Update()
@@ -46,10 +48,9 @@ public class Player_Movement : MonoBehaviour
     public void MovetoPoint(Vector3 newPoint)
     {
         //moveTarget.transform.position = newPoint;
-        agent.updateRotation = true;
+        //agent.updateRotation = true;
+        agent.stoppingDistance = 0.2f;
         agent.SetDestination(newPoint);
-        //agent.angularSpeed = 1000000000000f;
-        //agent.acceleration = 1000000000000f;
     }
     
     public void FollowTarget(Interactable newTarget)
@@ -62,7 +63,7 @@ public class Player_Movement : MonoBehaviour
     public void FollowTarget(GameObject newTarget, float stopDistance)
     {
         agent.stoppingDistance = stopDistance * 0.9f;
-        agent.updateRotation = false;
+        //agent.updateRotation = false;
         target = newTarget.transform;
         //Debug.Log("Target is: " + target);
     }
@@ -70,7 +71,7 @@ public class Player_Movement : MonoBehaviour
     public void StopFollowTarget()
     {
         agent.stoppingDistance = 0f;
-        agent.updateRotation = true;
+        //agent.updateRotation = true;
         target = null;
     }
 
