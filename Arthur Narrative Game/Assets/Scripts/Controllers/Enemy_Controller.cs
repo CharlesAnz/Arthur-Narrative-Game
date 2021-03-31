@@ -47,7 +47,7 @@ public class Enemy_Controller : MonoBehaviour
         float speedPercent = agent.velocity.magnitude / agent.speed;
         enemyAnim.SetFloat("speedPercent", speedPercent, locoAnimSmoothTime, Time.deltaTime);
 
-        if (GetComponent<CharacterCombat>().castTime > 0)
+        if (GetComponent<CharacterCombat>().CastTime > 0)
         {
             target = null;
             agent.velocity = Vector3.zero;
@@ -67,7 +67,7 @@ public class Enemy_Controller : MonoBehaviour
                 Character_Stats targetStats = target.GetComponent<Character_Stats>();
                 if(targetStats != null)
                 {
-                    if (stats.abilities[0].cooldownTimer < 0 && combat.castTime < 0)
+                    if (stats.abilities[0].cooldownTimer < 0 && combat.CastTime < 0 && (stats.abilities != null))
                     {
                         enemyAnim.SetTrigger("ability1");
                         stats.abilities[0].Use(gameObject);

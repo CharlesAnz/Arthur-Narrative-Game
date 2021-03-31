@@ -16,14 +16,14 @@ public class CharacterCombat : MonoBehaviour
     const float combatCooldown = 5;
     float lastAttackTime;
 
-    public float castTime;
-
-    public event System.Action OnAttack;
+    private float castTime;
 
     public float attackDelay = 0.6f;
 
-    public bool InCombat { get; private set; }
+    public List<CC_Effect> cc_Effects = new List<CC_Effect>();
 
+    public bool InCombat { get; private set; }
+    public float CastTime { get => castTime; set => castTime = value; }
 
     private void Start()
     {
@@ -34,7 +34,6 @@ public class CharacterCombat : MonoBehaviour
 
     private void Update()
     {
-        
         attackSpeed = myStats.attackSpeed.GetValue();
     
         attackCooldown -= Time.deltaTime;
@@ -51,6 +50,7 @@ public class CharacterCombat : MonoBehaviour
         }
 
         ManageBuffs();
+        Manage_CC();
     }
 
     //method for attackng another character
@@ -62,9 +62,6 @@ public class CharacterCombat : MonoBehaviour
             if (anim != null) anim.characterAnim.SetTrigger("basicAttack");
             //tells attack target's stats that they take damage after small delay
             StartCoroutine(DoDamage(targetStats, attackDelay));
-
-            if (OnAttack != null)
-                OnAttack();
                 
             //resets attack timer
             attackCooldown = 1f / attackSpeed;
@@ -88,6 +85,40 @@ public class CharacterCombat : MonoBehaviour
         targetStats.Heal(healAmount);
     }
 
+
+    public void Manage_CC()
+    {
+        for (int i = 0; i < cc_Effects.Count; i++)
+        {
+            CC_Effect effect = cc_Effects[i];
+
+            effect.durationTimer -= Time.deltaTime;
+
+            switch (effect.affect)
+            {
+                case StatusEffects.Stun:
+                    attackCooldown = effect.duration;
+                    castTime = effect.duration;
+                    
+                    break;
+                case StatusEffects.Silence:
+                    
+                    break;
+                case StatusEffects.Root:
+                    myStats.moveSpeed.AddModifier(-myStats.moveSpeed.GetValue());
+                    break;
+                case StatusEffects.Disarm:
+                    attackCooldown = effect.duration;
+                    break;
+            }
+
+            //removes buff if it's duration is 0
+            if (effect.durationTimer <= 0)
+            {
+                myStats.buffs.RemoveAt(i);
+            }
+        }
+    }
     void ManageBuffs()
     {
         for (int i = 0; i < myStats.buffs.Count; i++)

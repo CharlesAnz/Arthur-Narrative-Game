@@ -35,7 +35,7 @@ public class Player_Controller : MonoBehaviour
             return; 
         }
 
-        if (GetComponent<CharacterCombat>().castTime > 0) return;
+        if (GetComponent<CharacterCombat>().CastTime > 0) return;
 
         if (EventSystem.current.IsPointerOverGameObject()) return;
 

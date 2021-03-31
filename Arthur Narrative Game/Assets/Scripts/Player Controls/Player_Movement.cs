@@ -8,7 +8,7 @@ public class Player_Movement : MonoBehaviour
 {
     Transform target;
 
-    public GameObject moveTarget;
+    CharacterCombat combat;
 
     NavMeshAgent agent;
 
@@ -16,13 +16,16 @@ public class Player_Movement : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        combat = GetComponent<CharacterCombat>();
 
         agent.updateRotation = false;
     }
 
     private void Update()
     {
-        if (GetComponent<CharacterCombat>().castTime > 0)
+        agent.speed = combat.GetMyStats().moveSpeed.GetValue();
+
+        if (combat.CastTime > 0)
         {
             target = null;
             agent.velocity = Vector3.zero;
@@ -47,8 +50,6 @@ public class Player_Movement : MonoBehaviour
 
     public void MovetoPoint(Vector3 newPoint)
     {
-        //moveTarget.transform.position = newPoint;
-        //agent.updateRotation = true;
         agent.stoppingDistance = 0.2f;
         agent.SetDestination(newPoint);
     }
@@ -63,15 +64,12 @@ public class Player_Movement : MonoBehaviour
     public void FollowTarget(GameObject newTarget, float stopDistance)
     {
         agent.stoppingDistance = stopDistance * 0.9f;
-        //agent.updateRotation = false;
         target = newTarget.transform;
-        //Debug.Log("Target is: " + target);
     }
 
     public void StopFollowTarget()
     {
         agent.stoppingDistance = 0f;
-        //agent.updateRotation = true;
         target = null;
     }
 
@@ -80,6 +78,5 @@ public class Player_Movement : MonoBehaviour
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
-    
     }
 }

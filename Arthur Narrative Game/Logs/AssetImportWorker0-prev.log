@@ -1,267 +1,251 @@
 Using pre-set license
 Built from '2020.2/staging' branch; Version is '2020.2.3f1 (8ff31bc5bf5b) revision 9433883'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19041.867; Version 2004; 64bit' Language: 'pl' Physical Memory: 8140 MB
+OS: 'Windows 10 Home; OS build 19042.867; Version 2009; 64bit' Language: 'en' Physical Memory: 16282 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-D:\Unity\2020.2.3f1\Editor\Unity.exe
+C:\Program Files\Unity\2020.2.3f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Unity Projects/KingArthurGame/Arthur-Narrative-Game/Arthur Narrative Game
+C:/Users/charl/Documents/GitHub Projects/Arthur-Narrative-Game/Arthur Narrative Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50340
-Successfully changed project path to: D:/Unity Projects/KingArthurGame/Arthur-Narrative-Game/Arthur Narrative Game
-D:/Unity Projects/KingArthurGame/Arthur-Narrative-Game/Arthur Narrative Game
+55554
+Successfully changed project path to: C:/Users/charl/Documents/GitHub Projects/Arthur-Narrative-Game/Arthur Narrative Game
+C:/Users/charl/Documents/GitHub Projects/Arthur-Narrative-Game/Arthur Narrative Game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 33.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 30.62 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
-[Subsystems] Discovering subsystems at path D:/Unity/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Unity Projects/KingArthurGame/Arthur-Narrative-Game/Arthur Narrative Game/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/charl/Documents/GitHub Projects/Arthur-Narrative-Game/Arthur Narrative Game/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Radeon RX 580 Series (ID=0x67df)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f11)
     Vendor:   
-    VRAM:     8171 MB
-    Driver:   27.20.14501.18003
+    VRAM:     5980 MB
+    Driver:   27.21.14.6192
 Initialize mono
-Mono path[0] = 'D:/Unity/2020.2.3f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
+Mono path[0] = 'C:/Program Files/Unity/2020.2.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56536
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: D:/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: D:/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002638 seconds.
+Register platform support module: C:/Program Files/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.004207 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 33.05 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 28.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.465 seconds
+- Completed reload, in  3.527 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001074 seconds.
+Registered in 0.001378 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.913 seconds
+- Completed reload, in  0.835 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1294 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 85.5 MB.
-System memory in use after: 85.6 MB.
+System memory in use before: 151.8 MB.
+System memory in use after: 151.9 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1763.
-Total: 1.587400 ms (FindLiveObjects: 0.162400 ms CreateObjectMapping: 0.066400 ms MarkObjects: 1.279100 ms  DeleteObjects: 0.078600 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Models and textures/Arthur Model
-  artifactKey: Guid(c82336269e8a8c941a0fa2b5dea71223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models and textures/Arthur Model using Guid(c82336269e8a8c941a0fa2b5dea71223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff481130f0c8925fecf617a3189eca6b') in 0.006161 seconds
-  Import took 0.008528 seconds .
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1758.
+Total: 2.776600 ms (FindLiveObjects: 0.225700 ms CreateObjectMapping: 0.076000 ms MarkObjects: 2.356200 ms  DeleteObjects: 0.117200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.965955 seconds.
-  path: Assets/Models and textures/Arthur Model/Model/Arthur.fbx
-  artifactKey: Guid(ff8f2a5740f6a75449edb0df2215ab48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models and textures/Arthur Model/Model/Arthur.fbx using Guid(ff8f2a5740f6a75449edb0df2215ab48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be8aba693d1a6c7d86b03598c4d006ba') in 0.286757 seconds
-  Import took 0.289772 seconds .
+  path: Assets/Test Items
+  artifactKey: Guid(68a50c088b022f048bff1cdf765a676a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Items using Guid(68a50c088b022f048bff1cdf765a676a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a41e6569897fceaaa86a2f1af249d769') in 0.011346 seconds
+  Import took 0.013978 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 78.868463 seconds.
-  path: Assets/Models and textures/Knight with weapon/Galahad/Galahad-Sword Variant.prefab
-  artifactKey: Guid(c47d2a16bf8100046878892875ac0e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models and textures/Knight with weapon/Galahad/Galahad-Sword Variant.prefab using Guid(c47d2a16bf8100046878892875ac0e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40988d5fc9b2f9472d5cbe0c6775d1e2') in 0.030347 seconds
-  Import took 0.033505 seconds .
+  Time since last request: 0.000517 seconds.
+  path: Assets/Test Items/Purple thing.asset
+  artifactKey: Guid(08902963d3010bd43a1a79b553a03c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Items/Purple thing.asset using Guid(08902963d3010bd43a1a79b553a03c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe371a513b9236c1c77a4b5f90230c20') in 0.030478 seconds
+  Import took 0.032839 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 62.265603 seconds.
-  path: Assets/Models and textures/Knight with weapon/Galahad/Galahad-Sword Variant.prefab
-  artifactKey: Guid(c47d2a16bf8100046878892875ac0e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models and textures/Knight with weapon/Galahad/Galahad-Sword Variant.prefab using Guid(c47d2a16bf8100046878892875ac0e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1354d38fc07a6d9e6ce4599bf1649e07') in 0.022056 seconds
-  Import took 0.025104 seconds .
+  Time since last request: 0.000165 seconds.
+  path: Assets/Test Items/Purple Chest Piece.asset
+  artifactKey: Guid(4409a93c620d0704794ba5fd10eb207e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Items/Purple Chest Piece.asset using Guid(4409a93c620d0704794ba5fd10eb207e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e3e8fa310b8e6280efde0fcdba7880f') in 0.006628 seconds
+  Import took 0.008871 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 196.067056 seconds.
-  path: Assets/Models and textures/GrassFlowers/Textures/Ground/Grass01_BigUV.png
-  artifactKey: Guid(38bb15d6b378aff46b461e248592d1da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models and textures/GrassFlowers/Textures/Ground/Grass01_BigUV.png using Guid(38bb15d6b378aff46b461e248592d1da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd52cf556eb05fe22d47c776d3a56718f') in 0.042654 seconds
-  Import took 0.046300 seconds .
+  Time since last request: 12.291349 seconds.
+  path: Assets/Scripts/Items/Equipment.cs
+  artifactKey: Guid(d30695d1541592c4d9616ccdf7223db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Items/Equipment.cs using Guid(d30695d1541592c4d9616ccdf7223db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8780b650460f353aa26afb71d42f4818') in 0.013651 seconds
+  Import took 0.015953 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/Models and textures/Rock028_2K-PNG/Rock028_2K_Color.png
-  artifactKey: Guid(d2eba5c3463698442aacb3467b0a645c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models and textures/Rock028_2K-PNG/Rock028_2K_Color.png using Guid(d2eba5c3463698442aacb3467b0a645c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8013ee8ca97fb93a13a46d9e1bc3a333') in 0.010309 seconds
-  Import took 0.012831 seconds .
+  Time since last request: 0.012215 seconds.
+  path: Assets/Scripts/Items/Equipment.cs
+  artifactKey: Guid(d30695d1541592c4d9616ccdf7223db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Items/Equipment.cs using Guid(d30695d1541592c4d9616ccdf7223db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8780b650460f353aa26afb71d42f4818') in 0.002904 seconds
+  Import took 0.005309 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Albedo.png
-  artifactKey: Guid(7193a6787ada0c749b5388d7b75a3c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Albedo.png using Guid(7193a6787ada0c749b5388d7b75a3c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '613e0557cd3b50b79c8e5eb94cec3f8c') in 0.010543 seconds
-  Import took 0.014134 seconds .
+  Time since last request: 0.344234 seconds.
+  path: Assets/Scripts/Items/EquipmentManager.cs
+  artifactKey: Guid(8f8d4f78a8defac459712bdf3ead5482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Items/EquipmentManager.cs using Guid(8f8d4f78a8defac459712bdf3ead5482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8bd2545672b71f08719136b9858fd7f') in 0.006364 seconds
+  Import took 0.008670 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Diffuse.png
-  artifactKey: Guid(4e378473470043248af9eee2da286ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Diffuse.png using Guid(4e378473470043248af9eee2da286ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '882d16a50459669e138225215e315193') in 0.013800 seconds
-  Import took 0.016600 seconds .
+  Time since last request: 0.305618 seconds.
+  path: Assets/Scripts/Items/Item.cs
+  artifactKey: Guid(047ccc293b4730d4fb2133f4e32499f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Items/Item.cs using Guid(047ccc293b4730d4fb2133f4e32499f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc4d7d7b93a103962cc4a58975267a4e') in 0.006659 seconds
+  Import took 0.008780 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.510503 seconds.
-  path: Assets/Matt-Environment/Terrain/Grass Rock 1.terrainlayer
-  artifactKey: Guid(91571f33f371b01439bcb73f54974f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Matt-Environment/Terrain/Grass Rock 1.terrainlayer using Guid(91571f33f371b01439bcb73f54974f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8100d36c7b6cfcde8f702a9840ea4c1') in 0.025310 seconds
-  Import took 0.029078 seconds .
+  Time since last request: 36.295786 seconds.
+  path: Assets/Scripts/Inventory/Inventory.cs
+  artifactKey: Guid(f90afd53b61eeb24e9ff940b354463dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Inventory/Inventory.cs using Guid(f90afd53b61eeb24e9ff940b354463dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79a1acc0deb57a35b67b9a9b8a7b9e5') in 0.007654 seconds
+  Import took 0.010123 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003994 seconds.
-  path: Assets/Matt-Environment/Terrain/Grass Rock 1.terrainlayer
-  artifactKey: Guid(91571f33f371b01439bcb73f54974f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Matt-Environment/Terrain/Grass Rock 1.terrainlayer using Guid(91571f33f371b01439bcb73f54974f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8100d36c7b6cfcde8f702a9840ea4c1') in 0.012690 seconds
-  Import took 0.016559 seconds .
+  Time since last request: 82.296944 seconds.
+  path: Assets/Scripts/Items
+  artifactKey: Guid(c0522a1bc1d63f14ca2a5aba016c7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Items using Guid(c0522a1bc1d63f14ca2a5aba016c7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f64bd4832e55addf60b233046e219418') in 0.007039 seconds
+  Import took 0.018105 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.348612 seconds.
-  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Hight.tif
-  artifactKey: Guid(ace68ecd427fd794f9857b3d39e5ebea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Hight.tif using Guid(ace68ecd427fd794f9857b3d39e5ebea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6801e6e1f9cc10d72c4dfd42f96e64e7') in 0.012924 seconds
-  Import took 0.015666 seconds .
+  Time since last request: 0.011886 seconds.
+  path: Assets/Scripts/Items
+  artifactKey: Guid(c0522a1bc1d63f14ca2a5aba016c7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Items using Guid(c0522a1bc1d63f14ca2a5aba016c7f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f64bd4832e55addf60b233046e219418') in 0.003393 seconds
+  Import took 0.006405 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.032578 seconds.
-  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Hight.tif
-  artifactKey: Guid(ace68ecd427fd794f9857b3d39e5ebea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Hight.tif using Guid(ace68ecd427fd794f9857b3d39e5ebea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6801e6e1f9cc10d72c4dfd42f96e64e7') in 0.009619 seconds
-  Import took 0.012636 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.575617 seconds.
-  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Hight.tif
-  artifactKey: Guid(ace68ecd427fd794f9857b3d39e5ebea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Hight.tif using Guid(ace68ecd427fd794f9857b3d39e5ebea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0105bd7380e638c1ff36fc41a9bc097e') in 0.016172 seconds
-  Import took 0.019087 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.996635 seconds.
-  path: Assets/Matt-Environment/Terrain/Base Layer.terrainlayer
-  artifactKey: Guid(352efaa22ff76f54ab07b9b5d057a80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Matt-Environment/Terrain/Base Layer.terrainlayer using Guid(352efaa22ff76f54ab07b9b5d057a80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d34c96f205c82586bd37b2c892cd04') in 0.019650 seconds
-  Import took 0.022950 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000360 seconds.
-  path: Assets/Matt-Environment/Terrain/Base Layer.terrainlayer
-  artifactKey: Guid(352efaa22ff76f54ab07b9b5d057a80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Matt-Environment/Terrain/Base Layer.terrainlayer using Guid(352efaa22ff76f54ab07b9b5d057a80a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d34c96f205c82586bd37b2c892cd04') in 0.016005 seconds
-  Import took 0.019258 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.387289 seconds.
-  path: Assets/Matt-Environment/Terrain/Rock Layer.terrainlayer
-  artifactKey: Guid(6134522ef12367645b0693be8245990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Matt-Environment/Terrain/Rock Layer.terrainlayer using Guid(6134522ef12367645b0693be8245990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dbc88646686b3cc75caac560dcb7a5d') in 0.015425 seconds
-  Import took 0.018552 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 54.874985 seconds.
-  path: Assets/Matt-Environment/Terrain/Grass Rock 2.terrainlayer
-  artifactKey: Guid(cd084944c3271164ab968931f6e8b06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Matt-Environment/Terrain/Grass Rock 2.terrainlayer using Guid(cd084944c3271164ab968931f6e8b06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0179b9dc7562d100d9645b24ccfe2e4d') in 0.011240 seconds
-  Import took 0.013905 seconds .
+  Time since last request: 6.767131 seconds.
+  path: Assets/Scripts/Items/Potion.cs
+  artifactKey: Guid(3ea3b5d7a3222114a9411e5ea2a3a2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Items/Potion.cs using Guid(3ea3b5d7a3222114a9411e5ea2a3a2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8514956878ee4b80682ec27795e2b2') in 0.007891 seconds
+  Import took 0.010297 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001391 seconds.
+Registered in 0.000694 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.961 seconds
+- Completed reload, in  0.745 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1270 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.5 MB.
-System memory in use after: 98.6 MB.
+Unloading 1272 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.4 MB.
+System memory in use after: 150.5 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1782.
-Total: 1.903500 ms (FindLiveObjects: 0.312800 ms CreateObjectMapping: 0.109300 ms MarkObjects: 1.457300 ms  DeleteObjects: 0.022000 ms)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1762.
+Total: 2.767000 ms (FindLiveObjects: 0.243500 ms CreateObjectMapping: 0.083000 ms MarkObjects: 2.338500 ms  DeleteObjects: 0.100500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.100439 seconds.
+  path: Assets/Scripts/Abilities/AbilityUI.cs
+  artifactKey: Guid(8aa0742fe19a6ae48b436e917467d586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Abilities/AbilityUI.cs using Guid(8aa0742fe19a6ae48b436e917467d586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f15242c5279519ed574af011cc5b4a38') in 0.018058 seconds
+  Import took 0.020623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014006 seconds.
+  path: Assets/Scripts/Abilities/AbilityUI.cs
+  artifactKey: Guid(8aa0742fe19a6ae48b436e917467d586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Abilities/AbilityUI.cs using Guid(8aa0742fe19a6ae48b436e917467d586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f15242c5279519ed574af011cc5b4a38') in 0.003287 seconds
+  Import took 0.005653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.619751 seconds.
+  path: Assets/Scripts/Abilities/Ability.cs
+  artifactKey: Guid(fa7652459315bf741b3f65d5c33f5352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Abilities/Ability.cs using Guid(fa7652459315bf741b3f65d5c33f5352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae129acb335010487363e8825f481e93') in 0.007065 seconds
+  Import took 0.009558 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000976 seconds.
+Registered in 0.000716 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.948 seconds
+- Completed reload, in  0.860 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1269 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.5 MB.
-System memory in use after: 98.6 MB.
+Unloading 1271 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.4 MB.
+System memory in use after: 150.5 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1784.
-Total: 2.104000 ms (FindLiveObjects: 0.337500 ms CreateObjectMapping: 0.162400 ms MarkObjects: 1.588600 ms  DeleteObjects: 0.013700 ms)
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1764.
+Total: 2.588600 ms (FindLiveObjects: 0.250300 ms CreateObjectMapping: 0.084600 ms MarkObjects: 2.167000 ms  DeleteObjects: 0.085200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1243.579470 seconds.
+  path: Assets/Scripts/Items/Potion.cs
+  artifactKey: Guid(3ea3b5d7a3222114a9411e5ea2a3a2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Items/Potion.cs using Guid(3ea3b5d7a3222114a9411e5ea2a3a2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3730c5add6ff95837e9508aa9884e3d0') in 0.005703 seconds
+  Import took 0.010748 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -4,7 +4,7 @@
 public class Item : ScriptableObject
 {
     new public string name = "New Item";
-    private GameObject user = null;
+    protected GameObject user = null;
     public Sprite icon = null;
 
     public bool isDefault = false;

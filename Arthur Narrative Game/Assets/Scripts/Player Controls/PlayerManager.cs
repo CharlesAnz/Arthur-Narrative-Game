@@ -83,39 +83,13 @@ public class PlayerManager : MonoBehaviour
         
 
         if (Input.GetKeyDown(KeyCode.Q))
-        {
-            //activePerson.GetComponent<Player_Stats>().abilities[0].Use(activePerson.gameObject);
-            UseAbility(activePerson.GetComponent<Player_Stats>().abilities, 0);
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            //activePerson.GetComponent<Player_Stats>().abilities[1].Use(activePerson.gameObject);
-            UseAbility(activePerson.GetComponent<Player_Stats>().abilities, 1);
-        }
+            activePerson.GetComponent<Player_Stats>().abilities[0].Use(activePerson.gameObject);
+        
+        if (Input.GetKeyDown(KeyCode.W))        
+            activePerson.GetComponent<Player_Stats>().abilities[1].Use(activePerson.gameObject);
+        
         if (Input.GetKeyDown(KeyCode.E))
-        {
-            //activePerson.GetComponent<Player_Stats>().abilities[2].Use(activePerson.gameObject);
-            UseAbility(activePerson.GetComponent<Player_Stats>().abilities, 2);
-        }
+            activePerson.GetComponent<Player_Stats>().abilities[2].Use(activePerson.gameObject);
 
-    }
-
-
-    private void UseAbility(List<Ability> abilities, int i)
-    {
-        CharacterCombat combat = activePerson.GetComponent<CharacterCombat>();
-        CharacterAnimator anim = activePerson.GetComponent<CharacterAnimator>();
-
-        if (abilities[i].cooldownTimer > 0) return;
-        if (combat.castTime > 0) return;
-
-        if (anim != null)
-        {
-            if(i == 0) anim.characterAnim.SetTrigger("ability1");
-            else if(i == 1) anim.characterAnim.SetTrigger("ability2");
-            else if(i == 2) anim.characterAnim.SetTrigger("ability3");
-        }
-            
-        abilities[i].Use(activePerson.gameObject);
     }
 }

@@ -21,10 +21,15 @@ MonoBehaviour:
     duration: 10
     durationTimer: -0.017373156
     ramping: 0
+  cc_Effects: []
+  displacement:
+    pushOrPull: 0
+    distance: 0
   doesDamage: 1
   doesHealing: 0
   abilityValue: 30
   cooldown: 10
+  animatorTrigger: ability1
   castTime: 2.44
   cooldownTimer: -14.14749
   targetType: 2

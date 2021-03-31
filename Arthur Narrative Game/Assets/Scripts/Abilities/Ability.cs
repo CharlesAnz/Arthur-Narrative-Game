@@ -14,6 +14,11 @@ public class Ability : ScriptableObject
 
     public List<BufforDebuff> buffList = new List<BufforDebuff>();
 
+    public List<CC_Effect> cc_Effects = new List<CC_Effect>();
+
+    [SerializeField]
+    private CC_Displacement displacement;
+
     [SerializeField]
     protected bool doesDamage, doesHealing;
 
@@ -22,6 +27,9 @@ public class Ability : ScriptableObject
     
     [SerializeField]
     protected float cooldown;
+
+    [SerializeField]
+    protected string animatorTrigger;
 
     public float castTime;
 
@@ -44,20 +52,36 @@ public class Ability : ScriptableObject
     //Checks if the cooldown is below, if not then nothing happens
     protected bool Setup(GameObject interactor)
     {
+        CharacterCombat combat = interactor.GetComponent<CharacterCombat>();
+        CharacterAnimator anim = interactor.GetComponent<CharacterAnimator>();
+
         if (cooldownTimer >= 0)
         {
             Debug.Log("Ability on cooldown");
             return false;
         }
+        if (combat.CastTime >= 0) 
+        {
+            Debug.Log("Casting another Ability");
+            return false;
+        }
+
         cooldownTimer = cooldown;
 
-        CharacterCombat combat = interactor.GetComponent<CharacterCombat>();
-        combat.castTime = castTime;
+        if (anim != null)
+        {
+            anim.characterAnim.SetTrigger(animatorTrigger);
+        }
+
+        combat.CastTime = castTime;
         combat.SetAttackCooldown(castTime);
 
         if (doesDamage) OnAbilityUse.AddListener(Damage);
         if (doesHealing) OnAbilityUse.AddListener(Heal);
         if (buffList != null) OnAbilityUse.AddListener(addBuff);
+        if (cc_Effects != null) OnAbilityUse.AddListener(addCC_Effect);
+        if (displacement.distance != 0) OnAbilityUse.AddListener(addDisplacement);
+
 
         return true;
     }
@@ -104,6 +128,20 @@ public class Ability : ScriptableObject
             }
 
             statsAffected.buffs.Add(buff);
+        }
+    }
+
+    private void addDisplacement(CharacterCombat target)
+    {
+
+    }
+
+    private void addCC_Effect(CharacterCombat target)
+    {
+        foreach (CC_Effect effect in cc_Effects)
+        {
+            effect.durationTimer = effect.duration;
+            target.cc_Effects.Add(effect);
         }
     }
 
