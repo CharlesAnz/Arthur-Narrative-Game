@@ -12,7 +12,7 @@ public class Aoe_Ability : Ability
 
     //public float endPoint;
 
-    [HideInInspector]
+    //[HideInInspector]
     public Vector3 origin;
 
     public bool selfOrigin = false;
@@ -27,18 +27,13 @@ public class Aoe_Ability : Ability
         if (!Setup(user)) return;
 
         if (selfOrigin) origin = user.transform.position;
-        else
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, 100))
-            {
-                origin = hit.point;
-            }
+        else if(user.tag == "Player")
+        {
+            origin = FindOriginWithMouse();
         }
 
-        if ( origin != null)
+        if (origin != null)
         {
             if (aoeType == AOEType.Cube || aoeType == AOEType.Sphere)
                 CheckArea();
@@ -47,11 +42,15 @@ public class Aoe_Ability : Ability
             else if (aoeType == AOEType.Line)
                 CheckLine();
 
+            
             foreach (var target in targets)
             {
-                //Debug.Log(target + " was hit at coordinates: " + origin);
-
-                OnAbilityUse.Invoke(target);
+                Debug.Log(target + " was hit at coordinates: " + target.transform.position);
+                //Debug.Log("Ability hits");
+                if(delay > 0)
+                    user.GetComponent<CharacterCombat>().UseAbility(target, this);
+                else 
+                    OnAbilityUse.Invoke(target);
             }
 
         }
@@ -67,8 +66,10 @@ public class Aoe_Ability : Ability
         {
             foreach (var collider in colliderArray)
             {
+                
                 Vector3 directionTowardT = collider.transform.position - origin;
-                float angleFromConeCenter = Vector3.Angle(directionTowardT, Vector3.forward);
+                float angleFromConeCenter = Vector3.Angle(directionTowardT, abilityUser.transform.TransformDirection(Vector3.forward));
+
 
                 CharacterCombat colliderCombat = collider.gameObject.GetComponent<CharacterCombat>();
 
@@ -77,11 +78,15 @@ public class Aoe_Ability : Ability
                     switch (targetType)
                     {
                         case TargetType.Ally:
-                            if (colliderCombat.tag == "Ally" || colliderCombat.tag == "Player") targets.Add(colliderCombat);
+                            if (colliderCombat.tag == "Ally" || colliderCombat.tag == "Player")
+                                targets.Add(colliderCombat);
+
                             break;
 
                         case TargetType.Enemy:
-                            if (colliderCombat.tag == "Enemy") targets.Add(colliderCombat);
+                            if (colliderCombat.tag == "Enemy")
+                                targets.Add(colliderCombat);
+
                             break;
 
                         case TargetType.Any:
@@ -99,7 +104,7 @@ public class Aoe_Ability : Ability
 
     private void CheckLine()
     {
-        Ray aoeLineRay = new Ray(user.transform.position, user.transform.TransformDirection(Vector3.forward) * 2);
+        Ray aoeLineRay = new Ray(abilityUser.transform.position, abilityUser.transform.TransformDirection(abilityUser.transform.TransformDirection(Vector3.forward)) * 2);
         RaycastHit[] collidersHit = Physics.RaycastAll(aoeLineRay, areaSize);
 
         if (collidersHit != null)
@@ -129,12 +134,14 @@ public class Aoe_Ability : Ability
         }
     }
 
-    private void CheckArea ()
+    private void CheckArea()
     {
         Collider[] collidersNear = null;
 
-        if (aoeType == AOEType.Cube) 
-            collidersNear = Physics.OverlapBox(origin, new Vector3(areaSize /2, areaSize /2, areaSize /2 ));
+        if (aoeType == AOEType.Cube)
+        {
+            collidersNear = Physics.OverlapBox(origin, new Vector3(areaSize / 2, areaSize / 2, areaSize / 2));      
+        }
 
         else if (aoeType == AOEType.Sphere)
             collidersNear = Physics.OverlapSphere(origin, areaSize);
@@ -165,6 +172,22 @@ public class Aoe_Ability : Ability
             }
         }
     }
+
+
+    private Vector3 FindOriginWithMouse()
+    {
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100))
+        {
+            return hit.point;
+        }
+
+        else return Vector3.zero;
+    }
+
+
 }
 
 public enum AOEType { Sphere, Cube, Cone, Line }

@@ -16,7 +16,6 @@ public class Enemy_Controller : MonoBehaviour
     Character_Stats stats;
     PlayerManager playerManager;
 
-    Animator enemyAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +25,9 @@ public class Enemy_Controller : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         combat = GetComponent<CharacterCombat>();
         stats = GetComponent<Character_Stats>();
-        enemyAnim = GetComponentInChildren<Animator>();
         enemyInteractor = GetComponent<Enemy>();
+
+        agent.stoppingDistance = enemyInteractor.radius;
 
         agent.updateRotation = false;
 
@@ -36,6 +36,12 @@ public class Enemy_Controller : MonoBehaviour
         foreach (Ability ability in stats.GetComponent<Character_Stats>().abilities)
         {
             ability.cooldownTimer = 0;
+
+            if (ability.GetType().Equals(typeof(Aoe_Ability)))
+            {
+                Aoe_Ability abilityCopy = (Aoe_Ability)ability;
+                abilityCopy.origin = transform.forward * 1.2f;
+            }
         }
 
         target = playerManager.activePerson.transform;
@@ -44,8 +50,6 @@ public class Enemy_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float speedPercent = agent.velocity.magnitude / agent.speed;
-        enemyAnim.SetFloat("speedPercent", speedPercent, locoAnimSmoothTime, Time.deltaTime);
 
         if (GetComponent<CharacterCombat>().CastTime > 0)
         {
@@ -61,23 +65,38 @@ public class Enemy_Controller : MonoBehaviour
         {
             agent.SetDestination(target.position);
 
-            if(distance <= agent.stoppingDistance)
+            if (distance <= agent.stoppingDistance)
             {
                 //attack
                 Character_Stats targetStats = target.GetComponent<Character_Stats>();
-                if(targetStats != null)
+                if (targetStats != null && combat.CastTime < 0)
                 {
-                    if (stats.abilities[0].cooldownTimer < 0 && combat.CastTime < 0 && (stats.abilities != null))
+                    List<Ability> myAbilities = stats.abilities;
+
+                    if (myAbilities[0].cooldownTimer <= 0 && myAbilities.Count != 0)
                     {
-                        enemyAnim.SetTrigger("ability1");
-                        stats.abilities[0].Use(gameObject);
+                        //myAbilities[0].Use(gameObject);
                     }
 
-                    enemyAnim.SetTrigger("basicAttack");
-                    combat.Attack(targetStats);
-                }
+                    if (myAbilities[1].cooldownTimer <= 0 && myAbilities.Count != 0)
+                    {
+                        if (myAbilities[1].GetType().Equals(typeof(Aoe_Ability)))
+                        { 
+                            Aoe_Ability ability = (Aoe_Ability)myAbilities[1];
+                            ability.origin = transform.position + (transform.forward * 3);//transform.TransformDirection(Vector3.forward) * 1.2f;
+                        }
 
+                        myAbilities[1].Use(gameObject);
+                    }
+                    else
+                    {
+                        combat.Attack(targetStats);
+                    }
+
+                }
             }
+            else
+                GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
 
             FaceTarget();
         }
@@ -97,12 +116,21 @@ public class Enemy_Controller : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
+
+        /*
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireCube(
+             transform.position + (transform.forward * 3), 
+            new Vector3(4, 4, 4));
+        */
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;
-        Vector3 direction = transform.TransformDirection(Vector3.forward) * 2;
+        Vector3 direction = transform.TransformDirection(Vector3.forward) * 10;
         Gizmos.DrawRay(transform.position, direction);
+
+        
     }
 }

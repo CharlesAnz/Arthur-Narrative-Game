@@ -19,22 +19,23 @@ MonoBehaviour:
   - amount: -4
     affects: 1
     duration: 10
-    durationTimer: -0.017373156
+    durationTimer: 8.496827
     ramping: 0
   cc_Effects: []
+  delay: 1.3
   displacement:
     pushOrPull: 0
     distance: 0
   doesDamage: 1
   doesHealing: 0
   abilityValue: 30
-  cooldown: 10
+  cooldown: 3
   animatorTrigger: ability1
   castTime: 2.44
-  cooldownTimer: -14.14749
+  cooldownTimer: -11.671631
   targetType: 2
-  areaSize: 5
+  areaSize: 3
   aoeType: 2
-  origin: {x: 3.6466408, y: -0.03677669, z: -1.792336}
+  origin: {x: 3.7789416, y: 0.027201355, z: -1.9927939}
   selfOrigin: 1
   targets: []

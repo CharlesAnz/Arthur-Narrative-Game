@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 //This controls combat between 2 characters
@@ -15,6 +16,12 @@ public class CharacterCombat : MonoBehaviour
 
     const float combatCooldown = 5;
     float lastAttackTime;
+
+    [HideInInspector]
+    public bool rooted;
+
+    [HideInInspector]
+    public bool silenced;
 
     private float castTime;
 
@@ -59,7 +66,8 @@ public class CharacterCombat : MonoBehaviour
         //if attack not on cooldown
         if (attackCooldown <= 0f)
         {
-            if (anim != null) anim.characterAnim.SetTrigger("basicAttack");
+            if (anim != null) anim.characterAnim.SetBool("basicAttack", true);
+            
             //tells attack target's stats that they take damage after small delay
             StartCoroutine(DoDamage(targetStats, attackDelay));
                 
@@ -97,24 +105,28 @@ public class CharacterCombat : MonoBehaviour
             switch (effect.affect)
             {
                 case StatusEffects.Stun:
-                    attackCooldown = effect.duration;
-                    castTime = effect.duration;
-                    
+                    attackCooldown = effect.durationTimer;
+                    castTime = effect.durationTimer;
                     break;
                 case StatusEffects.Silence:
-                    
+                    silenced = true;
                     break;
                 case StatusEffects.Root:
-                    myStats.moveSpeed.AddModifier(-myStats.moveSpeed.GetValue());
+                    rooted = true;
                     break;
                 case StatusEffects.Disarm:
-                    attackCooldown = effect.duration;
+                    attackCooldown = effect.durationTimer;
                     break;
             }
 
             //removes buff if it's duration is 0
             if (effect.durationTimer <= 0)
             {
+                if (effect.affect == StatusEffects.Root)
+                    rooted = false;
+                if (effect.affect == StatusEffects.Silence)
+                    silenced = false;
+
                 myStats.buffs.RemoveAt(i);
             }
         }
@@ -231,6 +243,11 @@ public class CharacterCombat : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         stats.TakeDam(myStats.damage.GetValue());
+    }
+
+    public void UseAbility(CharacterCombat target, Ability ability)
+    {
+        StartCoroutine(ability.UseAbility(target));
     }
 
 }

@@ -30,12 +30,27 @@ public class Player_Movement : MonoBehaviour
             target = null;
             agent.velocity = Vector3.zero;
         }
+        
         if (target != null)
         {
-            agent.SetDestination(target.position);
+            if(combat.cc_Effects.Count == 0)
+            {
+                agent.SetDestination(target.position);
+                agent.acceleration = 12f;
+                agent.angularSpeed = 120f;
+            }
+
+            foreach (CC_Effect effect in combat.cc_Effects)
+            {
+                if (effect.affect != StatusEffects.Root)
+                {
+                    agent.SetDestination(target.position);
+                    agent.acceleration = 12f;
+                    agent.angularSpeed = 120f;
+                }
+            }
+
             FaceTarget();
-            agent.acceleration = 12f;
-            agent.angularSpeed = 120f;
         }
 
     }
