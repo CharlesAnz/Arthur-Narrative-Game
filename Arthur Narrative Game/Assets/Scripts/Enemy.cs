@@ -14,8 +14,7 @@ public class Enemy : Interactable
     public override void Interact(GameObject interactor)
     {
         base.Interact(interactor);
-        
-
+       
         interactorCombat = interactor.GetComponent<CharacterCombat>();
         if (interactorCombat != null)
         {
@@ -41,18 +40,23 @@ public class Enemy : Interactable
 
             //if the enemy has been attacked, then continue attacking as long they're still focused
             //and their attack cooldown allows it
-            else if(hasInteracted && interactorCombat.GetAttackCooldown() <= 0)
+            else if (hasInteracted && interactorCombat.GetAttackCooldown() <= 0)
             {
                 float distance = Vector3.Distance(interactor.position, interactionTransform.position);
                 if (distance <= radius)
                 {
-
                     Interact(interactor.gameObject);
                 }
             }
         }
+        else
+        {
+            if (interactorCombat != null)
+            {
+                interactorCombat.GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
+            }
+        }
 
-        
     }
 
 }

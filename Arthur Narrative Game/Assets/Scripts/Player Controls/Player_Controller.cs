@@ -50,16 +50,7 @@ public class Player_Controller : MonoBehaviour
                 //Left mouse button click move
                 RemoveFocus();
                 movement.MovetoPoint(hit.point);
-                /*
-                movement.moveTarget.transform.position = new Vector3(
-                    hit.point.x, 
-                    movement.moveTarget.transform.position.y, 
-                    hit.point.z);
-
-                movement.FollowTarget(movement.moveTarget.gameObject, (float)1.2);
-                */
-                
-            
+                    
             }
         }
 
@@ -74,7 +65,6 @@ public class Player_Controller : MonoBehaviour
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
                 if (interactable != null)
                 {
-                    //Debug.Log("We hit: " + hit.collider.name + " " + hit.point);
                     SetFocus(interactable);
                 }
             }

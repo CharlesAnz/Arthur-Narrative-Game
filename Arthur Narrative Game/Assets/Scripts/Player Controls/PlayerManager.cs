@@ -80,10 +80,12 @@ public class PlayerManager : MonoBehaviour
                     }
             }
         }
-        
+
 
         if (Input.GetKeyDown(KeyCode.Q))
+        {
             activePerson.GetComponent<Player_Stats>().abilities[0].Use(activePerson.gameObject);
+        }
         
         if (Input.GetKeyDown(KeyCode.W))        
             activePerson.GetComponent<Player_Stats>().abilities[1].Use(activePerson.gameObject);

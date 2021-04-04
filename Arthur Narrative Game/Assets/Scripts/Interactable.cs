@@ -16,7 +16,7 @@ public class Interactable : MonoBehaviour
     //This is used as a base and meant to be built upon for more specialised interactables
     public virtual void Interact(GameObject interactor)
     {
-        Debug.Log(interactor + " is Interacting with " + this.name);
+        //Debug.Log(interactor + " is Interacting with " + this.name);
         //method is meant to be overwritten
     }
 
