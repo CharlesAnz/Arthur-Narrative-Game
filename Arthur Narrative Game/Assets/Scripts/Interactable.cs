@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
@@ -29,7 +27,7 @@ public class Interactable : MonoBehaviour
             float distance = Vector3.Distance(interactor.position, interactionTransform.position);
             if (distance <= radius)
             {
-                
+
                 Interact(interactor.gameObject);
                 hasInteracted = true;
             }
@@ -50,13 +48,12 @@ public class Interactable : MonoBehaviour
         isFocus = false;
         interactor = null;
         hasInteracted = false;
-
     }
 
     private void OnDrawGizmosSelected()
     {
         if (interactionTransform == null)
-            interactionTransform = transform; 
+            interactionTransform = transform;
 
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(interactionTransform.position, radius);

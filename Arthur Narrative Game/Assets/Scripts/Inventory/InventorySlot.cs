@@ -39,7 +39,7 @@ public class InventorySlot : MonoBehaviour
 
     //uses item in inventory slot
     public void UseItem()
-    { 
+    {
         if (item != null)
         {
             item.Use(playerController.gameObject);

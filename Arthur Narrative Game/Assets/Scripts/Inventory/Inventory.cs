@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
-    
+
     public int space = 20;
 
     public List<Item> items = new List<Item>();
@@ -19,12 +18,12 @@ public class Inventory : MonoBehaviour
             {
                 Debug.Log("Not enough room.");
                 return false;
-            
+
             }
-            
+
             items.Add(item);
 
-            if(onItemChangedCallback != null)
+            if (onItemChangedCallback != null)
                 onItemChangedCallback.Invoke();
         }
 

@@ -1,12 +1,12 @@
-﻿using UnityEngine.EventSystems;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 //[RequireComponent(typeof(Player_Movement))]
 public class Player_Controller : MonoBehaviour
 {
     public LayerMask moveMask;
-    
+
     public Interactable focus;
     PlayerManager playerManager;
 
@@ -31,8 +31,8 @@ public class Player_Controller : MonoBehaviour
         if (activeCharacter == false && focus == null)
         {
             movement.FollowTarget(playerManager.activePerson.gameObject, 3);
-            
-            return; 
+
+            return;
         }
 
         if (GetComponent<CharacterCombat>().CastTime > 0) return;
@@ -50,7 +50,7 @@ public class Player_Controller : MonoBehaviour
                 //Left mouse button click move
                 RemoveFocus();
                 movement.MovetoPoint(hit.point);
-                    
+
             }
         }
 
@@ -91,13 +91,14 @@ public class Player_Controller : MonoBehaviour
     }
 
     //removes the player's current focus
-    void RemoveFocus()
+    public void RemoveFocus()
     {
         if (focus != null)
             focus.OnDefocused();
 
         focus = null;
         movement.StopFollowTarget();
+        //Debug.Log("focus removed should stop following target");
     }
 
     private void OnDrawGizmos()

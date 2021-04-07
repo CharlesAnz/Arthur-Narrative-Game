@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player_Stats : Character_Stats
 {
@@ -18,11 +16,11 @@ public class Player_Stats : Character_Stats
         }
     }
 
-    void OnEquipmentChanged (Equipment newItem, Equipment oldItem)
+    void OnEquipmentChanged(Equipment newItem, Equipment oldItem)
     {
-        
-        if(newItem != null)
-        { 
+
+        if (newItem != null)
+        {
             armor.AddModifier(newItem.armorMod);
             damage.AddModifier(newItem.damageMod);
         }
@@ -32,7 +30,7 @@ public class Player_Stats : Character_Stats
             armor.RemoveModifier(oldItem.armorMod);
             damage.RemoveModifier(oldItem.damageMod);
         }
-        
+
     }
 
     public override void Die()

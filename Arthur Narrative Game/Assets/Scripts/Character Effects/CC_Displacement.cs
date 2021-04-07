@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 [System.Serializable]
 public class CC_Displacement
 {
@@ -10,5 +6,5 @@ public class CC_Displacement
     public float distance;
 }
 
-public enum DisplacementEffect { Push, Pull}
+public enum DisplacementEffect { Push, Pull }
 

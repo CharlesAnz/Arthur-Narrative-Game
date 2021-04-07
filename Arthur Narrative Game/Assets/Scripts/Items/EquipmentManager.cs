@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EquipmentManager : MonoBehaviour
 {
@@ -17,13 +15,13 @@ public class EquipmentManager : MonoBehaviour
         inventory = gameObject.GetComponent<Inventory>();
     }
 
-    public void Equip (Equipment newItem)
+    public void Equip(Equipment newItem)
     {
         int slotIndex = (int)newItem.equipSlot;
 
         Equipment oldItem = null;
 
-        if (curEquipment[slotIndex]!= null)
+        if (curEquipment[slotIndex] != null)
         {
             oldItem = curEquipment[slotIndex];
             inventory.Add(oldItem);
@@ -37,7 +35,7 @@ public class EquipmentManager : MonoBehaviour
         curEquipment[slotIndex] = newItem;
     }
 
-    public void UnEquip (int slotIndex)
+    public void UnEquip(int slotIndex)
     {
         if (curEquipment[slotIndex] != null)
         {
@@ -53,9 +51,9 @@ public class EquipmentManager : MonoBehaviour
         }
     }
 
-    public void UnEquipAll() 
+    public void UnEquipAll()
     {
-        for (int i = 0; i< curEquipment.Length; i++)
+        for (int i = 0; i < curEquipment.Length; i++)
         {
             UnEquip(i);
         }

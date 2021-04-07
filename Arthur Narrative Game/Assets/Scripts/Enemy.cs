@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Enemy : Interactable
 {
@@ -11,10 +9,11 @@ public class Enemy : Interactable
     {
         myStats = GetComponent<Character_Stats>();
     }
+
     public override void Interact(GameObject interactor)
     {
         base.Interact(interactor);
-       
+
         interactorCombat = interactor.GetComponent<CharacterCombat>();
         if (interactorCombat != null)
         {
@@ -47,6 +46,8 @@ public class Enemy : Interactable
                 {
                     Interact(interactor.gameObject);
                 }
+                if (distance > radius)
+                    interactorCombat.GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
             }
         }
         else

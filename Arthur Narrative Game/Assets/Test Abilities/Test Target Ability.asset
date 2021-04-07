@@ -12,18 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29ae035edc32de447921400b0ecd43ed, type: 3}
   m_Name: Test Target Ability
   m_EditorClassIdentifier: 
-  name: New Ability
-  description: ability does thing
+  name: projectile test
+  description: shoots projectile at target
   icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  buffList:
-  - amount: 1
-    affects: 3
-    duration: 10
-    durationTimer: 6.917143
-    ramping: 0
+  buffList: []
+  cc_Effects: []
+  delay: 0
+  displacement:
+    pushOrPull: 0
+    distance: 20
   doesDamage: 0
   doesHealing: 0
   abilityValue: 1
-  cooldown: 10
-  cooldownTimer: 0.75144047
-  targetType: 0
+  cooldown: 0.5
+  animatorTrigger: ability2
+  castTime: 0
+  cooldownTimer: -6.218131
+  targetType: 2
+  maxDistance: 1000
+  projectile: {fileID: 5125266747777737099, guid: 7f03f8e6bfe517d449f3b9bdab4a69dc, type: 3}

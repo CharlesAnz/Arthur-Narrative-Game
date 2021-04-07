@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
 //[RequireComponent(typeof(NavMeshAgent))]
@@ -30,10 +28,10 @@ public class Player_Movement : MonoBehaviour
             target = null;
             agent.velocity = Vector3.zero;
         }
-        
+
         if (target != null)
         {
-            if(combat.cc_Effects.Count == 0)
+            if (combat.cc_Effects.Count == 0)
             {
                 agent.SetDestination(target.position);
                 agent.acceleration = 12f;
@@ -68,7 +66,7 @@ public class Player_Movement : MonoBehaviour
         agent.stoppingDistance = 0.2f;
         agent.SetDestination(newPoint);
     }
-    
+
     public void FollowTarget(Interactable newTarget)
     {
         agent.stoppingDistance = newTarget.radius;
@@ -86,6 +84,7 @@ public class Player_Movement : MonoBehaviour
     {
         agent.stoppingDistance = 0f;
         target = null;
+        agent.velocity = Vector3.zero;
     }
 
     void FaceTarget()

@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 //This is for holding the stats of any character and is used mostly for combat purposes
 public class Character_Stats : MonoBehaviour
 {
-    public float curHP { get; private set; }
+    [SerializeField]
+    public float curHP; //{ get; private set; }
 
     public Stat maxHP;
     public Stat damage;
@@ -20,7 +19,7 @@ public class Character_Stats : MonoBehaviour
 
     private void Start()
     {
-        foreach(Ability ability in abilities)
+        foreach (Ability ability in abilities)
         {
             ability.SetCam(Camera.main);
             ability.cooldownTimer = 0;
@@ -29,17 +28,17 @@ public class Character_Stats : MonoBehaviour
     }
 
     //Method for taking damage, damage is subtracted by the amount of armor and damage min is 0
-    public void TakeDam (float damage)
+    public void TakeDam(float damage)
     {
         if (armor.GetValue() > 0)
-        { 
-            damage -= armor.GetValue(); 
+        {
+            damage -= armor.GetValue();
         }
-        
+
         damage = Mathf.Clamp(damage, 0, int.MaxValue);
 
         curHP -= damage;
-        Debug.Log(gameObject + " takes " + damage + " damage");
+        //Debug.Log(gameObject + " takes " + damage + " damage");
 
         if (curHP <= 0)
         {

@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 
 //This controls combat between 2 characters
@@ -9,9 +8,9 @@ public class CharacterCombat : MonoBehaviour
 {
     Character_Stats myStats;
     CharacterAnimator anim;
-    
+
     float nextTime = 0;
-    public float attackSpeed; 
+    public float attackSpeed;
     private float attackCooldown = 0f;
 
     const float combatCooldown = 5;
@@ -23,6 +22,7 @@ public class CharacterCombat : MonoBehaviour
     [HideInInspector]
     public bool silenced;
 
+    [SerializeField]
     private float castTime;
 
     public float attackDelay = 0.6f;
@@ -42,16 +42,17 @@ public class CharacterCombat : MonoBehaviour
     private void Update()
     {
         attackSpeed = myStats.attackSpeed.GetValue();
-    
+
         attackCooldown -= Time.deltaTime;
         castTime -= Time.deltaTime;
+
 
         if (Time.time - lastAttackTime > combatCooldown)
         {
             InCombat = false;
         }
 
-        foreach(Ability ability in myStats.abilities)
+        foreach (Ability ability in myStats.abilities)
         {
             ability.cooldownTimer -= Time.deltaTime;
         }
@@ -61,25 +62,25 @@ public class CharacterCombat : MonoBehaviour
     }
 
     //method for attackng another character
-    public void Attack (Character_Stats targetStats)
+    public void Attack(Character_Stats targetStats)
     {
         //if attack not on cooldown
         if (attackCooldown <= 0f)
         {
             if (anim != null) anim.characterAnim.SetBool("basicAttack", true);
-            
+
             //tells attack target's stats that they take damage after small delay
             StartCoroutine(DoDamage(targetStats, attackDelay));
-                
+
             //resets attack timer
             attackCooldown = 1f / attackSpeed;
 
-            InCombat = true;
+            //InCombat = true;
             lastAttackTime = Time.time;
         }
     }
 
-    public Character_Stats GetMyStats(){ return myStats; }
+    public Character_Stats GetMyStats() { return myStats; }
 
     public void AbilityHit(Character_Stats targetStats, float mod)
     {
@@ -96,6 +97,8 @@ public class CharacterCombat : MonoBehaviour
 
     public void Manage_CC()
     {
+        if (cc_Effects.Count == 0) return;
+
         for (int i = 0; i < cc_Effects.Count; i++)
         {
             CC_Effect effect = cc_Effects[i];
@@ -127,12 +130,14 @@ public class CharacterCombat : MonoBehaviour
                 if (effect.affect == StatusEffects.Silence)
                     silenced = false;
 
-                myStats.buffs.RemoveAt(i);
+                cc_Effects.RemoveAt(i);
             }
         }
     }
     void ManageBuffs()
     {
+        if (myStats.buffs.Count == 0) return;
+
         for (int i = 0; i < myStats.buffs.Count; i++)
         {
             BufforDebuff buff = myStats.buffs[i];
@@ -165,14 +170,14 @@ public class CharacterCombat : MonoBehaviour
                             myStats.moveSpeed.AddModifier(buff.amount);
                             break;
 
-                            
+
                     }
                     //do something here every interval seconds
                     nextTime = Mathf.FloorToInt(Time.time) + 1;
                 }
 
             }
-            
+
             //removes buff if it's duration is 0
             if (buff.durationTimer <= 0)
             {
@@ -189,8 +194,8 @@ public class CharacterCombat : MonoBehaviour
                         else
                             myStats.armor.RemoveModifier(buff.amount);
                         break;
-                    
-                    
+
+
                     case StatBuffs.AttackSpeed:
                         if (buff.ramping)
                         {
@@ -202,8 +207,8 @@ public class CharacterCombat : MonoBehaviour
                         else
                             myStats.attackSpeed.RemoveModifier(buff.amount);
                         break;
-                    
-                    
+
+
                     case StatBuffs.Damage:
                         if (buff.ramping)
                         {
@@ -215,8 +220,8 @@ public class CharacterCombat : MonoBehaviour
                         else
                             myStats.damage.RemoveModifier(buff.amount);
                         break;
-                    
-                    
+
+
                     case StatBuffs.MoveSpeed:
                         if (buff.ramping)
                         {
@@ -235,10 +240,10 @@ public class CharacterCombat : MonoBehaviour
     }
 
     public float GetAttackCooldown() { return attackCooldown; }
-    public void SetAttackCooldown(float newAttackCooldown) {  attackCooldown = newAttackCooldown; }
+    public void SetAttackCooldown(float newAttackCooldown) { attackCooldown = newAttackCooldown; }
 
 
-    IEnumerator DoDamage (Character_Stats stats, float delay)
+    IEnumerator DoDamage(Character_Stats stats, float delay)
     {
         yield return new WaitForSeconds(delay);
 
@@ -248,6 +253,11 @@ public class CharacterCombat : MonoBehaviour
     public void UseAbility(CharacterCombat target, Ability ability)
     {
         StartCoroutine(ability.UseAbility(target));
+    }
+
+    public void SpawnProjectile(Vector3 pos, Ability ability)
+    {
+        StartCoroutine(ability.ProjectileSpawn(pos));
     }
 
 }

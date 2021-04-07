@@ -16,7 +16,7 @@ public class Item : ScriptableObject
     }
 
     //removes item from users inventory
-    public void RemoveFromInventory ()
+    public void RemoveFromInventory()
     {
         user.GetComponent<Inventory>().Remove(this);
     }

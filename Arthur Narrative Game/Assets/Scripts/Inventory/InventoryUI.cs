@@ -40,11 +40,11 @@ public class InventoryUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I))
         {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
         }
-        
+
     }
 
     void UpdateUI()
@@ -58,7 +58,7 @@ public class InventoryUI : MonoBehaviour
             if (i < playerInventory.items.Count)
             {
                 slots[i].AddItem(playerInventory.items[i]);
-                
+
             }
             else
             {
@@ -66,8 +66,8 @@ public class InventoryUI : MonoBehaviour
             }
 
         }
-        
-    
-    
+
+
+
     }
 }

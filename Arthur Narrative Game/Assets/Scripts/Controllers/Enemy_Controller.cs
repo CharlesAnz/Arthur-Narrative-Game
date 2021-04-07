@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class Enemy_Controller : MonoBehaviour
 {
     public float lookRadius = 10f;
-    const float locoAnimSmoothTime = 0.1f;
 
     Enemy enemyInteractor;
 
@@ -16,6 +14,11 @@ public class Enemy_Controller : MonoBehaviour
     Character_Stats stats;
     PlayerManager playerManager;
 
+
+    bool retreating;
+    Vector3 currentDestination;
+    public List<Transform> retreatLocations = new List<Transform>();
+    int locationsTraveled = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +43,7 @@ public class Enemy_Controller : MonoBehaviour
             if (ability.GetType().Equals(typeof(Aoe_Ability)))
             {
                 Aoe_Ability abilityCopy = (Aoe_Ability)ability;
-                abilityCopy.origin = transform.forward * 1.2f;
+                abilityCopy.SetOrigin(transform.position + (transform.forward));
             }
         }
 
@@ -50,18 +53,32 @@ public class Enemy_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (GetComponent<CharacterCombat>().CastTime > 0)
+        if (combat.CastTime > 0)
         {
             target = null;
             agent.velocity = Vector3.zero;
+            
             return;
         }
 
         target = playerManager.activePerson.transform;
 
+
+        if (retreating)
+        {
+            Retreating();
+            return;
+        }
+
+        FaceTarget(target.position);
+        Attacking();
+    }
+
+
+    void Attacking()
+    {
         float distance = Vector3.Distance(target.position, transform.position);
-        if(distance <= lookRadius)
+        if (distance <= lookRadius)
         {
             agent.SetDestination(target.position);
 
@@ -73,41 +90,101 @@ public class Enemy_Controller : MonoBehaviour
                 {
                     List<Ability> myAbilities = stats.abilities;
 
-                    if (myAbilities[0].cooldownTimer <= 0 && myAbilities.Count != 0)
+                    if (myAbilities.Count != 0)
                     {
-                        //myAbilities[0].Use(gameObject);
-                    }
+                        if (stats.curHP <= stats.maxHP.GetValue() * 0.75)
+                        {
+                            if (myAbilities[1].cooldownTimer <= 0)
+                            {
+                                retreating = true;
+                                locationsTraveled++;
+                                
+                                if (locationsTraveled >= 4) locationsTraveled = 1;
 
-                    if (myAbilities[1].cooldownTimer <= 0 && myAbilities.Count != 0)
-                    {
-                        if (myAbilities[1].GetType().Equals(typeof(Aoe_Ability)))
-                        { 
-                            Aoe_Ability ability = (Aoe_Ability)myAbilities[1];
-                            ability.origin = transform.position + (transform.forward * 3);//transform.TransformDirection(Vector3.forward) * 1.2f;
+                                stats.armor.AddModifier(3);
+                                stats.damage.AddModifier(2);
+
+                                if (myAbilities[1].GetType().Equals(typeof(Aoe_Ability)))
+                                {
+                                    Aoe_Ability ability = (Aoe_Ability)myAbilities[1];
+                                    ability.SetOrigin(transform.position + (transform.forward * 2));
+                                }
+
+                                myAbilities[1].Use(gameObject);
+
+                                combat.CastTime += 2f;
+                            }
                         }
 
-                        myAbilities[1].Use(gameObject);
-                    }
-                    else
-                    {
-                        combat.Attack(targetStats);
-                    }
+                        if (myAbilities[0].cooldownTimer <= 0)
+                        {
+                            myAbilities[0].Use(gameObject);
+                        }
 
+
+                    }
+                    combat.Attack(targetStats);
                 }
             }
             else
                 GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
 
-            FaceTarget();
+
         }
-        
 
     }
 
-    //make sure to face target when attacking
-    void FaceTarget()
+    void Retreating()
     {
-        Vector3 direction = (target.position - transform.position).normalized;
+        //target.GetComponent<CharacterAnimator>().characterAnim.SetBool("attacking", false);
+
+        agent.speed = 6;
+        enemyInteractor.radius = 0.1f;
+        GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
+
+        if (currentDestination != Vector3.zero)
+        {
+            agent.SetDestination(currentDestination);
+            FaceTarget(currentDestination);
+
+            float distance = Vector3.Distance(currentDestination, transform.position);
+
+            if (distance <= 5)
+            {
+                currentDestination = Vector3.zero;
+                agent.speed = 2;
+                GetComponent<CharacterAnimator>().characterAnim.SetTrigger("land");
+                enemyInteractor.radius = 4f;
+                retreating = false;
+                
+            }
+
+            return;
+        }
+
+        if (stats.abilities[2].cooldownTimer <= 0)
+        {
+            if (stats.abilities[2].GetType().Equals(typeof(Targeted_Ability)))
+            {
+                Targeted_Ability ability = (Targeted_Ability)stats.abilities[2];
+                ability.FindTarget(target.GetComponent<CharacterCombat>());
+            }
+            FaceTarget(target.position);
+            stats.abilities[2].Use(gameObject);
+        }
+
+
+        currentDestination = retreatLocations[locationsTraveled - 1].position;
+
+        agent.SetDestination(currentDestination);
+
+    }
+
+
+    //make sure to face target when attacking
+    void FaceTarget(Vector3 position)
+    {
+        Vector3 direction = (position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5);
     }
@@ -117,12 +194,12 @@ public class Enemy_Controller : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
 
-        /*
+
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(
-             transform.position + (transform.forward * 3), 
+             transform.position + (transform.forward * 2),
             new Vector3(4, 4, 4));
-        */
+
     }
 
     private void OnDrawGizmos()
@@ -130,7 +207,5 @@ public class Enemy_Controller : MonoBehaviour
         Gizmos.color = Color.cyan;
         Vector3 direction = transform.TransformDirection(Vector3.forward) * 10;
         Gizmos.DrawRay(transform.position, direction);
-
-        
     }
 }

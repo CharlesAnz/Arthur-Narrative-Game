@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -15,7 +13,7 @@ public class PlayerManager : MonoBehaviour
     }
 
     #endregion
-    
+
     public delegate void OnCharacterChange();
     public OnCharacterChange onCharacterChangeCallback;
     public GameObject player2;
@@ -23,14 +21,14 @@ public class PlayerManager : MonoBehaviour
 
     public Player_Controller activePerson;
 
-    
+
 
     void Start()
     {
         activePerson = player1.GetComponent<Player_Controller>();
         player1.GetComponent<Player_Controller>().activeCharacter = true;
-        
-        foreach(Ability ability in player1.GetComponent<Player_Stats>().abilities)
+
+        foreach (Ability ability in player1.GetComponent<Player_Stats>().abilities)
         {
             ability.cooldownTimer = 0;
         }
@@ -48,7 +46,7 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        
+
         //press 1 on keyboard to switch to character 1
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -67,17 +65,17 @@ public class PlayerManager : MonoBehaviour
         //press 2 on keyboard to switch to character 2
 
         if (player2 != null)
-        { 
+        {
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                    player1.GetComponent<Player_Controller>().activeCharacter = false;
-                    player2.GetComponent<Player_Controller>().activeCharacter = true;
-                    activePerson = player2.GetComponent<Player_Controller>();
+                player1.GetComponent<Player_Controller>().activeCharacter = false;
+                player2.GetComponent<Player_Controller>().activeCharacter = true;
+                activePerson = player2.GetComponent<Player_Controller>();
 
-                    if (onCharacterChangeCallback != null)
-                    {
-                        onCharacterChangeCallback.Invoke();
-                    }
+                if (onCharacterChangeCallback != null)
+                {
+                    onCharacterChangeCallback.Invoke();
+                }
             }
         }
 
@@ -86,10 +84,10 @@ public class PlayerManager : MonoBehaviour
         {
             activePerson.GetComponent<Player_Stats>().abilities[0].Use(activePerson.gameObject);
         }
-        
-        if (Input.GetKeyDown(KeyCode.W))        
+
+        if (Input.GetKeyDown(KeyCode.W))
             activePerson.GetComponent<Player_Stats>().abilities[1].Use(activePerson.gameObject);
-        
+
         if (Input.GetKeyDown(KeyCode.E))
             activePerson.GetComponent<Player_Stats>().abilities[2].Use(activePerson.gameObject);
 

@@ -20,9 +20,9 @@ public class Item_Pickup : Interactable
         bool wasPickedUp = interactor.GetComponent<Inventory>().Add(item);
         //add to inventory
 
-        if(wasPickedUp)
+        if (wasPickedUp)
             Destroy(gameObject);
-    
+
     }
 
 
