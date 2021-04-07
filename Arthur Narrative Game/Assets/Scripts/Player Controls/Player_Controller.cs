@@ -98,6 +98,7 @@ public class Player_Controller : MonoBehaviour
 
         focus = null;
         movement.StopFollowTarget();
+        //Debug.Log("focus removed should stop following target");
     }
 
     private void OnDrawGizmos()

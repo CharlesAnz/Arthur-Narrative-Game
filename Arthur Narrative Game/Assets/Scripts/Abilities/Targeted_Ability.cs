@@ -26,10 +26,16 @@ public class Targeted_Ability : Ability
         }
 
         CharacterCombat targetCharacter = targetHit;
-
-        if (SpawnProjectile(targetCharacter.transform.position)) return;
-
         if (targetCharacter == null) return;
+
+        if (projectile != null)
+        {
+            if (delay > 0)
+                user.GetComponent<CharacterCombat>().SpawnProjectile(targetCharacter.transform.position, this);
+            else
+                SpawnProjectile(targetCharacter.transform.position);
+            return;
+        }
 
         float distance = Vector3.Distance(targetCharacter.transform.position, user.transform.position);
 
@@ -47,7 +53,10 @@ public class Targeted_Ability : Ability
                     if (targetCharacter.tag == "Ally" || targetCharacter.tag == "Player")
                     {
                         Debug.Log("We hit: " + targetCharacter.name + " " + point);
-                        OnAbilityUse.Invoke(targetCharacter);
+                        if (delay > 0)
+                            user.GetComponent<CharacterCombat>().UseAbility(targetCharacter, this);
+                        else
+                            OnAbilityUse.Invoke(targetCharacter);
                     }
                     break;
 
@@ -56,20 +65,30 @@ public class Targeted_Ability : Ability
                     if (targetCharacter.gameObject.tag == "Enemy")
                     {
                         Debug.Log("We hit: " + targetCharacter.name + " at " + point);
-                        OnAbilityUse.Invoke(targetCharacter);
+                        if (delay > 0)
+                            user.GetComponent<CharacterCombat>().UseAbility(targetCharacter, this);
+                        else
+                            OnAbilityUse.Invoke(targetCharacter);
                     }
                     break;
 
                 case TargetType.Any:
                     //ability affects targeted character
                     Debug.Log("We hit: " + targetCharacter.name + " at " + point);
-                    OnAbilityUse.Invoke(targetCharacter);
+                    if (delay > 0)
+                        user.GetComponent<CharacterCombat>().UseAbility(targetCharacter, this);
+                    else
+                        OnAbilityUse.Invoke(targetCharacter);
                     break;
+
                 case TargetType.AnyExcludingSelf:
                     if (targetCharacter.gameObject != abilityUser)
                     {
                         Debug.Log("We hit: " + targetCharacter.name + " at " + point);
-                        OnAbilityUse.Invoke(targetCharacter);
+                        if (delay > 0)
+                            user.GetComponent<CharacterCombat>().UseAbility(targetCharacter, this);
+                        else
+                            OnAbilityUse.Invoke(targetCharacter);
                     }
 
                     break;

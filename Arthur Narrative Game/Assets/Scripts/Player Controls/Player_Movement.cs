@@ -84,6 +84,7 @@ public class Player_Movement : MonoBehaviour
     {
         agent.stoppingDistance = 0f;
         target = null;
+        agent.velocity = Vector3.zero;
     }
 
     void FaceTarget()

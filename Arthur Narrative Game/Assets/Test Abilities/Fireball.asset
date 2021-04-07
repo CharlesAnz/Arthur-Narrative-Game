@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ae035edc32de447921400b0ecd43ed, type: 3}
+  m_Name: Fireball
+  m_EditorClassIdentifier: 
+  name: Fireball
+  description: Shoots fireball at targeted character
+  icon: {fileID: 0}
+  buffList:
+  - amount: -4
+    affects: 2
+    duration: 3
+    durationTimer: 0.99451196
+    ramping: 0
+  cc_Effects: []
+  projectile: {fileID: 4915467226096152956, guid: 17dfb4e5d027184478d4ff2e476673ec, type: 3}
+  delay: 0.5
+  maxDistance: 100
+  displacement:
+    pushOrPull: 0
+    distance: 0
+  doesDamage: 1
+  doesHealing: 0
+  abilityValue: 40
+  cooldown: 30
+  animatorTrigger: fireBall
+  castTime: 1.15
+  cooldownTimer: 27.26318
+  targetType: 1

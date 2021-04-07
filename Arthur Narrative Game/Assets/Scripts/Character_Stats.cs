@@ -38,7 +38,7 @@ public class Character_Stats : MonoBehaviour
         damage = Mathf.Clamp(damage, 0, int.MaxValue);
 
         curHP -= damage;
-        Debug.Log(gameObject + " takes " + damage + " damage");
+        //Debug.Log(gameObject + " takes " + damage + " damage");
 
         if (curHP <= 0)
         {

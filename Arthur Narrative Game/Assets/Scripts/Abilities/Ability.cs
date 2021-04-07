@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.AI;
 
 public class Ability : ScriptableObject
 {
@@ -16,7 +17,7 @@ public class Ability : ScriptableObject
     public List<CC_Effect> cc_Effects = new List<CC_Effect>();
 
     [SerializeField]
-    private GameObject projectile;
+    protected GameObject projectile;
 
     [SerializeField]
     protected float delay;
@@ -188,6 +189,7 @@ public class Ability : ScriptableObject
             target.CastTime = 2f;
             target.SetAttackCooldown(2f);
             target.GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
+            target.GetComponent<NavMeshAgent>().destination = target.transform.position + rb.velocity;
             target.GetComponent<Player_Controller>().RemoveFocus();
         }
     }
@@ -201,10 +203,8 @@ public class Ability : ScriptableObject
         }
     }
 
-    protected bool SpawnProjectile(Vector3 hitPositiion)
+    protected void SpawnProjectile(Vector3 hitPositiion)
     {
-        if (projectile == null) return false;
-
         Vector3 spawnPos = new Vector3(abilityUser.transform.localPosition.x, abilityUser.transform.localPosition.y + 1, abilityUser.transform.localPosition.z + 1);
 
         GameObject spawnedProjectile = Instantiate(projectile, spawnPos, Quaternion.identity);
@@ -217,12 +217,11 @@ public class Ability : ScriptableObject
 
         projectileScript.OnHit = OnAbilityUse;
         projectileScript.targetType = targetType;
+        projectileScript.user = abilityUser;
 
         Vector3 direction = (hitPositiion - abilityUser.transform.position).normalized;
 
-        spawnedProjectile.GetComponent<Rigidbody>().velocity = direction * (Time.deltaTime + 5);
-
-        return true;
+        spawnedProjectile.GetComponent<Rigidbody>().velocity = direction * (Time.deltaTime + 10);
     }
 
 
@@ -234,6 +233,13 @@ public class Ability : ScriptableObject
         yield return new WaitForSeconds(delay);
 
         OnAbilityUse.Invoke(target);
+    }
+
+    public IEnumerator ProjectileSpawn(Vector3 pos)
+    {
+        yield return new WaitForSeconds(delay);
+
+        SpawnProjectile(pos);
     }
 
 }

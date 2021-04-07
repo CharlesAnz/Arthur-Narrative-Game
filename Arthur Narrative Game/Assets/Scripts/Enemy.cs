@@ -9,6 +9,7 @@ public class Enemy : Interactable
     {
         myStats = GetComponent<Character_Stats>();
     }
+
     public override void Interact(GameObject interactor)
     {
         base.Interact(interactor);

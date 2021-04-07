@@ -53,10 +53,11 @@ public class Enemy_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GetComponent<CharacterCombat>().CastTime > 0)
+        if (combat.CastTime > 0)
         {
             target = null;
             agent.velocity = Vector3.zero;
+            
             return;
         }
 
@@ -97,6 +98,7 @@ public class Enemy_Controller : MonoBehaviour
                             {
                                 retreating = true;
                                 locationsTraveled++;
+                                
                                 if (locationsTraveled >= 4) locationsTraveled = 1;
 
                                 stats.armor.AddModifier(3);
@@ -109,6 +111,8 @@ public class Enemy_Controller : MonoBehaviour
                                 }
 
                                 myAbilities[1].Use(gameObject);
+
+                                combat.CastTime += 2f;
                             }
                         }
 
@@ -133,6 +137,7 @@ public class Enemy_Controller : MonoBehaviour
     void Retreating()
     {
         //target.GetComponent<CharacterAnimator>().characterAnim.SetBool("attacking", false);
+
         agent.speed = 6;
         enemyInteractor.radius = 0.1f;
         GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
@@ -164,6 +169,7 @@ public class Enemy_Controller : MonoBehaviour
                 Targeted_Ability ability = (Targeted_Ability)stats.abilities[2];
                 ability.FindTarget(target.GetComponent<CharacterCombat>());
             }
+            FaceTarget(target.position);
             stats.abilities[2].Use(gameObject);
         }
 

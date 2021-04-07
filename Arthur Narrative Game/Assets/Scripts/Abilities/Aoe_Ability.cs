@@ -34,7 +34,17 @@ public class Aoe_Ability : Ability
 
         displacePos = origin;
 
-        if (SpawnProjectile(origin)) return;
+        if(projectile != null)
+        {
+            if (delay > 0)
+                user.GetComponent<CharacterCombat>().SpawnProjectile(origin, this);
+            else
+                SpawnProjectile(origin);
+
+            return;
+        }
+
+        
 
         if (origin != null)
         {
@@ -48,7 +58,7 @@ public class Aoe_Ability : Ability
 
             foreach (var target in targets)
             {
-                Debug.Log(target + " was hit at coordinates: " + target.transform.position);
+                //Debug.Log(target + " was hit at coordinates: " + target.transform.position);
                 //Debug.Log("Ability hits");
                 if (delay > 0)
                     user.GetComponent<CharacterCombat>().UseAbility(target, this);

@@ -22,6 +22,7 @@ public class CharacterCombat : MonoBehaviour
     [HideInInspector]
     public bool silenced;
 
+    [SerializeField]
     private float castTime;
 
     public float attackDelay = 0.6f;
@@ -252,6 +253,11 @@ public class CharacterCombat : MonoBehaviour
     public void UseAbility(CharacterCombat target, Ability ability)
     {
         StartCoroutine(ability.UseAbility(target));
+    }
+
+    public void SpawnProjectile(Vector3 pos, Ability ability)
+    {
+        StartCoroutine(ability.ProjectileSpawn(pos));
     }
 
 }
