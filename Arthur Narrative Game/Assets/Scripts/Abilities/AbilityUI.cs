@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AbilityUI : MonoBehaviour
 {
@@ -29,8 +27,8 @@ public class AbilityUI : MonoBehaviour
 
         for (int i = 0; i < slots.Length; i++)
         {
-            slots[i].playerController = playerController; 
-            
+            slots[i].playerController = playerController;
+
             if (i < characterStats.abilities.Count)
             {
                 slots[i].AddAbility(characterStats.abilities[i]);

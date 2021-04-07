@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 [System.Serializable]
-public class CC_Effect 
+public class CC_Effect
 {
     public StatusEffects affect;
 

@@ -19,9 +19,10 @@ MonoBehaviour:
   - amount: 5
     affects: 4
     duration: 5
-    durationTimer: -0.16784965
+    durationTimer: -0.02639012
     ramping: 1
   cc_Effects: []
+  delay: 0.5
   displacement:
     pushOrPull: 0
     distance: 0
@@ -31,6 +32,6 @@ MonoBehaviour:
   cooldown: 8
   animatorTrigger: ability3
   castTime: 1.15
-  cooldownTimer: -0.48376232
+  cooldownTimer: -12.837164
   targetType: 0
   maxDistance: 0

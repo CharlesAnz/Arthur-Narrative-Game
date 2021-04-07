@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -17,17 +16,25 @@ public class Ability : ScriptableObject
     public List<CC_Effect> cc_Effects = new List<CC_Effect>();
 
     [SerializeField]
+    private GameObject projectile;
+
+    [SerializeField]
     protected float delay;
 
     [SerializeField]
-    private CC_Displacement displacement;
+    protected float maxDistance;
+
+    [SerializeField]
+    protected CC_Displacement displacement;
+
+    protected Vector3 displacePos;
 
     [SerializeField]
     protected bool doesDamage, doesHealing;
 
     [SerializeField]
     protected float abilityValue;
-    
+
     [SerializeField]
     protected float cooldown;
 
@@ -49,6 +56,8 @@ public class Ability : ScriptableObject
     public virtual void Use(GameObject interactor)
     {
         abilityUser = interactor;
+
+        displacePos = interactor.transform.position;
     }
 
     //Checks if the cooldown is below, if not then nothing happens
@@ -62,12 +71,12 @@ public class Ability : ScriptableObject
             Debug.Log("Ability on cooldown");
             return false;
         }
-        if (combat.CastTime >= 0) 
+        if (combat.CastTime >= 0)
         {
             Debug.Log("Casting another Ability");
             return false;
         }
-        if(combat.silenced)
+        if (combat.silenced)
         {
             Debug.Log(interactor.name + " is using is silenced");
             return false;
@@ -91,6 +100,19 @@ public class Ability : ScriptableObject
 
 
         return true;
+    }
+
+    protected virtual Vector3 FindTargetWithMouse(float maxCastDistance)
+    {
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, maxCastDistance))
+        {
+            return hit.point;
+        }
+
+        else return Vector3.zero;
     }
 
     private void Damage(CharacterCombat target)
@@ -125,7 +147,7 @@ public class Ability : ScriptableObject
                     statsAffected.attackSpeed.AddModifier(buff.amount);
                     break;
                 case StatBuffs.Health:
-                    if(buff.amount < 0)
+                    if (buff.amount < 0)
                         statsAffected.TakePureDam(buff.amount);
                     else
                         statsAffected.Heal(buff.amount);
@@ -140,6 +162,7 @@ public class Ability : ScriptableObject
 
     private void addDisplacement(CharacterCombat target)
     {
+
         Rigidbody rb = target.GetComponent<Rigidbody>();
 
         Debug.Log(target.gameObject.name + " is being displaced");
@@ -149,22 +172,24 @@ public class Ability : ScriptableObject
             Vector3 direction = Vector3.zero;
 
             if (displacement.pushOrPull == DisplacementEffect.Push)
-                 direction = target.transform.position - abilityUser.transform.position;
+                direction = target.transform.position - displacePos;
 
-            else if(displacement.pushOrPull == DisplacementEffect.Pull)
-                direction = (abilityUser.transform.position - target.transform.position);
+            else if (displacement.pushOrPull == DisplacementEffect.Pull)
+                direction = displacePos - target.transform.position;
 
             direction.y = 0;
 
             //rb.AddForce(direction.normalized * displacement.distance, ForceMode.VelocityChange);
 
-            rb.velocity = direction.normalized * displacement.distance;
+            rb.velocity = (direction.normalized * displacement.distance);// * (Time.deltaTime + 2));
+
+            Debug.Log("Displacement velocity is:" + direction.normalized * displacement.distance);
 
             target.CastTime = 2f;
             target.SetAttackCooldown(2f);
+            target.GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
+            target.GetComponent<Player_Controller>().RemoveFocus();
         }
-
-        
     }
 
     private void addCC_Effect(CharacterCombat target)
@@ -176,7 +201,33 @@ public class Ability : ScriptableObject
         }
     }
 
-    public void SetCam(Camera newCam) {  cam = newCam; }
+    protected bool SpawnProjectile(Vector3 hitPositiion)
+    {
+        if (projectile == null) return false;
+
+        Vector3 spawnPos = new Vector3(abilityUser.transform.localPosition.x, abilityUser.transform.localPosition.y + 1, abilityUser.transform.localPosition.z + 1);
+
+        GameObject spawnedProjectile = Instantiate(projectile, spawnPos, Quaternion.identity);
+
+        Debug.Log("Projectile Spawned ");
+
+        displacePos = spawnedProjectile.transform.position;
+
+        AbilityProjectile projectileScript = spawnedProjectile.GetComponent<AbilityProjectile>();
+
+        projectileScript.OnHit = OnAbilityUse;
+        projectileScript.targetType = targetType;
+
+        Vector3 direction = (hitPositiion - abilityUser.transform.position).normalized;
+
+        spawnedProjectile.GetComponent<Rigidbody>().velocity = direction * (Time.deltaTime + 5);
+
+        return true;
+    }
+
+
+
+    public void SetCam(Camera newCam) { cam = newCam; }
 
     public IEnumerator UseAbility(CharacterCombat target)
     {
@@ -189,7 +240,7 @@ public class Ability : ScriptableObject
 
 public enum TargetType { Self, Ally, Enemy, Any, AnyExcludingSelf }
 
-  
+
 
 
 

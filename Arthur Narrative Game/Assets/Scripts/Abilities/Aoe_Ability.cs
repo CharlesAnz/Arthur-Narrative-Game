@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Ability", menuName = "Ability/Aoe")]
@@ -13,7 +12,7 @@ public class Aoe_Ability : Ability
     //public float endPoint;
 
     //[HideInInspector]
-    public Vector3 origin;
+    private Vector3 origin;
 
     public bool selfOrigin = false;
 
@@ -28,10 +27,14 @@ public class Aoe_Ability : Ability
 
         if (selfOrigin) origin = user.transform.position;
 
-        else if(user.tag == "Player")
+        else if (user.tag == "Player")
         {
-            origin = FindOriginWithMouse();
+            origin = FindTargetWithMouse(100);
         }
+
+        displacePos = origin;
+
+        if (SpawnProjectile(origin)) return;
 
         if (origin != null)
         {
@@ -42,17 +45,16 @@ public class Aoe_Ability : Ability
             else if (aoeType == AOEType.Line)
                 CheckLine();
 
-            
+
             foreach (var target in targets)
             {
                 Debug.Log(target + " was hit at coordinates: " + target.transform.position);
                 //Debug.Log("Ability hits");
-                if(delay > 0)
+                if (delay > 0)
                     user.GetComponent<CharacterCombat>().UseAbility(target, this);
-                else 
+                else
                     OnAbilityUse.Invoke(target);
             }
-
         }
 
         targets.Clear();
@@ -66,7 +68,7 @@ public class Aoe_Ability : Ability
         {
             foreach (var collider in colliderArray)
             {
-                
+
                 Vector3 directionTowardT = collider.transform.position - origin;
                 float angleFromConeCenter = Vector3.Angle(directionTowardT, abilityUser.transform.TransformDirection(Vector3.forward));
 
@@ -140,7 +142,7 @@ public class Aoe_Ability : Ability
 
         if (aoeType == AOEType.Cube)
         {
-            collidersNear = Physics.OverlapBox(origin, new Vector3(areaSize / 2, areaSize / 2, areaSize / 2));      
+            collidersNear = Physics.OverlapBox(origin, new Vector3(areaSize / 2, areaSize / 2, areaSize / 2));
         }
 
         else if (aoeType == AOEType.Sphere)
@@ -173,21 +175,7 @@ public class Aoe_Ability : Ability
         }
     }
 
-
-    private Vector3 FindOriginWithMouse()
-    {
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, 100))
-        {
-            return hit.point;
-        }
-
-        else return Vector3.zero;
-    }
-
-
+    public void SetOrigin(Vector3 point) { origin = point; }
 }
 
 public enum AOEType { Sphere, Cube, Cone, Line }

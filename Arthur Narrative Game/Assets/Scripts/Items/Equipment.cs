@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Equipment", menuName = "Inventory/Equipment")]
 public class Equipment : Item
@@ -24,4 +22,4 @@ public class Equipment : Item
 }
 
 //Slots that equipment can be placed in
-public enum EquipmentSlot { Head, Chest, Legs, RHand, LHand, Feet}
+public enum EquipmentSlot { Head, Chest, Legs, RHand, LHand, Feet }

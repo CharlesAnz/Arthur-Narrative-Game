@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 
 [System.Serializable]
-public class Stat 
+public class Stat
 {
     [SerializeField]
     private float baseValue;
@@ -13,11 +12,11 @@ public class Stat
     private List<float> mods = new List<float>();
 
     //returns base stat value + or - all mods in list
-    public float GetValue() 
+    public float GetValue()
     {
         float finalValue = baseValue;
         mods.ForEach(x => finalValue += x);
-        return finalValue; 
+        return finalValue;
     }
 
     //adds new mod to stat list
@@ -28,7 +27,7 @@ public class Stat
     }
 
     //removes mod from stat list
-    public void RemoveModifier (float modifier)
+    public void RemoveModifier(float modifier)
     {
         if (modifier != 0)
             mods.Remove(modifier);

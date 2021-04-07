@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Camera_Controller : MonoBehaviour
 {
@@ -16,6 +14,7 @@ public class Camera_Controller : MonoBehaviour
 
     public float yawSpeed = 100f;
 
+    [SerializeField]
     private float currentZoom = 15f;
     private float currentYaw = 0f;
 
@@ -31,9 +30,13 @@ public class Camera_Controller : MonoBehaviour
         currentZoom -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
         currentZoom = Mathf.Clamp(currentZoom, minZoom, maxZoom);
 
+        target = playerManager.activePerson.gameObject.transform;
+
+        //currentYaw = target.rotation.y;
+
         currentYaw -= Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime;
 
-        target = playerManager.activePerson.gameObject.transform;
+
     }
 
 
@@ -43,5 +46,7 @@ public class Camera_Controller : MonoBehaviour
         transform.position = target.position - offset * currentZoom;
         transform.LookAt(target.position + Vector3.up * pitch);
         transform.RotateAround(target.position, Vector3.up, currentYaw);
+
+        //transform.Rotate(new Vector3(transform.rotation.x, currentYaw, transform.rotation.z), currentYaw);
     }
 }

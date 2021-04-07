@@ -30,12 +30,12 @@ MonoBehaviour:
   doesHealing: 0
   abilityValue: 20
   cooldown: 10
-  animatorTrigger: ability1
+  animatorTrigger: fireBreath
   castTime: 2.35
-  cooldownTimer: 3.2853146
+  cooldownTimer: -15.690502
   targetType: 1
   areaSize: 5
   aoeType: 2
-  origin: {x: 3.6312068, y: -0.35666665, z: -1.2880615}
+  origin: {x: 0, y: 0, z: -1.2}
   selfOrigin: 1
   targets: []
