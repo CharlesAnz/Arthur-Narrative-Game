@@ -19,15 +19,19 @@ public class PlayerManager : MonoBehaviour
     public GameObject player2;
     public GameObject player1;
 
+    public UI_HealthBar playerHealthBar;
+    public UI_HealthBar targetHealthBar;
+
     public Player_Controller activePerson;
 
-
+    private CharacterCombat activePersonCombat;
 
     void Start()
     {
         activePerson = player1.GetComponent<Player_Controller>();
         player1.GetComponent<Player_Controller>().activeCharacter = true;
 
+        
         foreach (Ability ability in player1.GetComponent<Player_Stats>().abilities)
         {
             ability.cooldownTimer = 0;
@@ -42,10 +46,43 @@ public class PlayerManager : MonoBehaviour
                 ability.cooldownTimer = 0;
             }
         }
+       
+        activePersonCombat = player1.GetComponent<CharacterCombat>();
+        
+
+        playerHealthBar.SetMaxHP((int)activePersonCombat.GetMyStats().maxHP.GetValue());
+        playerHealthBar.SetCurHP((int)activePersonCombat.GetMyStats().curHP);
+        playerHealthBar.SetNameTxt(activePerson.gameObject.name);
+
+        targetHealthBar.SetNameTxt(" ");
+        targetHealthBar.SetMaxHP(1);
+        targetHealthBar.SetCurHP(0);
+        targetHealthBar.gameObject.SetActive(false);
     }
 
     void Update()
     {
+        playerHealthBar.SetCurHP((int)activePerson.GetComponent<CharacterCombat>().GetMyStats().curHP);
+
+        if (activePerson.focus != null)
+        {
+            if (activePerson.focus.GetType().Equals(typeof(Enemy)))
+            {
+                CharacterCombat focusedEnemy = activePerson.focus.GetComponent<CharacterCombat>();
+                targetHealthBar.gameObject.SetActive(false);
+
+                targetHealthBar.SetMaxHP((int)focusedEnemy.GetMyStats().maxHP.GetValue());
+                targetHealthBar.SetCurHP((int)focusedEnemy.GetMyStats().curHP);
+                targetHealthBar.SetNameTxt(focusedEnemy.gameObject.name);
+            }
+        }
+        else
+        {
+            targetHealthBar.SetNameTxt(" ");
+            targetHealthBar.SetMaxHP(1);
+            targetHealthBar.SetCurHP(0);
+        }
+
 
         //press 1 on keyboard to switch to character 1
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -54,6 +91,8 @@ public class PlayerManager : MonoBehaviour
             if (player2 != null) player2.GetComponent<Player_Controller>().activeCharacter = false;
             activePerson = player1.GetComponent<Player_Controller>();
 
+            playerHealthBar.SetMaxHP((int)player1.GetComponent<CharacterCombat>().GetMyStats().maxHP.GetValue());
+            playerHealthBar.SetCurHP((int)player1.GetComponent<CharacterCombat>().GetMyStats().curHP);
 
             if (onCharacterChangeCallback != null)
             {
@@ -71,6 +110,9 @@ public class PlayerManager : MonoBehaviour
                 player1.GetComponent<Player_Controller>().activeCharacter = false;
                 player2.GetComponent<Player_Controller>().activeCharacter = true;
                 activePerson = player2.GetComponent<Player_Controller>();
+
+                playerHealthBar.SetMaxHP((int)player2.GetComponent<CharacterCombat>().GetMyStats().maxHP.GetValue());
+                playerHealthBar.SetCurHP((int)player2.GetComponent<CharacterCombat>().GetMyStats().curHP);
 
                 if (onCharacterChangeCallback != null)
                 {

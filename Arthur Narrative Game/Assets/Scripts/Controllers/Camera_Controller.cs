@@ -16,6 +16,7 @@ public class Camera_Controller : MonoBehaviour
 
     [SerializeField]
     private float currentZoom = 15f;
+    [SerializeField]
     private float currentYaw = 0f;
 
     private void Start()

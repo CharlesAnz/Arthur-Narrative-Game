@@ -47,7 +47,7 @@ public class Enemy_Controller : MonoBehaviour
             }
         }
 
-        target = playerManager.activePerson.transform;
+        //target = playerManager.activePerson.transform;
     }
 
     // Update is called once per frame
