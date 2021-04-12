@@ -69,7 +69,7 @@ public class PlayerManager : MonoBehaviour
             if (activePerson.focus.GetType().Equals(typeof(Enemy)))
             {
                 CharacterCombat focusedEnemy = activePerson.focus.GetComponent<CharacterCombat>();
-                targetHealthBar.gameObject.SetActive(false);
+                targetHealthBar.gameObject.SetActive(true);
 
                 targetHealthBar.SetMaxHP((int)focusedEnemy.GetMyStats().maxHP.GetValue());
                 targetHealthBar.SetCurHP((int)focusedEnemy.GetMyStats().curHP);
@@ -81,6 +81,7 @@ public class PlayerManager : MonoBehaviour
             targetHealthBar.SetNameTxt(" ");
             targetHealthBar.SetMaxHP(1);
             targetHealthBar.SetCurHP(0);
+            targetHealthBar.gameObject.SetActive(false);
         }
 
 

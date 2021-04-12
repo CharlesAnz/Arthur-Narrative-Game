@@ -152,7 +152,7 @@ public class Aoe_Ability : Ability
 
         if (aoeType == AOEType.Cube)
         {
-            collidersNear = Physics.OverlapBox(origin, new Vector3(areaSize / 2, areaSize / 2, areaSize / 2));
+            collidersNear = Physics.OverlapBox(origin, new Vector3(areaSize, areaSize, areaSize));
         }
 
         else if (aoeType == AOEType.Sphere)

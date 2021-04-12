@@ -107,7 +107,7 @@ public class Enemy_Controller : MonoBehaviour
                                 if (myAbilities[1].GetType().Equals(typeof(Aoe_Ability)))
                                 {
                                     Aoe_Ability ability = (Aoe_Ability)myAbilities[1];
-                                    ability.SetOrigin(transform.position + (transform.forward * 2));
+                                    ability.SetOrigin(transform.position + (transform.forward * 5));
                                 }
 
                                 myAbilities[1].Use(gameObject);
@@ -149,7 +149,7 @@ public class Enemy_Controller : MonoBehaviour
 
             float distance = Vector3.Distance(currentDestination, transform.position);
 
-            if (distance <= 5)
+            if (distance <= agent.stoppingDistance)
             {
                 currentDestination = Vector3.zero;
                 agent.speed = 2;
@@ -168,6 +168,7 @@ public class Enemy_Controller : MonoBehaviour
             {
                 Targeted_Ability ability = (Targeted_Ability)stats.abilities[2];
                 ability.FindTarget(target.GetComponent<CharacterCombat>());
+                ability.SetProjectileSpawnPos(new Vector3(transform.localPosition.x, transform.localPosition.y + 8, transform.localPosition.z + 8));
             }
             FaceTarget(target.position);
             stats.abilities[2].Use(gameObject);
@@ -197,8 +198,8 @@ public class Enemy_Controller : MonoBehaviour
 
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(
-             transform.position + (transform.forward * 2),
-            new Vector3(4, 4, 4));
+             transform.position + (transform.forward * 5),
+            new Vector3(8, 8, 8));
 
     }
 

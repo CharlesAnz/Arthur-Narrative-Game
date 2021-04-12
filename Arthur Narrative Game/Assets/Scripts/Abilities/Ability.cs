@@ -30,6 +30,8 @@ public class Ability : ScriptableObject
 
     protected Vector3 displacePos;
 
+    protected Vector3 projectileSpawnPos;
+
     [SerializeField]
     protected bool doesDamage, doesHealing;
 
@@ -205,9 +207,9 @@ public class Ability : ScriptableObject
 
     protected void SpawnProjectile(Vector3 hitPositiion)
     {
-        Vector3 spawnPos = new Vector3(abilityUser.transform.localPosition.x, abilityUser.transform.localPosition.y + 1, abilityUser.transform.localPosition.z + 1);
+        if(projectileSpawnPos == Vector3.zero) projectileSpawnPos = new Vector3(abilityUser.transform.localPosition.x, abilityUser.transform.localPosition.y + 1, abilityUser.transform.localPosition.z + 1);
 
-        GameObject spawnedProjectile = Instantiate(projectile, spawnPos, Quaternion.identity);
+        GameObject spawnedProjectile = Instantiate(projectile, projectileSpawnPos, Quaternion.identity);
 
         Debug.Log("Projectile Spawned ");
 
@@ -224,6 +226,10 @@ public class Ability : ScriptableObject
         spawnedProjectile.GetComponent<Rigidbody>().velocity = direction * (Time.deltaTime + 10);
     }
 
+    public void SetProjectileSpawnPos(Vector3 pos)
+    {
+        projectileSpawnPos = pos;
+    }
 
 
     public void SetCam(Camera newCam) { cam = newCam; }

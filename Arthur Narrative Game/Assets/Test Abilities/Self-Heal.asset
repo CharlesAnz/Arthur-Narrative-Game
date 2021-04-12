@@ -19,10 +19,12 @@ MonoBehaviour:
   - amount: 5
     affects: 4
     duration: 5
-    durationTimer: -0.02639012
+    durationTimer: -0.10461724
     ramping: 1
   cc_Effects: []
+  projectile: {fileID: 0}
   delay: 0.5
+  maxDistance: 0
   displacement:
     pushOrPull: 0
     distance: 0
@@ -31,7 +33,6 @@ MonoBehaviour:
   abilityValue: 10
   cooldown: 8
   animatorTrigger: ability3
-  castTime: 1.15
-  cooldownTimer: -12.837164
+  castTime: 1.45
+  cooldownTimer: 4.6481028
   targetType: 0
-  maxDistance: 0
