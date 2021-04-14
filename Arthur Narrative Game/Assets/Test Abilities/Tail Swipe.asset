@@ -29,7 +29,7 @@ MonoBehaviour:
   cooldown: 45
   animatorTrigger: tailSwipe
   castTime: 2
-  cooldownTimer: -1.2799076
+  cooldownTimer: 33.294285
   targetType: 1
   areaSize: 8
   aoeType: 1

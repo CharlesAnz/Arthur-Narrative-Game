@@ -18,10 +18,13 @@ MonoBehaviour:
   buffList:
   - amount: 10
     affects: 1
-    duration: 3
+    duration: 5
     durationTimer: -0.109589614
     ramping: 0
   cc_Effects: []
+  projectile: {fileID: 0}
+  delay: 0
+  maxDistance: 0
   displacement:
     pushOrPull: 0
     distance: 0
@@ -33,4 +36,3 @@ MonoBehaviour:
   castTime: 0.5
   cooldownTimer: -0.48376232
   targetType: 0
-  maxDistance: 0

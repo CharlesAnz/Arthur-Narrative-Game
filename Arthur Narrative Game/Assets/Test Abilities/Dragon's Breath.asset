@@ -22,7 +22,9 @@ MonoBehaviour:
     durationTimer: -0.00021243282
     ramping: 1
   cc_Effects: []
+  projectile: {fileID: 0}
   delay: 0
+  maxDistance: 0
   displacement:
     pushOrPull: 0
     distance: 0
@@ -32,10 +34,9 @@ MonoBehaviour:
   cooldown: 10
   animatorTrigger: fireBreath
   castTime: 2.35
-  cooldownTimer: -15.690502
+  cooldownTimer: 2.5465252
   targetType: 1
-  areaSize: 5
+  areaSize: 30
   aoeType: 2
-  origin: {x: 0, y: 0, z: -1.2}
   selfOrigin: 1
   targets: []
