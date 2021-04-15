@@ -1,88 +1,1914 @@
 Using pre-set license
 Built from '2020.2/staging' branch; Version is '2020.2.3f1 (8ff31bc5bf5b) revision 9433883'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.906; Version 2009; 64bit' Language: 'en' Physical Memory: 16282 MB
+OS: 'Windows 10 Home; OS build 19041.867; Version 2004; 64bit' Language: 'pl' Physical Memory: 8140 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\2020.2.3f1\Editor\Unity.exe
+D:\Unity\2020.2.3f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/charl/Documents/GitHub Projects/Arthur-Narrative-Game/Arthur Narrative Game
+D:/Unity Projects/KingArthurGame/Arthur-Narrative-Game/Arthur Narrative Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50227
-Successfully changed project path to: C:/Users/charl/Documents/GitHub Projects/Arthur-Narrative-Game/Arthur Narrative Game
-C:/Users/charl/Documents/GitHub Projects/Arthur-Narrative-Game/Arthur Narrative Game
+59084
+Successfully changed project path to: D:/Unity Projects/KingArthurGame/Arthur-Narrative-Game/Arthur Narrative Game
+D:/Unity Projects/KingArthurGame/Arthur-Narrative-Game/Arthur Narrative Game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 30.79 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 38.71 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/charl/Documents/GitHub Projects/Arthur-Narrative-Game/Arthur Narrative Game/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity Projects/KingArthurGame/Arthur-Narrative-Game/Arthur Narrative Game/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f11)
+    Renderer: Radeon RX 580 Series (ID=0x67df)
     Vendor:   
-    VRAM:     5980 MB
-    Driver:   27.21.14.6589
+    VRAM:     8171 MB
+    Driver:   27.20.14501.18003
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/2020.2.3f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56408
+Mono path[0] = 'D:/Unity/2020.2.3f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002286 seconds.
+Register platform support module: D:/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: D:/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: D:/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.005507 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 29.69 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 39.44 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.039 seconds
+- Completed reload, in  2.234 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000663 seconds.
+Registered in 0.002493 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.848 seconds
+- Completed reload, in  1.062 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1300 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 152.0 MB.
-System memory in use after: 152.1 MB.
+System memory in use before: 158.3 MB.
+System memory in use after: 158.4 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1759.
-Total: 1.916700 ms (FindLiveObjects: 0.170400 ms CreateObjectMapping: 0.051800 ms MarkObjects: 1.618500 ms  DeleteObjects: 0.074900 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1773.
+Total: 2.375900 ms (FindLiveObjects: 0.238800 ms CreateObjectMapping: 0.175400 ms MarkObjects: 1.836400 ms  DeleteObjects: 0.123900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Test Animators/Arthur Anim.controller
-  artifactKey: Guid(828cb4e05f208654ab95cafcba5c7782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test Animators/Arthur Anim.controller using Guid(828cb4e05f208654ab95cafcba5c7782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53916baebebf5f0d0700f5289f5095aa') in 0.048725 seconds
-  Import took 0.051384 seconds .
+  path: Assets/Test Animators/Knight 9.controller
+  artifactKey: Guid(2e081c4cd1841674f87d6b21bc1d2f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Animators/Knight 9.controller using Guid(2e081c4cd1841674f87d6b21bc1d2f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5539c5fbddab582a33d4717acf34d064') in 0.038456 seconds
+  Import took 0.042033 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000548 seconds.
+  path: Assets/Test Animators/Knight 11.controller
+  artifactKey: Guid(fe0c7063e22fcff45ae15f33570fc275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Animators/Knight 11.controller using Guid(fe0c7063e22fcff45ae15f33570fc275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd64872eb6eef8bce1b1021314e6ee049') in 0.003597 seconds
+  Import took 0.006821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.095211 seconds.
+  path: Assets/Models and textures/New Animations
+  artifactKey: Guid(e7236c8d3031b0349b39b29a942aba16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations using Guid(e7236c8d3031b0349b39b29a942aba16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f063dd417122635c37a4f6370066a33') in 0.003521 seconds
+  Import took 0.007592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016181 seconds.
+  path: Assets/Models and textures/New Animations
+  artifactKey: Guid(e7236c8d3031b0349b39b29a942aba16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations using Guid(e7236c8d3031b0349b39b29a942aba16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f063dd417122635c37a4f6370066a33') in 0.008584 seconds
+  Import took 0.013104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 195.302492 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic
+  artifactKey: Guid(bc7a499c263da3b4792b00c779dd5a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic using Guid(bc7a499c263da3b4792b00c779dd5a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b9322534e3fa6fb0d8410b0edd931d0') in 0.004426 seconds
+  Import took 0.007981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004834 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic
+  artifactKey: Guid(bc7a499c263da3b4792b00c779dd5a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic using Guid(bc7a499c263da3b4792b00c779dd5a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b9322534e3fa6fb0d8410b0edd931d0') in 0.002407 seconds
+  Import took 0.005150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.006857 seconds.
+  path: Assets/Models and textures/New Animations/Gestures
+  artifactKey: Guid(bc7a499c263da3b4792b00c779dd5a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures using Guid(bc7a499c263da3b4792b00c779dd5a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc971252a89bbd516f404bd8654906f') in 0.002515 seconds
+  Import took 0.005633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.403007 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle
+  artifactKey: Guid(72c36e59e9821324f8b2de2716dd1840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle using Guid(72c36e59e9821324f8b2de2716dd1840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '577c689cfd957f2cc8128a7d4bee8f97') in 0.003100 seconds
+  Import took 0.006347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015758 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle
+  artifactKey: Guid(72c36e59e9821324f8b2de2716dd1840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle using Guid(72c36e59e9821324f8b2de2716dd1840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '577c689cfd957f2cc8128a7d4bee8f97') in 0.002282 seconds
+  Import took 0.005181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.648249 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/paladin_prop_j_nordstrom@Breathing Idle.fbx
+  artifactKey: Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/paladin_prop_j_nordstrom@Breathing Idle.fbx using Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d1a12e6f2db8a2f7d06ad020a0d964') in 0.026472 seconds
+  Import took 0.029955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022513 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/paladin_prop_j_nordstrom@Breathing Idle.fbx
+  artifactKey: Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/paladin_prop_j_nordstrom@Breathing Idle.fbx using Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d1a12e6f2db8a2f7d06ad020a0d964') in 0.006328 seconds
+  Import took 0.009355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.168121 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/paladin_prop_j_nordstrom@Male Sitting Pose.fbx
+  artifactKey: Guid(507ed59d72f110447a39dbcad19f1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/paladin_prop_j_nordstrom@Male Sitting Pose.fbx using Guid(507ed59d72f110447a39dbcad19f1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6724b9a06d450dcefb75f59311f8a392') in 0.007483 seconds
+  Import took 0.011207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008380 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/paladin_prop_j_nordstrom@Male Sitting Pose.fbx
+  artifactKey: Guid(507ed59d72f110447a39dbcad19f1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/paladin_prop_j_nordstrom@Male Sitting Pose.fbx using Guid(507ed59d72f110447a39dbcad19f1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6724b9a06d450dcefb75f59311f8a392') in 0.006553 seconds
+  Import took 0.009149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.411193 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/Breathing Idle.fbx
+  artifactKey: Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/Breathing Idle.fbx using Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5de19c43b00f30b89dc28b82ab2ee02') in 0.006506 seconds
+  Import took 0.010405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019224 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/Breathing Idle.fbx
+  artifactKey: Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/Breathing Idle.fbx using Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5de19c43b00f30b89dc28b82ab2ee02') in 0.006965 seconds
+  Import took 0.009923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.648237 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/Sit 1.fbx
+  artifactKey: Guid(507ed59d72f110447a39dbcad19f1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/Sit 1.fbx using Guid(507ed59d72f110447a39dbcad19f1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '343c9b451e9f983647fc84a014223186') in 0.006208 seconds
+  Import took 0.009450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.974244 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/paladin_prop_j_nordstrom@Sitting Idle.fbx
+  artifactKey: Guid(e3923d54dff880b458f5e996e118a682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/paladin_prop_j_nordstrom@Sitting Idle.fbx using Guid(e3923d54dff880b458f5e996e118a682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4acba50b3107897d004e48a674fcfc27') in 0.007293 seconds
+  Import took 0.010670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028296 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/paladin_prop_j_nordstrom@Sitting Idle.fbx
+  artifactKey: Guid(e3923d54dff880b458f5e996e118a682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/paladin_prop_j_nordstrom@Sitting Idle.fbx using Guid(e3923d54dff880b458f5e996e118a682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4acba50b3107897d004e48a674fcfc27') in 0.006185 seconds
+  Import took 0.008851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.278846 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/Sit 2.fbx
+  artifactKey: Guid(e3923d54dff880b458f5e996e118a682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/Sit 2.fbx using Guid(e3923d54dff880b458f5e996e118a682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4887efb9a55b4196be60ec98593d0ba4') in 0.006220 seconds
+  Import took 0.009828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018873 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/Sit 2.fbx
+  artifactKey: Guid(e3923d54dff880b458f5e996e118a682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/Sit 2.fbx using Guid(e3923d54dff880b458f5e996e118a682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4887efb9a55b4196be60ec98593d0ba4') in 0.006783 seconds
+  Import took 0.010060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.154359 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/acknowledging.fbx
+  artifactKey: Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/acknowledging.fbx using Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1627dc0e6100f61ba1074b258de3001') in 0.005966 seconds
+  Import took 0.010103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030586 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/acknowledging.fbx
+  artifactKey: Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/acknowledging.fbx using Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1627dc0e6100f61ba1074b258de3001') in 0.006069 seconds
+  Import took 0.008893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.849001 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/angry gesture.fbx
+  artifactKey: Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/angry gesture.fbx using Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ddd3b3c70238a56f2739ac6b0c870f') in 0.006352 seconds
+  Import took 0.009894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029361 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/angry gesture.fbx
+  artifactKey: Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/angry gesture.fbx using Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ddd3b3c70238a56f2739ac6b0c870f') in 0.007493 seconds
+  Import took 0.012184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.741489 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/acknowledging.fbx
+  artifactKey: Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/acknowledging.fbx using Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37a45dd3bc3113bdcfa36bfb43fea269') in 0.005785 seconds
+  Import took 0.009225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.177734 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/angry gesture.fbx
+  artifactKey: Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/angry gesture.fbx using Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e9a9b63534b59bcd0bbf5457a0b6d51') in 0.006402 seconds
+  Import took 0.009577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045349 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/angry gesture.fbx
+  artifactKey: Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/angry gesture.fbx using Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e9a9b63534b59bcd0bbf5457a0b6d51') in 0.006041 seconds
+  Import took 0.008926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.564952 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx
+  artifactKey: Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx using Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14004f8fa1437766b4f03e3c20aa2eb') in 0.007381 seconds
+  Import took 0.010933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027890 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx
+  artifactKey: Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx using Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14004f8fa1437766b4f03e3c20aa2eb') in 0.007183 seconds
+  Import took 0.010080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.824732 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx
+  artifactKey: Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx using Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23bb0d30bff73c6cf564816028d09759') in 0.006074 seconds
+  Import took 0.009281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050539 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx
+  artifactKey: Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx using Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23bb0d30bff73c6cf564816028d09759') in 0.004974 seconds
+  Import took 0.007735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.880981 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/being cocky.fbx
+  artifactKey: Guid(36eb92a3a0d04a04ebe817e22057af74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/being cocky.fbx using Guid(36eb92a3a0d04a04ebe817e22057af74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a2b574c9b3677e398cf026ae8127ef') in 0.007088 seconds
+  Import took 0.010339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032334 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/being cocky.fbx
+  artifactKey: Guid(36eb92a3a0d04a04ebe817e22057af74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/being cocky.fbx using Guid(36eb92a3a0d04a04ebe817e22057af74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a2b574c9b3677e398cf026ae8127ef') in 0.005086 seconds
+  Import took 0.008047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.752927 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/being cocky.fbx
+  artifactKey: Guid(36eb92a3a0d04a04ebe817e22057af74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/being cocky.fbx using Guid(36eb92a3a0d04a04ebe817e22057af74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e3556370d6ec30608320c7a99da29f') in 0.006853 seconds
+  Import took 0.010167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.954797 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/dismissing gesture.fbx
+  artifactKey: Guid(960d72bd890c1e54093811df9efcb153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/dismissing gesture.fbx using Guid(960d72bd890c1e54093811df9efcb153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a741f53aba64cbf5a9d88c28d1b285ba') in 0.007108 seconds
+  Import took 0.010292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031235 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/dismissing gesture.fbx
+  artifactKey: Guid(960d72bd890c1e54093811df9efcb153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/dismissing gesture.fbx using Guid(960d72bd890c1e54093811df9efcb153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a741f53aba64cbf5a9d88c28d1b285ba') in 0.005757 seconds
+  Import took 0.008362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.166167 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/dismissing gesture.fbx
+  artifactKey: Guid(960d72bd890c1e54093811df9efcb153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/dismissing gesture.fbx using Guid(960d72bd890c1e54093811df9efcb153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e903ece4c453876e571a95afb777e4') in 0.005819 seconds
+  Import took 0.009158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046324 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/dismissing gesture.fbx
+  artifactKey: Guid(960d72bd890c1e54093811df9efcb153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/dismissing gesture.fbx using Guid(960d72bd890c1e54093811df9efcb153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e903ece4c453876e571a95afb777e4') in 0.005794 seconds
+  Import took 0.008720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.616584 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/happy hand gesture.fbx
+  artifactKey: Guid(233d6ad45ed6b934c8d020532b537fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/happy hand gesture.fbx using Guid(233d6ad45ed6b934c8d020532b537fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf5c754ec6e0b415cec402df11051b4') in 0.008003 seconds
+  Import took 0.011353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026662 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/happy hand gesture.fbx
+  artifactKey: Guid(233d6ad45ed6b934c8d020532b537fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/happy hand gesture.fbx using Guid(233d6ad45ed6b934c8d020532b537fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cf5c754ec6e0b415cec402df11051b4') in 0.005594 seconds
+  Import took 0.008755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.458173 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/happy hand gesture.fbx
+  artifactKey: Guid(233d6ad45ed6b934c8d020532b537fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/happy hand gesture.fbx using Guid(233d6ad45ed6b934c8d020532b537fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d325eb13d4e83f21a8f0c982397ec90') in 0.005803 seconds
+  Import took 0.008688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.925035 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/hard head nod.fbx
+  artifactKey: Guid(3fb1444a046581346bc852ee95347884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/hard head nod.fbx using Guid(3fb1444a046581346bc852ee95347884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e5836c7860b3d81cbcc61603f25f24') in 0.005931 seconds
+  Import took 0.008952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029057 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/hard head nod.fbx
+  artifactKey: Guid(3fb1444a046581346bc852ee95347884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/hard head nod.fbx using Guid(3fb1444a046581346bc852ee95347884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e5836c7860b3d81cbcc61603f25f24') in 0.005337 seconds
+  Import took 0.008475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.942887 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/hard head nod.fbx
+  artifactKey: Guid(3fb1444a046581346bc852ee95347884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/hard head nod.fbx using Guid(3fb1444a046581346bc852ee95347884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f98b42abdfc3a8f8b2c9d27b663f913') in 0.005307 seconds
+  Import took 0.008974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053889 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/hard head nod.fbx
+  artifactKey: Guid(3fb1444a046581346bc852ee95347884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/hard head nod.fbx using Guid(3fb1444a046581346bc852ee95347884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f98b42abdfc3a8f8b2c9d27b663f913') in 0.006064 seconds
+  Import took 0.009245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.077360 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/head nod yes.fbx
+  artifactKey: Guid(d987b8431a6df0b488c3f7ae56852330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/head nod yes.fbx using Guid(d987b8431a6df0b488c3f7ae56852330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3aa4c1437dabeae96565e1e5ec6aa98') in 0.006017 seconds
+  Import took 0.009877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032248 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/head nod yes.fbx
+  artifactKey: Guid(d987b8431a6df0b488c3f7ae56852330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/head nod yes.fbx using Guid(d987b8431a6df0b488c3f7ae56852330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3aa4c1437dabeae96565e1e5ec6aa98') in 0.006784 seconds
+  Import took 0.009546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.193512 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/head nod yes.fbx
+  artifactKey: Guid(d987b8431a6df0b488c3f7ae56852330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/head nod yes.fbx using Guid(d987b8431a6df0b488c3f7ae56852330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3429ea0ec49c68949ede571224aa33e2') in 0.005622 seconds
+  Import took 0.008558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.752720 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx
+  artifactKey: Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx using Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d240dd509a0c68d9b8b48488689b809') in 0.007044 seconds
+  Import took 0.010285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029974 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx
+  artifactKey: Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx using Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d240dd509a0c68d9b8b48488689b809') in 0.005549 seconds
+  Import took 0.008406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.754885 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx
+  artifactKey: Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx using Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53067d566f7fce03188ec9795d0ec210') in 0.005097 seconds
+  Import took 0.008121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050431 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx
+  artifactKey: Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx using Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53067d566f7fce03188ec9795d0ec210') in 0.005406 seconds
+  Import took 0.008610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.786353 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/look away gesture.fbx
+  artifactKey: Guid(1aa99f90c79991246a2401b61d07483d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/look away gesture.fbx using Guid(1aa99f90c79991246a2401b61d07483d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce45984fa4958e193cb9c028638466c') in 0.007915 seconds
+  Import took 0.011757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026742 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/look away gesture.fbx
+  artifactKey: Guid(1aa99f90c79991246a2401b61d07483d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/look away gesture.fbx using Guid(1aa99f90c79991246a2401b61d07483d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce45984fa4958e193cb9c028638466c') in 0.005789 seconds
+  Import took 0.009032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.163795 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/look away gesture.fbx
+  artifactKey: Guid(1aa99f90c79991246a2401b61d07483d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/look away gesture.fbx using Guid(1aa99f90c79991246a2401b61d07483d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8927e6176e16a2f2d57379bac94b6b08') in 0.004981 seconds
+  Import took 0.007684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.565525 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/relieved sigh.fbx
+  artifactKey: Guid(9e7a1bddd96057d44a70d9fbc0403e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/relieved sigh.fbx using Guid(9e7a1bddd96057d44a70d9fbc0403e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '729008fe2f27ca543c4a00263320200d') in 0.007683 seconds
+  Import took 0.011538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026716 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/relieved sigh.fbx
+  artifactKey: Guid(9e7a1bddd96057d44a70d9fbc0403e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/relieved sigh.fbx using Guid(9e7a1bddd96057d44a70d9fbc0403e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '729008fe2f27ca543c4a00263320200d') in 0.006253 seconds
+  Import took 0.009744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.795472 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/relieved sigh.fbx
+  artifactKey: Guid(9e7a1bddd96057d44a70d9fbc0403e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/relieved sigh.fbx using Guid(9e7a1bddd96057d44a70d9fbc0403e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185d2b4c66883994d43af2571bb67778') in 0.007183 seconds
+  Import took 0.010582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.751482 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/sarcastic head nod.fbx
+  artifactKey: Guid(07a41daeb1ebd1d429e824b7bf0271be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/sarcastic head nod.fbx using Guid(07a41daeb1ebd1d429e824b7bf0271be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2926c813198b9795f4e038fbec7157f') in 0.007947 seconds
+  Import took 0.010991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028698 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/sarcastic head nod.fbx
+  artifactKey: Guid(07a41daeb1ebd1d429e824b7bf0271be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/sarcastic head nod.fbx using Guid(07a41daeb1ebd1d429e824b7bf0271be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2926c813198b9795f4e038fbec7157f') in 0.006302 seconds
+  Import took 0.009136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.537715 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/sarcastic head nod.fbx
+  artifactKey: Guid(07a41daeb1ebd1d429e824b7bf0271be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/sarcastic head nod.fbx using Guid(07a41daeb1ebd1d429e824b7bf0271be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69607beba7b75a6ad9f4ed04af2aa2f4') in 0.006190 seconds
+  Import took 0.009397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047496 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/sarcastic head nod.fbx
+  artifactKey: Guid(07a41daeb1ebd1d429e824b7bf0271be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/sarcastic head nod.fbx using Guid(07a41daeb1ebd1d429e824b7bf0271be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69607beba7b75a6ad9f4ed04af2aa2f4') in 0.005789 seconds
+  Import took 0.009182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.903520 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/shaking head no.fbx
+  artifactKey: Guid(74d114efb76499945880bc04d1a22bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/shaking head no.fbx using Guid(74d114efb76499945880bc04d1a22bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b628380ce8ebe25d49768a291b7b2cd') in 0.006270 seconds
+  Import took 0.009225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029923 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/shaking head no.fbx
+  artifactKey: Guid(74d114efb76499945880bc04d1a22bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/shaking head no.fbx using Guid(74d114efb76499945880bc04d1a22bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b628380ce8ebe25d49768a291b7b2cd') in 0.005899 seconds
+  Import took 0.008885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.644050 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/shaking head no.fbx
+  artifactKey: Guid(74d114efb76499945880bc04d1a22bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/shaking head no.fbx using Guid(74d114efb76499945880bc04d1a22bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68efe5f023085739491f0c75e86c9de2') in 0.005637 seconds
+  Import took 0.008258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.064061 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/shaking head no.fbx
+  artifactKey: Guid(74d114efb76499945880bc04d1a22bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/shaking head no.fbx using Guid(74d114efb76499945880bc04d1a22bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68efe5f023085739491f0c75e86c9de2') in 0.006425 seconds
+  Import took 0.008892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.559641 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/weight shift.fbx
+  artifactKey: Guid(10f31777d7a3aef4090891076c9cd9da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/weight shift.fbx using Guid(10f31777d7a3aef4090891076c9cd9da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8997a3699a93aa0c17bdb1ae87214e') in 0.006851 seconds
+  Import took 0.010126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.041879 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/weight shift.fbx
+  artifactKey: Guid(10f31777d7a3aef4090891076c9cd9da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/weight shift.fbx using Guid(10f31777d7a3aef4090891076c9cd9da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8997a3699a93aa0c17bdb1ae87214e') in 0.007152 seconds
+  Import took 0.010780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.306882 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/thoughtful head shake.fbx
+  artifactKey: Guid(9d1822e0f8a329b4498cdf11bb013de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/thoughtful head shake.fbx using Guid(9d1822e0f8a329b4498cdf11bb013de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceff50f69e4c78d9a5ed0c222e42bcd6') in 0.005771 seconds
+  Import took 0.009298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030862 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/thoughtful head shake.fbx
+  artifactKey: Guid(9d1822e0f8a329b4498cdf11bb013de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/thoughtful head shake.fbx using Guid(9d1822e0f8a329b4498cdf11bb013de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceff50f69e4c78d9a5ed0c222e42bcd6') in 0.006453 seconds
+  Import took 0.010606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.373820 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/thoughtful head shake.fbx
+  artifactKey: Guid(9d1822e0f8a329b4498cdf11bb013de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/thoughtful head shake.fbx using Guid(9d1822e0f8a329b4498cdf11bb013de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ced4d807013505a6f5af1d5d101e531') in 0.006317 seconds
+  Import took 0.010027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045248 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/thoughtful head shake.fbx
+  artifactKey: Guid(9d1822e0f8a329b4498cdf11bb013de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/thoughtful head shake.fbx using Guid(9d1822e0f8a329b4498cdf11bb013de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ced4d807013505a6f5af1d5d101e531') in 0.005203 seconds
+  Import took 0.008268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.026626 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/weight shift.fbx
+  artifactKey: Guid(10f31777d7a3aef4090891076c9cd9da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/weight shift.fbx using Guid(10f31777d7a3aef4090891076c9cd9da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1418e9dd9f6309c046e17d643ff2ebd') in 0.006837 seconds
+  Import took 0.010206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.959061 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/Breathing Idle.fbx
+  artifactKey: Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/Breathing Idle.fbx using Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6829333ddeffad436aaa5c04cb474f7d') in 0.006001 seconds
+  Import took 0.008763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.893067 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/Sit 1.fbx
+  artifactKey: Guid(507ed59d72f110447a39dbcad19f1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/Sit 1.fbx using Guid(507ed59d72f110447a39dbcad19f1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02db7339686a743fa560a3c8f6753950') in 0.005994 seconds
+  Import took 0.009823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046533 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/Sit 1.fbx
+  artifactKey: Guid(507ed59d72f110447a39dbcad19f1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/Sit 1.fbx using Guid(507ed59d72f110447a39dbcad19f1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02db7339686a743fa560a3c8f6753950') in 0.006545 seconds
+  Import took 0.009356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.216017 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/Sit 2.fbx
+  artifactKey: Guid(e3923d54dff880b458f5e996e118a682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/Sit 2.fbx using Guid(e3923d54dff880b458f5e996e118a682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d7fc5cdb4b551fa9cb92ab7960428e3') in 0.005937 seconds
+  Import took 0.008656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.699583 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx
+  artifactKey: Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx using Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6ff118a5f3a47c171edf0c00f04c6b') in 0.005829 seconds
+  Import took 0.009206 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017512 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx
+  artifactKey: Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx using Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6ff118a5f3a47c171edf0c00f04c6b') in 0.006254 seconds
+  Import took 0.010007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.832879 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/Sit 1.fbx
+  artifactKey: Guid(507ed59d72f110447a39dbcad19f1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/Sit 1.fbx using Guid(507ed59d72f110447a39dbcad19f1dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '443eaf5b8a7950a6856a324656054b96') in 0.007176 seconds
+  Import took 0.010504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.119585 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/Breathing Idle.fbx
+  artifactKey: Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/Breathing Idle.fbx using Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024f09c32063e2863543f042b2f13fd8') in 0.008454 seconds
+  Import took 0.012039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031886 seconds.
+  path: Assets/Models and textures/New Animations/Sit  and Idle/Breathing Idle.fbx
+  artifactKey: Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Sit  and Idle/Breathing Idle.fbx using Guid(3e86b65b012cc624d84740922e919546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024f09c32063e2863543f042b2f13fd8') in 0.007419 seconds
+  Import took 0.010406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.175974 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/acknowledging.fbx
+  artifactKey: Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/acknowledging.fbx using Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309f67296c36a00ee167f8a94c48b07c') in 0.006423 seconds
+  Import took 0.009544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030259 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/acknowledging.fbx
+  artifactKey: Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/acknowledging.fbx using Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309f67296c36a00ee167f8a94c48b07c') in 0.006578 seconds
+  Import took 0.009497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.554927 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/angry gesture.fbx
+  artifactKey: Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/angry gesture.fbx using Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e59db405785e57f7d920f2fe8198d57') in 0.011710 seconds
+  Import took 0.014814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027502 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/angry gesture.fbx
+  artifactKey: Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/angry gesture.fbx using Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e59db405785e57f7d920f2fe8198d57') in 0.006667 seconds
+  Import took 0.010318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.698102 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx
+  artifactKey: Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx using Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ea16727a24b1aae95e4a5df2032585b') in 0.007554 seconds
+  Import took 0.010944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036996 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx
+  artifactKey: Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx using Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ea16727a24b1aae95e4a5df2032585b') in 0.006734 seconds
+  Import took 0.009785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.341435 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/happy hand gesture.fbx
+  artifactKey: Guid(233d6ad45ed6b934c8d020532b537fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/happy hand gesture.fbx using Guid(233d6ad45ed6b934c8d020532b537fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62443626c45425182cbce6c0f867ede1') in 0.006154 seconds
+  Import took 0.009219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031532 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/happy hand gesture.fbx
+  artifactKey: Guid(233d6ad45ed6b934c8d020532b537fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/happy hand gesture.fbx using Guid(233d6ad45ed6b934c8d020532b537fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62443626c45425182cbce6c0f867ede1') in 0.007352 seconds
+  Import took 0.011086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.894475 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/crouch.fbx
+  artifactKey: Guid(ee4ba470219e93a4f8ba532022b0e550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/crouch.fbx using Guid(ee4ba470219e93a4f8ba532022b0e550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb51b6bd8dad9d7d496a9a889157eb3') in 0.006494 seconds
+  Import took 0.010135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.770578 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/crouch block.fbx
+  artifactKey: Guid(ce35c99d10bec4249957c4285b7b6e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/crouch block.fbx using Guid(ce35c99d10bec4249957c4285b7b6e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05be2be2543352f851dc52f83b9d884e') in 0.006126 seconds
+  Import took 0.009455 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032788 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/crouch block.fbx
+  artifactKey: Guid(ce35c99d10bec4249957c4285b7b6e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/crouch block.fbx using Guid(ce35c99d10bec4249957c4285b7b6e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05be2be2543352f851dc52f83b9d884e') in 0.006182 seconds
+  Import took 0.009393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.289321 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/crouch block idle.fbx
+  artifactKey: Guid(799c90174463000419569279a1c777d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/crouch block idle.fbx using Guid(799c90174463000419569279a1c777d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540cce1c415f17d1023ad8f9229f3b9c') in 0.007056 seconds
+  Import took 0.010848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014582 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/crouch block idle.fbx
+  artifactKey: Guid(799c90174463000419569279a1c777d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/crouch block idle.fbx using Guid(799c90174463000419569279a1c777d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540cce1c415f17d1023ad8f9229f3b9c') in 0.006855 seconds
+  Import took 0.010126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.359317 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/casting.fbx
+  artifactKey: Guid(00d914efc76a6824885b42f975609ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/casting.fbx using Guid(00d914efc76a6824885b42f975609ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8258544670706d537f7f8e384debe89') in 0.007330 seconds
+  Import took 0.011159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.025762 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/casting.fbx
+  artifactKey: Guid(00d914efc76a6824885b42f975609ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/casting.fbx using Guid(00d914efc76a6824885b42f975609ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8258544670706d537f7f8e384debe89') in 0.006354 seconds
+  Import took 0.009874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.831205 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/casting 2.fbx
+  artifactKey: Guid(b09dba080745e6a4d9311017b3cd1adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/casting 2.fbx using Guid(b09dba080745e6a4d9311017b3cd1adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66959d354ee2163859d700ace0958858') in 0.007601 seconds
+  Import took 0.011773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028095 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/casting 2.fbx
+  artifactKey: Guid(b09dba080745e6a4d9311017b3cd1adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/casting 2.fbx using Guid(b09dba080745e6a4d9311017b3cd1adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66959d354ee2163859d700ace0958858') in 0.006514 seconds
+  Import took 0.009862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.375299 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/block.fbx
+  artifactKey: Guid(30523e50de430d04aad40018402110b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/block.fbx using Guid(30523e50de430d04aad40018402110b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '452a434fa97e02810bcc3ceb5130e4e5') in 0.006770 seconds
+  Import took 0.010268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034125 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/block.fbx
+  artifactKey: Guid(30523e50de430d04aad40018402110b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/block.fbx using Guid(30523e50de430d04aad40018402110b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '452a434fa97e02810bcc3ceb5130e4e5') in 0.006010 seconds
+  Import took 0.009837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.250967 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/attack.fbx
+  artifactKey: Guid(06aaba9586112184d8b8f58bd5027fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/attack.fbx using Guid(06aaba9586112184d8b8f58bd5027fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12770294ee2213ace05d88622e6d953d') in 0.007462 seconds
+  Import took 0.011112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028012 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/attack.fbx
+  artifactKey: Guid(06aaba9586112184d8b8f58bd5027fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/attack.fbx using Guid(06aaba9586112184d8b8f58bd5027fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12770294ee2213ace05d88622e6d953d') in 0.006822 seconds
+  Import took 0.009798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.859182 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/attack 3.fbx
+  artifactKey: Guid(f39417eb3547c1047a9bcd409078f06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/attack 3.fbx using Guid(f39417eb3547c1047a9bcd409078f06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70ef64c0fa28ff796df3b535ec2366b') in 0.008227 seconds
+  Import took 0.012348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030526 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/attack 3.fbx
+  artifactKey: Guid(f39417eb3547c1047a9bcd409078f06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/attack 3.fbx using Guid(f39417eb3547c1047a9bcd409078f06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70ef64c0fa28ff796df3b535ec2366b') in 0.007934 seconds
+  Import took 0.011232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.836376 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/jump 2.fbx
+  artifactKey: Guid(db4b228676464d0498f0de16b7e94211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/jump 2.fbx using Guid(db4b228676464d0498f0de16b7e94211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc0c58c8149d8887848c659cf758456') in 0.007303 seconds
+  Import took 0.010636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030689 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/jump 2.fbx
+  artifactKey: Guid(db4b228676464d0498f0de16b7e94211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/jump 2.fbx using Guid(db4b228676464d0498f0de16b7e94211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc0c58c8149d8887848c659cf758456') in 0.006195 seconds
+  Import took 0.009245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.284909 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/power up.fbx
+  artifactKey: Guid(b6a3aa26219085b4480a15afc776a46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/power up.fbx using Guid(b6a3aa26219085b4480a15afc776a46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7305378fe826ff5c8f6fcc91a8ef57') in 0.006571 seconds
+  Import took 0.009615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031105 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/power up.fbx
+  artifactKey: Guid(b6a3aa26219085b4480a15afc776a46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/power up.fbx using Guid(b6a3aa26219085b4480a15afc776a46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7305378fe826ff5c8f6fcc91a8ef57') in 0.006106 seconds
+  Import took 0.008877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.502392 seconds.
+  path: Assets/Test Animators/Galahad Anim.controller
+  artifactKey: Guid(a405cf8f72ae2de44bca6f6f8a52b1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Animators/Galahad Anim.controller using Guid(a405cf8f72ae2de44bca6f6f8a52b1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6aec1d496e13360df246e8d977e0860') in 0.006253 seconds
+  Import took 0.009802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007123 seconds.
+  path: Assets/Test Animators/Galahad Anim.controller
+  artifactKey: Guid(a405cf8f72ae2de44bca6f6f8a52b1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Animators/Galahad Anim.controller using Guid(a405cf8f72ae2de44bca6f6f8a52b1ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6aec1d496e13360df246e8d977e0860') in 0.002902 seconds
+  Import took 0.005935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.089586 seconds.
+  path: Assets/Test Animators/Knight 5.controller
+  artifactKey: Guid(62d32209ecc7bd6498fdcb3b62504587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Animators/Knight 5.controller using Guid(62d32209ecc7bd6498fdcb3b62504587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e0587feb34ee09428bf121f334187cc') in 0.005741 seconds
+  Import took 0.008493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.697178 seconds.
+  path: Assets/Test Animators/Knight 6.controller
+  artifactKey: Guid(4854e0a49089c254bb23cc1b013bb8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Animators/Knight 6.controller using Guid(4854e0a49089c254bb23cc1b013bb8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e29d923eb3edd76afe97ae24c06aace') in 0.003841 seconds
+  Import took 0.006582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.447790 seconds.
+  path: Assets/Test Animators/Knight 8.controller
+  artifactKey: Guid(f89f0b0f48d48a24ca2e41d3f2b70f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Animators/Knight 8.controller using Guid(f89f0b0f48d48a24ca2e41d3f2b70f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15629b0f5602c1f08b85a7efcb907a89') in 0.005848 seconds
+  Import took 0.008640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.545136 seconds.
+  path: Assets/Test Animators/Knight 10.controller
+  artifactKey: Guid(d2368c40ae3b90341b991f9db1c2a30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Animators/Knight 10.controller using Guid(d2368c40ae3b90341b991f9db1c2a30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd281331072db5b43cad8f8136aa4c1') in 0.006174 seconds
+  Import took 0.008864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.772607 seconds.
+  path: Assets/Test Animators
+  artifactKey: Guid(e3caf97979129b5499fe36a397f93691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test Animators using Guid(e3caf97979129b5499fe36a397f93691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0f2f610adcc22a2b22c5901369bc39') in 0.006024 seconds
+  Import took 0.010798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.093737 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/look away gesture.fbx
+  artifactKey: Guid(1aa99f90c79991246a2401b61d07483d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/look away gesture.fbx using Guid(1aa99f90c79991246a2401b61d07483d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef06f75491bae0c968d7f444a8d4c7d4') in 0.006731 seconds
+  Import took 0.012383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027822 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/look away gesture.fbx
+  artifactKey: Guid(1aa99f90c79991246a2401b61d07483d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/look away gesture.fbx using Guid(1aa99f90c79991246a2401b61d07483d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef06f75491bae0c968d7f444a8d4c7d4') in 0.006178 seconds
+  Import took 0.009008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.759021 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/relieved sigh.fbx
+  artifactKey: Guid(9e7a1bddd96057d44a70d9fbc0403e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/relieved sigh.fbx using Guid(9e7a1bddd96057d44a70d9fbc0403e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af36cb96e952614748f744123863b4a') in 0.006782 seconds
+  Import took 0.010592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032615 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/relieved sigh.fbx
+  artifactKey: Guid(9e7a1bddd96057d44a70d9fbc0403e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/relieved sigh.fbx using Guid(9e7a1bddd96057d44a70d9fbc0403e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af36cb96e952614748f744123863b4a') in 0.005552 seconds
+  Import took 0.008735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.403755 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/death.fbx
+  artifactKey: Guid(9f402a1925bc5c94aa78a8a35fe34a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/death.fbx using Guid(9f402a1925bc5c94aa78a8a35fe34a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a570d086a2795eebbf96efa3d56cbcf1') in 0.007733 seconds
+  Import took 0.011479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.897312 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/crouching.fbx
+  artifactKey: Guid(1af7c94ca119a9f45aca28ef1e86bb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/crouching.fbx using Guid(1af7c94ca119a9f45aca28ef1e86bb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce3c8bd387cba974e6c12239f80881e') in 0.012820 seconds
+  Import took 0.016333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024158 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/crouching.fbx
+  artifactKey: Guid(1af7c94ca119a9f45aca28ef1e86bb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/crouching.fbx using Guid(1af7c94ca119a9f45aca28ef1e86bb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce3c8bd387cba974e6c12239f80881e') in 0.006990 seconds
+  Import took 0.010351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.407965 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/crouch idle.fbx
+  artifactKey: Guid(fa9aefddb1613c741b73ee6b88d4e081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/crouch idle.fbx using Guid(fa9aefddb1613c741b73ee6b88d4e081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '169ab2f1422725990cf0cf915eccab56') in 0.008545 seconds
+  Import took 0.012173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028026 seconds.
+  path: Assets/Models and textures/Arthur Model/Animations/crouch idle.fbx
+  artifactKey: Guid(fa9aefddb1613c741b73ee6b88d4e081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Arthur Model/Animations/crouch idle.fbx using Guid(fa9aefddb1613c741b73ee6b88d4e081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '169ab2f1422725990cf0cf915eccab56') in 0.006143 seconds
+  Import took 0.009314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.432082 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx
+  artifactKey: Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx using Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '598a4f75846ba8fa6d8f753f838c3024') in 0.006334 seconds
+  Import took 0.009657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055355 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx
+  artifactKey: Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx using Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '598a4f75846ba8fa6d8f753f838c3024') in 0.006320 seconds
+  Import took 0.009577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.463106 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx
+  artifactKey: Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx using Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae4ec1f3fcc68aebe027010e8220c1e') in 0.004893 seconds
+  Import took 0.008128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.219629 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx
+  artifactKey: Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx using Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1623c96884fff5ef7b09afa1fa05798') in 0.006597 seconds
+  Import took 0.010315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.385411 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/acknowledging.fbx
+  artifactKey: Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/acknowledging.fbx using Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6e610a718ed10e4114084f3f32fb11') in 0.004922 seconds
+  Import took 0.008490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032623 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/acknowledging.fbx
+  artifactKey: Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/acknowledging.fbx using Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6e610a718ed10e4114084f3f32fb11') in 0.005056 seconds
+  Import took 0.008090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.116813 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx
+  artifactKey: Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/lengthy head nod.fbx using Guid(833389fd5f7bafb4aa64903ad76bbb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aecf67707f7af5b10e712c576c821da') in 0.004678 seconds
+  Import took 0.008077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.737133 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/acknowledging.fbx
+  artifactKey: Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/acknowledging.fbx using Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537bd81fdd7dc7c4935b8a26d909c3ad') in 0.006166 seconds
+  Import took 0.009874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011285 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/acknowledging.fbx
+  artifactKey: Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/acknowledging.fbx using Guid(8af2abbece2f1cd49b6339391621bd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537bd81fdd7dc7c4935b8a26d909c3ad') in 0.005511 seconds
+  Import took 0.009221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.123922 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/angry gesture.fbx
+  artifactKey: Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/angry gesture.fbx using Guid(5a21f674e33c7a54a81312305cebda98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cabee388e38cbed2de53efb5d1c7099b') in 0.004366 seconds
+  Import took 0.006851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.071023 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx
+  artifactKey: Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx using Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb40ae377a19e03d5cf22b40754f953') in 0.005942 seconds
+  Import took 0.009465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032933 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx
+  artifactKey: Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/annoyed head shake.fbx using Guid(7895d6106b6520643a186b0dabb904a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb40ae377a19e03d5cf22b40754f953') in 0.012524 seconds
+  Import took 0.016321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.340456 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/dismissing gesture.fbx
+  artifactKey: Guid(960d72bd890c1e54093811df9efcb153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/dismissing gesture.fbx using Guid(960d72bd890c1e54093811df9efcb153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '353f4f226b1f94003cef6c1d1c75c926') in 0.005452 seconds
+  Import took 0.008726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034570 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/dismissing gesture.fbx
+  artifactKey: Guid(960d72bd890c1e54093811df9efcb153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/dismissing gesture.fbx using Guid(960d72bd890c1e54093811df9efcb153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '353f4f226b1f94003cef6c1d1c75c926') in 0.006012 seconds
+  Import took 0.009291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.678724 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/being cocky.fbx
+  artifactKey: Guid(36eb92a3a0d04a04ebe817e22057af74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/being cocky.fbx using Guid(36eb92a3a0d04a04ebe817e22057af74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5c91e8248b83a1ecb7b973b3806db09') in 0.005327 seconds
+  Import took 0.008503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004531 seconds.
+  path: Assets/Models and textures/New Animations/Gestures/being cocky.fbx
+  artifactKey: Guid(36eb92a3a0d04a04ebe817e22057af74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures/being cocky.fbx using Guid(36eb92a3a0d04a04ebe817e22057af74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5c91e8248b83a1ecb7b973b3806db09') in 0.005152 seconds
+  Import took 0.007996 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001446 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.953 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1276 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.2 MB.
+System memory in use after: 157.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1776.
+Total: 1.607900 ms (FindLiveObjects: 0.136500 ms CreateObjectMapping: 0.039900 ms MarkObjects: 1.402100 ms  DeleteObjects: 0.028700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.911362 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic
+  artifactKey: Guid(ec8976e122664fc448028fe1c5cda884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic using Guid(ec8976e122664fc448028fe1c5cda884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e393c9a3a04503cdedc3e84261c13c9') in 0.004957 seconds
+  Import took 0.007447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010972 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic
+  artifactKey: Guid(ec8976e122664fc448028fe1c5cda884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic using Guid(ec8976e122664fc448028fe1c5cda884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e393c9a3a04503cdedc3e84261c13c9') in 0.002482 seconds
+  Import took 0.005117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.788809 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle
+  artifactKey: Guid(ac0f11453dbf3c6459889ec9d5ccd094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle using Guid(ac0f11453dbf3c6459889ec9d5ccd094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97dd7a000bc7a7c99dcc21a57bf4d16') in 0.003071 seconds
+  Import took 0.006201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.163505 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/paladin_prop_j_nordstrom@Male Sitting Pose.fbx
+  artifactKey: Guid(fc283381d9e33fb4ea45003ce987f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/paladin_prop_j_nordstrom@Male Sitting Pose.fbx using Guid(fc283381d9e33fb4ea45003ce987f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79177ece79dda03e388d1961a09ba647') in 0.025840 seconds
+  Import took 0.029199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019963 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/paladin_prop_j_nordstrom@Male Sitting Pose.fbx
+  artifactKey: Guid(fc283381d9e33fb4ea45003ce987f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/paladin_prop_j_nordstrom@Male Sitting Pose.fbx using Guid(fc283381d9e33fb4ea45003ce987f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79177ece79dda03e388d1961a09ba647') in 0.005609 seconds
+  Import took 0.009274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.670011 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/paladin_prop_j_nordstrom@Breathing Idle.fbx
+  artifactKey: Guid(631aabade8871f248ae25c59ae52b8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/paladin_prop_j_nordstrom@Breathing Idle.fbx using Guid(631aabade8871f248ae25c59ae52b8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba36bec195212d55a889d13138db851') in 0.006224 seconds
+  Import took 0.009524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008919 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/paladin_prop_j_nordstrom@Breathing Idle.fbx
+  artifactKey: Guid(631aabade8871f248ae25c59ae52b8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/paladin_prop_j_nordstrom@Breathing Idle.fbx using Guid(631aabade8871f248ae25c59ae52b8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba36bec195212d55a889d13138db851') in 0.008088 seconds
+  Import took 0.011589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.241348 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/happy hand gesture.fbx
+  artifactKey: Guid(a58b0c22b366bb64998419403296be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/happy hand gesture.fbx using Guid(a58b0c22b366bb64998419403296be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de023bde1903f185854ec47c5195142b') in 0.008142 seconds
+  Import took 0.011304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034349 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/happy hand gesture.fbx
+  artifactKey: Guid(a58b0c22b366bb64998419403296be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/happy hand gesture.fbx using Guid(a58b0c22b366bb64998419403296be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de023bde1903f185854ec47c5195142b') in 0.007486 seconds
+  Import took 0.011727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.563735 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/head nod yes.fbx
+  artifactKey: Guid(0522afb0a4647814d9b6ddd1e0268711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/head nod yes.fbx using Guid(0522afb0a4647814d9b6ddd1e0268711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d8f4c718521f8fc318f88956dbf05b1') in 0.004895 seconds
+  Import took 0.007650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038258 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/head nod yes.fbx
+  artifactKey: Guid(0522afb0a4647814d9b6ddd1e0268711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/head nod yes.fbx using Guid(0522afb0a4647814d9b6ddd1e0268711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d8f4c718521f8fc318f88956dbf05b1') in 0.005700 seconds
+  Import took 0.008790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.492587 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/sarcastic head nod.fbx
+  artifactKey: Guid(72d1ade80406f9f459c6be7a46d38751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/sarcastic head nod.fbx using Guid(72d1ade80406f9f459c6be7a46d38751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef72a8e43d4c75cc7550879413920849') in 0.006479 seconds
+  Import took 0.009535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037723 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/sarcastic head nod.fbx
+  artifactKey: Guid(72d1ade80406f9f459c6be7a46d38751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/sarcastic head nod.fbx using Guid(72d1ade80406f9f459c6be7a46d38751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef72a8e43d4c75cc7550879413920849') in 0.006555 seconds
+  Import took 0.010289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.450394 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/shaking head no.fbx
+  artifactKey: Guid(a4b029d1714c258488fa8b902349fc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/shaking head no.fbx using Guid(a4b029d1714c258488fa8b902349fc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2130cfb645f804e719b66773728d821') in 0.006041 seconds
+  Import took 0.009169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032265 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/shaking head no.fbx
+  artifactKey: Guid(a4b029d1714c258488fa8b902349fc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/shaking head no.fbx using Guid(a4b029d1714c258488fa8b902349fc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2130cfb645f804e719b66773728d821') in 0.006095 seconds
+  Import took 0.009340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.314034 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/thoughtful head shake.fbx
+  artifactKey: Guid(f8f3d26b286ea4c41990bc4bf775b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/thoughtful head shake.fbx using Guid(f8f3d26b286ea4c41990bc4bf775b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75061000a3f02d503a3a419130aaf27') in 0.006112 seconds
+  Import took 0.009361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030567 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/thoughtful head shake.fbx
+  artifactKey: Guid(f8f3d26b286ea4c41990bc4bf775b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/thoughtful head shake.fbx using Guid(f8f3d26b286ea4c41990bc4bf775b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75061000a3f02d503a3a419130aaf27') in 0.005247 seconds
+  Import took 0.008230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.239514 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/weight shift.fbx
+  artifactKey: Guid(2163c021ec266584e8d5ce47abe8a64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/weight shift.fbx using Guid(2163c021ec266584e8d5ce47abe8a64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '038b15f92db18fbc6e412fba29e80536') in 0.005953 seconds
+  Import took 0.008923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030876 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/weight shift.fbx
+  artifactKey: Guid(2163c021ec266584e8d5ce47abe8a64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/weight shift.fbx using Guid(2163c021ec266584e8d5ce47abe8a64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '038b15f92db18fbc6e412fba29e80536') in 0.006310 seconds
+  Import took 0.009485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.799571 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/acknowledging.fbx
+  artifactKey: Guid(597cb532ab77b2e488796e253bdf5435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/acknowledging.fbx using Guid(597cb532ab77b2e488796e253bdf5435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c200e0078a6c63b7fbbeaf60b404a5') in 0.006218 seconds
+  Import took 0.009013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028359 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/acknowledging.fbx
+  artifactKey: Guid(597cb532ab77b2e488796e253bdf5435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/acknowledging.fbx using Guid(597cb532ab77b2e488796e253bdf5435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c200e0078a6c63b7fbbeaf60b404a5') in 0.005989 seconds
+  Import took 0.008867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.842357 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/lengthy head nod.fbx
+  artifactKey: Guid(682a5faeabb3876439d592e7cd64c6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/lengthy head nod.fbx using Guid(682a5faeabb3876439d592e7cd64c6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09d13d1dce9c623ba2240bbb7421f568') in 0.006674 seconds
+  Import took 0.010334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007626 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/lengthy head nod.fbx
+  artifactKey: Guid(682a5faeabb3876439d592e7cd64c6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/lengthy head nod.fbx using Guid(682a5faeabb3876439d592e7cd64c6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09d13d1dce9c623ba2240bbb7421f568') in 0.005630 seconds
+  Import took 0.009042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.908796 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/lengthy head nod.fbx
+  artifactKey: Guid(682a5faeabb3876439d592e7cd64c6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/lengthy head nod.fbx using Guid(682a5faeabb3876439d592e7cd64c6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b66c645a44cf194ad053650cf72c3871') in 0.006325 seconds
+  Import took 0.009653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.876822 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/acknowledging.fbx
+  artifactKey: Guid(597cb532ab77b2e488796e253bdf5435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/acknowledging.fbx using Guid(597cb532ab77b2e488796e253bdf5435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c84d28be21e2364273c9e025596b12fd') in 0.005118 seconds
+  Import took 0.007849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001324 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/acknowledging.fbx
+  artifactKey: Guid(597cb532ab77b2e488796e253bdf5435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/acknowledging.fbx using Guid(597cb532ab77b2e488796e253bdf5435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c84d28be21e2364273c9e025596b12fd') in 0.005754 seconds
+  Import took 0.008499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.540845 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/acknowledging.fbx
+  artifactKey: Guid(597cb532ab77b2e488796e253bdf5435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/acknowledging.fbx using Guid(597cb532ab77b2e488796e253bdf5435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ba73857d49b93d4afc21bee1677a62') in 0.006579 seconds
+  Import took 0.010130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046729 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/acknowledging.fbx
+  artifactKey: Guid(597cb532ab77b2e488796e253bdf5435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/acknowledging.fbx using Guid(597cb532ab77b2e488796e253bdf5435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ba73857d49b93d4afc21bee1677a62') in 0.007036 seconds
+  Import took 0.010663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.685365 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/annoyed head shake.fbx
+  artifactKey: Guid(c3bfc0369f4fb024b9a3df603249b6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/annoyed head shake.fbx using Guid(c3bfc0369f4fb024b9a3df603249b6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd934ac343c13efeaebbf339090f52737') in 0.006199 seconds
+  Import took 0.009279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032002 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/annoyed head shake.fbx
+  artifactKey: Guid(c3bfc0369f4fb024b9a3df603249b6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/annoyed head shake.fbx using Guid(c3bfc0369f4fb024b9a3df603249b6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd934ac343c13efeaebbf339090f52737') in 0.006967 seconds
+  Import took 0.009727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.264778 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/angry gesture.fbx
+  artifactKey: Guid(fab6fd15a854cb547b636a37810bb2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/angry gesture.fbx using Guid(fab6fd15a854cb547b636a37810bb2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '594cf9b698efff8837a38f0a851a9921') in 0.007094 seconds
+  Import took 0.010330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036158 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/angry gesture.fbx
+  artifactKey: Guid(fab6fd15a854cb547b636a37810bb2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/angry gesture.fbx using Guid(fab6fd15a854cb547b636a37810bb2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '594cf9b698efff8837a38f0a851a9921') in 0.007152 seconds
+  Import took 0.010084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.443859 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/angry gesture.fbx
+  artifactKey: Guid(fab6fd15a854cb547b636a37810bb2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/angry gesture.fbx using Guid(fab6fd15a854cb547b636a37810bb2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1a2e7bd882090c1a6216811b12b563') in 0.006054 seconds
+  Import took 0.009279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.699583 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/annoyed head shake.fbx
+  artifactKey: Guid(c3bfc0369f4fb024b9a3df603249b6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/annoyed head shake.fbx using Guid(c3bfc0369f4fb024b9a3df603249b6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549e3fd2adc90eb4cc9f181b0d066f2e') in 0.006961 seconds
+  Import took 0.010138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.542532 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/being cocky.fbx
+  artifactKey: Guid(ff1a482b69da08e40a83587de6ee778d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/being cocky.fbx using Guid(ff1a482b69da08e40a83587de6ee778d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '240f4540e9b9e23b0cd2f1c990ada109') in 0.007108 seconds
+  Import took 0.010149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031620 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/being cocky.fbx
+  artifactKey: Guid(ff1a482b69da08e40a83587de6ee778d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/being cocky.fbx using Guid(ff1a482b69da08e40a83587de6ee778d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '240f4540e9b9e23b0cd2f1c990ada109') in 0.008013 seconds
+  Import took 0.011848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.291356 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/being cocky.fbx
+  artifactKey: Guid(ff1a482b69da08e40a83587de6ee778d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/being cocky.fbx using Guid(ff1a482b69da08e40a83587de6ee778d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f2303b00d81cafdeee6825806450f75') in 0.007108 seconds
+  Import took 0.010600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.475204 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/dismissing gesture.fbx
+  artifactKey: Guid(89859cb4828b2c143a952e107f41ee20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/dismissing gesture.fbx using Guid(89859cb4828b2c143a952e107f41ee20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '159a1f9d3a760b1b4d3ce25ac80c54e8') in 0.007266 seconds
+  Import took 0.010883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031909 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/dismissing gesture.fbx
+  artifactKey: Guid(89859cb4828b2c143a952e107f41ee20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/dismissing gesture.fbx using Guid(89859cb4828b2c143a952e107f41ee20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '159a1f9d3a760b1b4d3ce25ac80c54e8') in 0.006619 seconds
+  Import took 0.010101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.085866 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/dismissing gesture.fbx
+  artifactKey: Guid(89859cb4828b2c143a952e107f41ee20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/dismissing gesture.fbx using Guid(89859cb4828b2c143a952e107f41ee20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de429c729a39781bfafa0333071f56b6') in 0.007064 seconds
+  Import took 0.010171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.506809 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/happy hand gesture.fbx
+  artifactKey: Guid(a58b0c22b366bb64998419403296be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/happy hand gesture.fbx using Guid(a58b0c22b366bb64998419403296be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6979074f03570981485c35750f4d9d64') in 0.007672 seconds
+  Import took 0.011226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032155 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/happy hand gesture.fbx
+  artifactKey: Guid(a58b0c22b366bb64998419403296be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/happy hand gesture.fbx using Guid(a58b0c22b366bb64998419403296be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6979074f03570981485c35750f4d9d64') in 0.007676 seconds
+  Import took 0.011041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.402115 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/happy hand gesture.fbx
+  artifactKey: Guid(a58b0c22b366bb64998419403296be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/happy hand gesture.fbx using Guid(a58b0c22b366bb64998419403296be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeab67c68ad616a864c8157ee39587d8') in 0.006011 seconds
+  Import took 0.008793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.624707 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/hard head nod.fbx
+  artifactKey: Guid(16bf87ea1b1d11a4e9a9efd941a2f71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/hard head nod.fbx using Guid(16bf87ea1b1d11a4e9a9efd941a2f71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffcd8c198549ef9b2fcba733c23c948') in 0.007096 seconds
+  Import took 0.010410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033033 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/hard head nod.fbx
+  artifactKey: Guid(16bf87ea1b1d11a4e9a9efd941a2f71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/hard head nod.fbx using Guid(16bf87ea1b1d11a4e9a9efd941a2f71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffcd8c198549ef9b2fcba733c23c948') in 0.006624 seconds
+  Import took 0.009968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.888352 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/hard head nod.fbx
+  artifactKey: Guid(16bf87ea1b1d11a4e9a9efd941a2f71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/hard head nod.fbx using Guid(16bf87ea1b1d11a4e9a9efd941a2f71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbf3d63d2e1b76959d1f12603a7f0b3c') in 0.006127 seconds
+  Import took 0.009394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.720451 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/head nod yes.fbx
+  artifactKey: Guid(0522afb0a4647814d9b6ddd1e0268711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/head nod yes.fbx using Guid(0522afb0a4647814d9b6ddd1e0268711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d597b149075411b66f100fbd5a61e1c') in 0.007272 seconds
+  Import took 0.010511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034208 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/head nod yes.fbx
+  artifactKey: Guid(0522afb0a4647814d9b6ddd1e0268711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/head nod yes.fbx using Guid(0522afb0a4647814d9b6ddd1e0268711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d597b149075411b66f100fbd5a61e1c') in 0.006383 seconds
+  Import took 0.009790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.456621 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/head nod yes.fbx
+  artifactKey: Guid(0522afb0a4647814d9b6ddd1e0268711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/head nod yes.fbx using Guid(0522afb0a4647814d9b6ddd1e0268711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83ec588a60ab213ab5aef8194c8a8fd4') in 0.006496 seconds
+  Import took 0.010065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.195618 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/lengthy head nod.fbx
+  artifactKey: Guid(682a5faeabb3876439d592e7cd64c6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/lengthy head nod.fbx using Guid(682a5faeabb3876439d592e7cd64c6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810dbab8711d3d61424aa9ce87900dfd') in 0.005945 seconds
+  Import took 0.009540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050637 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/lengthy head nod.fbx
+  artifactKey: Guid(682a5faeabb3876439d592e7cd64c6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/lengthy head nod.fbx using Guid(682a5faeabb3876439d592e7cd64c6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810dbab8711d3d61424aa9ce87900dfd') in 0.006827 seconds
+  Import took 0.009704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.613007 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/look away gesture.fbx
+  artifactKey: Guid(ac11c2aaa10fe1f4785ce4080d209a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/look away gesture.fbx using Guid(ac11c2aaa10fe1f4785ce4080d209a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61f54a38a82a99aeb3caa6533373234') in 0.006633 seconds
+  Import took 0.010419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028897 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/look away gesture.fbx
+  artifactKey: Guid(ac11c2aaa10fe1f4785ce4080d209a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/look away gesture.fbx using Guid(ac11c2aaa10fe1f4785ce4080d209a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61f54a38a82a99aeb3caa6533373234') in 0.006182 seconds
+  Import took 0.009427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.262797 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/look away gesture.fbx
+  artifactKey: Guid(ac11c2aaa10fe1f4785ce4080d209a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/look away gesture.fbx using Guid(ac11c2aaa10fe1f4785ce4080d209a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2fdf32b12c271f8bfd12e373804cd2') in 0.005798 seconds
+  Import took 0.009323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.398423 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/sarcastic head nod.fbx
+  artifactKey: Guid(72d1ade80406f9f459c6be7a46d38751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/sarcastic head nod.fbx using Guid(72d1ade80406f9f459c6be7a46d38751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04657fd20e8e05492f00a6ce65cc539') in 0.006504 seconds
+  Import took 0.009995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033551 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/sarcastic head nod.fbx
+  artifactKey: Guid(72d1ade80406f9f459c6be7a46d38751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/sarcastic head nod.fbx using Guid(72d1ade80406f9f459c6be7a46d38751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04657fd20e8e05492f00a6ce65cc539') in 0.012247 seconds
+  Import took 0.015707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.287701 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/relieved sigh.fbx
+  artifactKey: Guid(763aca47d2b522444a80dcb4d7b611b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/relieved sigh.fbx using Guid(763aca47d2b522444a80dcb4d7b611b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf11e76de8b9a91121c90d6052930d2') in 0.006526 seconds
+  Import took 0.010496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030432 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/relieved sigh.fbx
+  artifactKey: Guid(763aca47d2b522444a80dcb4d7b611b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/relieved sigh.fbx using Guid(763aca47d2b522444a80dcb4d7b611b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf11e76de8b9a91121c90d6052930d2') in 0.007833 seconds
+  Import took 0.011069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.719211 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/relieved sigh.fbx
+  artifactKey: Guid(763aca47d2b522444a80dcb4d7b611b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/relieved sigh.fbx using Guid(763aca47d2b522444a80dcb4d7b611b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ddeaefac91f5698676b9da4f856b72f') in 0.005882 seconds
+  Import took 0.008863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.065749 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/sarcastic head nod.fbx
+  artifactKey: Guid(72d1ade80406f9f459c6be7a46d38751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/sarcastic head nod.fbx using Guid(72d1ade80406f9f459c6be7a46d38751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0741fdbb9af6e834b2af989b1140c40') in 0.006307 seconds
+  Import took 0.009442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.608561 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/shaking head no.fbx
+  artifactKey: Guid(a4b029d1714c258488fa8b902349fc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/shaking head no.fbx using Guid(a4b029d1714c258488fa8b902349fc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79e20daae30ff73ddd2098716378b14') in 0.006669 seconds
+  Import took 0.010393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031719 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/shaking head no.fbx
+  artifactKey: Guid(a4b029d1714c258488fa8b902349fc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/shaking head no.fbx using Guid(a4b029d1714c258488fa8b902349fc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79e20daae30ff73ddd2098716378b14') in 0.007370 seconds
+  Import took 0.011049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.826636 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/shaking head no.fbx
+  artifactKey: Guid(a4b029d1714c258488fa8b902349fc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/shaking head no.fbx using Guid(a4b029d1714c258488fa8b902349fc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2503e7230497b3527ca31f605b1982') in 0.006657 seconds
+  Import took 0.010019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.541101 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/thoughtful head shake.fbx
+  artifactKey: Guid(f8f3d26b286ea4c41990bc4bf775b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/thoughtful head shake.fbx using Guid(f8f3d26b286ea4c41990bc4bf775b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58e8c2a9aeab8ddf04a96893b771fbf') in 0.008663 seconds
+  Import took 0.012157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031541 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/thoughtful head shake.fbx
+  artifactKey: Guid(f8f3d26b286ea4c41990bc4bf775b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/thoughtful head shake.fbx using Guid(f8f3d26b286ea4c41990bc4bf775b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58e8c2a9aeab8ddf04a96893b771fbf') in 0.006911 seconds
+  Import took 0.010080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.605651 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/thoughtful head shake.fbx
+  artifactKey: Guid(f8f3d26b286ea4c41990bc4bf775b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/thoughtful head shake.fbx using Guid(f8f3d26b286ea4c41990bc4bf775b9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cb2c6dc0a58a8ba2bd00e0d91e35edb') in 0.006225 seconds
+  Import took 0.009350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.644441 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/weight shift.fbx
+  artifactKey: Guid(2163c021ec266584e8d5ce47abe8a64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/weight shift.fbx using Guid(2163c021ec266584e8d5ce47abe8a64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4164547db8b31e3bc6c3b72b4725c7c') in 0.011283 seconds
+  Import took 0.015336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.729824 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/weight shift.fbx
+  artifactKey: Guid(2163c021ec266584e8d5ce47abe8a64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/weight shift.fbx using Guid(2163c021ec266584e8d5ce47abe8a64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc60107a9cd3ce87bc6a062a1ded3436') in 0.006279 seconds
+  Import took 0.008953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.567879 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Breathing idle.fbx
+  artifactKey: Guid(631aabade8871f248ae25c59ae52b8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Breathing idle.fbx using Guid(631aabade8871f248ae25c59ae52b8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '795d4b025568e5e692637ed2589e4c41') in 0.007907 seconds
+  Import took 0.011736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.739819 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/paladin_prop_j_nordstrom@Crouch To Stand.fbx
+  artifactKey: Guid(c3fa79652ee17e04c9022be41103a6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/paladin_prop_j_nordstrom@Crouch To Stand.fbx using Guid(c3fa79652ee17e04c9022be41103a6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0205a29df8f489cd683623ec7434fd6') in 0.007546 seconds
+  Import took 0.011442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033441 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/paladin_prop_j_nordstrom@Crouch To Stand.fbx
+  artifactKey: Guid(c3fa79652ee17e04c9022be41103a6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/paladin_prop_j_nordstrom@Crouch To Stand.fbx using Guid(c3fa79652ee17e04c9022be41103a6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0205a29df8f489cd683623ec7434fd6') in 0.007185 seconds
+  Import took 0.010612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.472417 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Crouch to stand.fbx
+  artifactKey: Guid(c3fa79652ee17e04c9022be41103a6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Crouch to stand.fbx using Guid(c3fa79652ee17e04c9022be41103a6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dbd7e12ed43208779b463b0a2bf8467') in 0.008126 seconds
+  Import took 0.011850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.057326 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Sitting pose.fbx
+  artifactKey: Guid(fc283381d9e33fb4ea45003ce987f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Sitting pose.fbx using Guid(fc283381d9e33fb4ea45003ce987f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4806ea097f782ac8acffd81871c0185a') in 0.006991 seconds
+  Import took 0.009804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.830807 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/paladin_prop_j_nordstrom@Sitting Idle.fbx
+  artifactKey: Guid(07eee959dc07490429d2cc74585637ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/paladin_prop_j_nordstrom@Sitting Idle.fbx using Guid(07eee959dc07490429d2cc74585637ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdc9294cf9c174cbeb127db2d1df2d2e') in 0.005500 seconds
+  Import took 0.008783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039684 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/paladin_prop_j_nordstrom@Sitting Idle.fbx
+  artifactKey: Guid(07eee959dc07490429d2cc74585637ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/paladin_prop_j_nordstrom@Sitting Idle.fbx using Guid(07eee959dc07490429d2cc74585637ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdc9294cf9c174cbeb127db2d1df2d2e') in 0.007048 seconds
+  Import took 0.010502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.302789 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Sitting idle.fbx
+  artifactKey: Guid(07eee959dc07490429d2cc74585637ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Sitting idle.fbx using Guid(07eee959dc07490429d2cc74585637ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee374572f9d28ccaf02bd0570bc6a96') in 0.008856 seconds
+  Import took 0.013185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.531965 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Breathing idle.fbx
+  artifactKey: Guid(631aabade8871f248ae25c59ae52b8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Breathing idle.fbx using Guid(631aabade8871f248ae25c59ae52b8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65290ad1d246fc5f0d152366f4c3cfbc') in 0.008653 seconds
+  Import took 0.012484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.076598 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Crouch to stand.fbx
+  artifactKey: Guid(c3fa79652ee17e04c9022be41103a6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Crouch to stand.fbx using Guid(c3fa79652ee17e04c9022be41103a6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69266d2ea471dc0a4242055e168dde6c') in 0.006143 seconds
+  Import took 0.009227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.429948 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Sitting idle.fbx
+  artifactKey: Guid(07eee959dc07490429d2cc74585637ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Sitting idle.fbx using Guid(07eee959dc07490429d2cc74585637ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14348c64edc01991fa3101c7bce5c21c') in 0.005675 seconds
+  Import took 0.009128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.907882 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Sitting pose.fbx
+  artifactKey: Guid(fc283381d9e33fb4ea45003ce987f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Sitting pose.fbx using Guid(fc283381d9e33fb4ea45003ce987f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10eaea720c66fb5e89ef99d20507e704') in 0.007814 seconds
+  Import took 0.011983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.956468 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Breathing idle.fbx
+  artifactKey: Guid(631aabade8871f248ae25c59ae52b8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Breathing idle.fbx using Guid(631aabade8871f248ae25c59ae52b8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ede43276ddf88f5e2afe15d75005f2') in 0.009040 seconds
+  Import took 0.013215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.912225 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Sitting pose.fbx
+  artifactKey: Guid(fc283381d9e33fb4ea45003ce987f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Sitting pose.fbx using Guid(fc283381d9e33fb4ea45003ce987f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b20c4b17e88650ed8786227d9f573a') in 0.005725 seconds
+  Import took 0.009666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017426 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Sitting pose.fbx
+  artifactKey: Guid(fc283381d9e33fb4ea45003ce987f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Sitting pose.fbx using Guid(fc283381d9e33fb4ea45003ce987f8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b20c4b17e88650ed8786227d9f573a') in 0.008901 seconds
+  Import took 0.013272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.721905 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Crouch to stand.fbx
+  artifactKey: Guid(c3fa79652ee17e04c9022be41103a6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Crouch to stand.fbx using Guid(c3fa79652ee17e04c9022be41103a6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '556d844608c974ccf2694fbd210cfa44') in 0.008341 seconds
+  Import took 0.012556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040227 seconds.
+  path: Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Crouch to stand.fbx
+  artifactKey: Guid(c3fa79652ee17e04c9022be41103a6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/New Animations/Gestures Pack Basic/Sit and idle/Crouch to stand.fbx using Guid(c3fa79652ee17e04c9022be41103a6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '556d844608c974ccf2694fbd210cfa44') in 0.007713 seconds
+  Import took 0.011619 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
