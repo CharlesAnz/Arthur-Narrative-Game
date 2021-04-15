@@ -23,6 +23,12 @@ public class Enemy : Interactable
 
     private void Update()
     {
+        if (isFocus && myStats.dead)
+        {
+            interactorCombat.GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
+            return; 
+        }
+
         //If this interactable is the focus of a character and not interacted with yet
         //check if character is close enough to interact, if so, set hasInteracted to true
         if (isFocus)

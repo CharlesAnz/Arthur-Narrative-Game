@@ -35,7 +35,7 @@ public class Player_Controller : MonoBehaviour
             return;
         }
 
-        if (GetComponent<Player_Stats>().dead) return;
+        if (GetComponent<Player_Stats>().dead || playerManager.gameOver) return;
 
         if (GetComponent<CharacterCombat>().CastTime > 0) return;
 
