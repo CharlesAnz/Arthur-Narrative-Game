@@ -14,6 +14,9 @@ public class Enemy_Controller : MonoBehaviour
     Character_Stats stats;
     PlayerManager playerManager;
 
+    public GameObject spawnfireBreath;
+    GameObject spawnedfire;
+    float firebreathActive;
 
     bool retreating;
     Vector3 currentDestination;
@@ -53,6 +56,16 @@ public class Enemy_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        firebreathActive -= Time.deltaTime;
+
+        if(firebreathActive > 0 && firebreathActive < 1.6f && spawnedfire == null) 
+        {
+            spawnedfire = Instantiate(spawnfireBreath, transform.position + (transform.forward * 5), Quaternion.Euler(new Vector3(90, 0, 0)), gameObject.transform);
+            spawnedfire.transform.localScale = new Vector3(5, 5, 5);
+        }
+
+        if (firebreathActive < 0 && spawnedfire != null) Destroy(spawnedfire.gameObject);
+
         if (combat.CastTime > 0)
         {
             target = null;
@@ -119,6 +132,7 @@ public class Enemy_Controller : MonoBehaviour
                         if (myAbilities[0].cooldownTimer <= 0)
                         {
                             myAbilities[0].Use(gameObject);
+                            firebreathActive = 2f;
                         }
 
 

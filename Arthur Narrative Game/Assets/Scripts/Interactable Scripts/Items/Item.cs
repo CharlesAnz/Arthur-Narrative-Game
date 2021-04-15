@@ -6,6 +6,7 @@ public class Item : ScriptableObject
     new public string name = "New Item";
     protected GameObject user = null;
     public Sprite icon = null;
+    public Color color = new Color(255,255,255);
 
     public bool isDefault = false;
 

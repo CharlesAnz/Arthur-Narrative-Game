@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Purple Breastplate
   icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  color: {r: 1, g: 1, b: 1, a: 1}
   isDefault: 0
   equipSlot: 1
   armorMod: 5

@@ -3,7 +3,7 @@
 [CreateAssetMenu(fileName = "New Ability", menuName = "Ability/Targeted")]
 public class Targeted_Ability : Ability
 {
-    private CharacterCombat targetHit;
+    public CharacterCombat targetHit;
 
     public override void Use(GameObject user)
     {
@@ -31,9 +31,13 @@ public class Targeted_Ability : Ability
         if (projectile != null)
         {
             if (delay > 0)
+            {
                 user.GetComponent<CharacterCombat>().SpawnProjectile(targetCharacter.transform.position, this);
+            }
             else
+            {
                 SpawnProjectile(targetCharacter.transform.position);
+            }
             return;
         }
 

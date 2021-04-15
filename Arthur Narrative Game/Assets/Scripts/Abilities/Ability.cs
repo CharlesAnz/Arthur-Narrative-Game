@@ -93,7 +93,7 @@ public class Ability : ScriptableObject
         cooldownTimer = cooldown;
 
         combat.CastTime = castTime;
-        combat.SetAttackCooldown(castTime);
+        combat.SetAttackCooldown(castTime); //+ (1f / combat.attackSpeed));
 
         if (doesDamage) OnAbilityUse.AddListener(Damage);
         if (doesHealing) OnAbilityUse.AddListener(Heal);
@@ -221,9 +221,11 @@ public class Ability : ScriptableObject
         projectileScript.targetType = targetType;
         projectileScript.user = abilityUser;
 
-        Vector3 direction = (hitPositiion - abilityUser.transform.position).normalized;
+        Vector3 direction = (hitPositiion - projectileSpawnPos).normalized;
+        Debug.Log("Projectile Direction: " +  direction.normalized);
 
         spawnedProjectile.GetComponent<Rigidbody>().velocity = direction * (Time.deltaTime + 10);
+        Debug.Log("Projectile Velocity: " + spawnedProjectile.GetComponent<Rigidbody>().velocity);
     }
 
     public void SetProjectileSpawnPos(Vector3 pos)
