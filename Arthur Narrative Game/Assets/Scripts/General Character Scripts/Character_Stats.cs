@@ -80,6 +80,6 @@ public class Character_Stats : MonoBehaviour
 
     public virtual void Die()
     {
-        
+        dead = true;
     }
 }
