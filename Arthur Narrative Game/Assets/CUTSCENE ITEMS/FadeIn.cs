@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class FadeIn : MonoBehaviour
 {
+    [Header("Determine if we are fading an image in or out")]
+    public bool fadeImageIn = true;
     [Header("Background image to be faded in/out")]
     public Image blackFade;
     [Header("How long to wait until starting to fade in/out")]
@@ -13,14 +15,20 @@ public class FadeIn : MonoBehaviour
 
     private void Start()
     {
-        /* FADE IMAGE IN */
-        //blackFade.canvasRenderer.SetAlpha(0.0f);
-        //fadeIn();
-
-        /* FADE IMAGE OUT */
-        blackFade.canvasRenderer.SetAlpha(1.0f);
-        //fadeOut();
-        StartCoroutine(InitialDelay(timeDelay));
+        if(fadeImageIn == true)
+        {
+            /* FADE IMAGE IN */
+            blackFade.canvasRenderer.SetAlpha(0.0f);
+            //fadeIn();
+            StartCoroutine(FadeImageIn(timeDelay));
+        }
+        else if (fadeImageIn == false)
+        {
+            /* FADE IMAGE OUT */
+            blackFade.canvasRenderer.SetAlpha(1.0f);
+            //fadeOut();
+            StartCoroutine(FadeImageOut(timeDelay));
+        }
     }
 
     void fadeIn()
@@ -35,10 +43,16 @@ public class FadeIn : MonoBehaviour
         blackFade.CrossFadeAlpha(0, timeToCompleteFade, false);
     }
 
-    private IEnumerator InitialDelay(float timeDelay)
+    private IEnumerator FadeImageOut(float timeDelay)
     {
         yield return new WaitForSeconds(timeDelay);
         blackFade.CrossFadeAlpha(0, timeToCompleteFade, false);
+    }
+
+    private IEnumerator FadeImageIn(float timeDelay)
+    {
+        yield return new WaitForSeconds(timeDelay);
+        blackFade.CrossFadeAlpha(1, timeToCompleteFade, false);
     }
 
 }
