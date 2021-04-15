@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Playables;
 
 public class PlayerManager : MonoBehaviour
@@ -29,6 +30,7 @@ public class PlayerManager : MonoBehaviour
 
     public bool gameOver = false;
     public PlayableDirector timeline;
+    public GameObject cutSceneCamera;
 
     void Start()
     {
@@ -149,9 +151,15 @@ public class PlayerManager : MonoBehaviour
         gameOver = true;
     }
 
-    public void WinCondtion()
+    public void WinCondtion(GameObject enemy)
     {
         gameOver = true;
+
+        cutSceneCamera.SetActive(true);
+
+        enemy.transform.position = new Vector3(48, 28, -80);
+        enemy.GetComponent<NavMeshAgent>().enabled = false;
+        enemy.GetComponent<CharacterAnimator>().characterAnim.SetTrigger("dead");
 
         // Play the timeline, a.k.a. the cutscene
         timeline.Play();
