@@ -3065,8 +3065,8 @@ MonoBehaviour:
 
     645 Anno Domini (A.D.)'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3522867de95e1e64498aea520c97ac4c, type: 2}
+  m_sharedMaterial: {fileID: 5616788789505667324, guid: 3522867de95e1e64498aea520c97ac4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3090,8 +3090,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 110
+  m_fontSizeBase: 110
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3972,8 +3972,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500101344}
-  m_LocalRotation: {x: 0.101386495, y: 0.04949612, z: 0.0051386007, w: -0.99360186}
-  m_LocalPosition: {x: -15.105137, y: 6.1509857, z: -76.36105}
+  m_LocalRotation: {x: 0.081982635, y: -0.053517494, z: -0.004327859, w: -0.99518645}
+  m_LocalPosition: {x: -18.846756, y: 4.6812363, z: -84.65292}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 493114590}
@@ -8802,7 +8802,7 @@ MonoBehaviour:
   fadeImageIn: 1
   blackFade: {fileID: 417437098}
   timeDelay: 63
-  timeToCompleteFade: 3
+  timeToCompleteFade: 6.866667
 --- !u!114 &1631745551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9540,7 +9540,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027398491}
-  m_LocalRotation: {x: -0.0842072, y: -0.005691171, z: 0.0005623285, w: -0.9964319}
+  m_LocalRotation: {x: -0.0842072, y: -0.0056911707, z: 0.0005623285, w: -0.9964318}
   m_LocalPosition: {x: -15.940594, y: 9.180344, z: -91.71414}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
