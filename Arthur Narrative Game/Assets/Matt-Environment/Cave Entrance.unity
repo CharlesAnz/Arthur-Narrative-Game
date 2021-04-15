@@ -3972,8 +3972,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500101344}
-  m_LocalRotation: {x: 0.0018796918, y: -0.99804765, z: 0.034749694, w: 0.051864363}
-  m_LocalPosition: {x: -15.831551, y: 7.361374, z: -70.80951}
+  m_LocalRotation: {x: 0.101386495, y: 0.04949612, z: 0.0051386007, w: -0.99360186}
+  m_LocalPosition: {x: -15.105137, y: 6.1509857, z: -76.36105}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 493114590}
@@ -8238,7 +8238,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541494048}
-  m_LocalRotation: {x: 0.06126614, y: -0.85473716, z: 0.10371865, w: 0.50488937}
+  m_LocalRotation: {x: -0.0038558915, y: 0.98192894, z: -0.020124694, w: -0.18813756}
   m_LocalPosition: {x: -13.651852, y: 4.99279, z: -81.74429}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8799,9 +8799,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af526aad64fb1524f9aea09393b62f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeImageIn: 0
+  fadeImageIn: 1
   blackFade: {fileID: 417437098}
-  timeDelay: 1
+  timeDelay: 63
   timeToCompleteFade: 3
 --- !u!114 &1631745551
 MonoBehaviour:
