@@ -3,10 +3,13 @@
 public class Player_Stats : Character_Stats
 {
     EquipmentManager equipManager;
+    PlayerManager playerManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        playerManager = PlayerManager.instance;
+
         equipManager = GetComponent<EquipmentManager>();
         equipManager.onEquipmentChanged += OnEquipmentChanged;
 
@@ -36,6 +39,7 @@ public class Player_Stats : Character_Stats
     public override void Die()
     {
         base.Die();
-        //player dies
+        GetComponent<CharacterAnimator>().characterAnim.SetTrigger("death");
+        playerManager.LoseCondition();
     }
 }

@@ -26,6 +26,8 @@ public class PlayerManager : MonoBehaviour
 
     private CharacterCombat activePersonCombat;
 
+    public bool gameOver = false;
+
     void Start()
     {
         activePerson = player1.GetComponent<Player_Controller>();
@@ -62,6 +64,8 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
+        if (gameOver) return;
+        
         playerHealthBar.SetCurHP((int)activePerson.GetComponent<CharacterCombat>().GetMyStats().curHP);
 
         if (activePerson.focus != null)
@@ -133,6 +137,16 @@ public class PlayerManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
             activePerson.GetComponent<Player_Stats>().abilities[2].Use(activePerson.gameObject);
+    }
 
+
+    public void LoseCondition()
+    {
+        gameOver = true;
+    }
+
+    public void WinCondtion()
+    {
+        gameOver = true;
     }
 }

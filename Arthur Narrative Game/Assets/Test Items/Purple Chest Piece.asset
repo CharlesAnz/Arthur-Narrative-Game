@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Purple Chest Piece
   m_EditorClassIdentifier: 
   name: Purple Breastplate
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  color: {r: 1, g: 1, b: 1, a: 1}
+  icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  color: {r: 0, g: 0.297235, b: 1, a: 1}
   isDefault: 0
   equipSlot: 1
   armorMod: 5

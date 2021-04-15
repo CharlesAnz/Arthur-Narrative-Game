@@ -21,6 +21,8 @@ public class Player_Movement : MonoBehaviour
 
     private void Update()
     {
+        if (combat.GetMyStats().dead) return;
+
         agent.speed = combat.GetMyStats().moveSpeed.GetValue();
 
         if (combat.CastTime > 0)
