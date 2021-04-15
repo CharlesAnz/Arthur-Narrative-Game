@@ -19,7 +19,7 @@ MonoBehaviour:
   - amount: -4
     affects: 2
     duration: 3
-    durationTimer: 0.99451196
+    durationTimer: 1.8471864
     ramping: 0
   cc_Effects: []
   projectile: {fileID: 4915467226096152956, guid: 17dfb4e5d027184478d4ff2e476673ec, type: 3}
@@ -34,5 +34,6 @@ MonoBehaviour:
   cooldown: 30
   animatorTrigger: fireBall
   castTime: 1.15
-  cooldownTimer: 27.26318
+  cooldownTimer: 27.294159
   targetType: 1
+  targetHit: {fileID: 0}

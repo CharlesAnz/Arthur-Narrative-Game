@@ -18704,9 +18704,9 @@ MonoBehaviour:
   armor:
     baseValue: 2
   moveSpeed:
-    baseValue: 3.5
+    baseValue: 6
   attackSpeed:
-    baseValue: 1
+    baseValue: 0.68
   abilities:
   - {fileID: 11400000, guid: 02c4826ee3f87bb4ba584d3f739331cb, type: 2}
   - {fileID: 11400000, guid: b70acb817caac184a9eeb5a99d0befea, type: 2}
@@ -24798,7 +24798,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1629214720
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33985,7 +33985,7 @@ MonoBehaviour:
   armor:
     baseValue: 3
   moveSpeed:
-    baseValue: 8
+    baseValue: 12
   attackSpeed:
     baseValue: 0.5
   abilities:
@@ -34014,12 +34014,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245723129405070248}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cadea39f4d43d04ebb91d8726698758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lookRadius: 70
+  spawnfireBreath: {fileID: 5339199328005539108, guid: 7d4586b5c61d06a46bd22fc388614872, type: 3}
   retreatLocations:
   - {fileID: 1894216744}
   - {fileID: 268300505}
