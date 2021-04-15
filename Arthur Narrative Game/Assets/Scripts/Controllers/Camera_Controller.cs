@@ -28,6 +28,7 @@ public class Camera_Controller : MonoBehaviour
 
     void Update()
     {
+        if (playerManager.gameOver) return;
         currentZoom -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
         currentZoom = Mathf.Clamp(currentZoom, minZoom, maxZoom);
 

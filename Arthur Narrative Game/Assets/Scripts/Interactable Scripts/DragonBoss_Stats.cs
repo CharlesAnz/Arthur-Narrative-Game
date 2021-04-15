@@ -21,6 +21,7 @@ public class DragonBoss_Stats : Character_Stats
     public override void Die()
     {
         base.Die();
+        dead = true;
         GetComponent<CharacterAnimator>().characterAnim.SetTrigger("dead");
         playerManager.WinCondtion();
     }
