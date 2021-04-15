@@ -53,6 +53,7 @@ public class FadeIn : MonoBehaviour
     {
         yield return new WaitForSeconds(timeDelay);
         blackFade.CrossFadeAlpha(1, timeToCompleteFade, false);
+        Debug.Log("Fading in image");
     }
 
 }
