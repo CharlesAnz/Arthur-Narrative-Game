@@ -486,3 +486,36 @@ System memory in use after: 154.0 MB.
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1803.
 Total: 1.720000 ms (FindLiveObjects: 0.143500 ms CreateObjectMapping: 0.047500 ms MarkObjects: 1.515200 ms  DeleteObjects: 0.012800 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000722 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.752 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1277 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.9 MB.
+System memory in use after: 154.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1805.
+Total: 1.526900 ms (FindLiveObjects: 0.146300 ms CreateObjectMapping: 0.040200 ms MarkObjects: 1.317600 ms  DeleteObjects: 0.021800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1963.941844 seconds.
+  path: Assets/CUTSCENE ITEMS/EnglishTowne.ttf
+  artifactKey: Guid(b8a82ae74b86e6044b93df5a1d34b5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/EnglishTowne.ttf using Guid(b8a82ae74b86e6044b93df5a1d34b5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a9d4e2fab57a7c2276af63523fefee') in 0.102419 seconds
+  Import took 0.105961 seconds .
+
