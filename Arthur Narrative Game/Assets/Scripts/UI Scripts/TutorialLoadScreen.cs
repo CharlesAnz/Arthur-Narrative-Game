@@ -12,7 +12,6 @@ public class TutorialLoadScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        duration = 10f;
         startTime = duration;   
     }
 

@@ -13,6 +13,8 @@ public class Character_Stats : MonoBehaviour
     public Stat moveSpeed;
     public Stat attackSpeed;
 
+    public bool dead = false;
+
     public List<Ability> abilities = new List<Ability>();
 
     public List<BufforDebuff> buffs = new List<BufforDebuff>();
@@ -78,7 +80,6 @@ public class Character_Stats : MonoBehaviour
 
     public virtual void Die()
     {
-
-
+        
     }
 }

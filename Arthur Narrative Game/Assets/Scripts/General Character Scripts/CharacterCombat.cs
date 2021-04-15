@@ -41,6 +41,8 @@ public class CharacterCombat : MonoBehaviour
 
     private void Update()
     {
+        if (myStats.dead) return;
+
         attackSpeed = myStats.attackSpeed.GetValue();
 
         attackCooldown -= Time.deltaTime;

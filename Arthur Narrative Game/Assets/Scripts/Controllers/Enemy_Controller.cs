@@ -56,6 +56,10 @@ public class Enemy_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (stats.dead) return;
+        if (playerManager.gameOver) return;
+
+
         firebreathActive -= Time.deltaTime;
 
         if(firebreathActive > 0 && firebreathActive < 1.6f && spawnedfire == null) 
