@@ -157,6 +157,6 @@ public class PlayerManager : MonoBehaviour
         timeline.Play();
 
         // Calls ShakeCamera function to shake the cinemachine camera. Values are intensity and time
-        CinemachineShake.Instance.ShakeCamera(5f, .1f);
+        //CinemachineShake.Instance.ShakeCamera(5f, .1f);
     }
 }
