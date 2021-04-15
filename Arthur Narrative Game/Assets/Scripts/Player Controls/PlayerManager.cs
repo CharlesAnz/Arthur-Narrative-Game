@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Playables;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class PlayerManager : MonoBehaviour
     private CharacterCombat activePersonCombat;
 
     public bool gameOver = false;
+    public PlayableDirector timeline;
 
     void Start()
     {
@@ -60,6 +62,8 @@ public class PlayerManager : MonoBehaviour
         targetHealthBar.SetMaxHP(1);
         targetHealthBar.SetCurHP(0);
         targetHealthBar.gameObject.SetActive(false);
+
+        timeline = GetComponent<PlayableDirector>();
     }
 
     void Update()
@@ -148,5 +152,11 @@ public class PlayerManager : MonoBehaviour
     public void WinCondtion()
     {
         gameOver = true;
+
+        // Play the timeline, a.k.a. the cutscene
+        timeline.Play();
+
+        // Calls ShakeCamera function to shake the cinemachine camera. Values are intensity and time
+        CinemachineShake.Instance.ShakeCamera(5f, .1f);
     }
 }
