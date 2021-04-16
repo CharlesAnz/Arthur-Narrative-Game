@@ -33,6 +33,8 @@ public class PlayerManager : MonoBehaviour
     public GameObject cutSceneCamera;
     public GameObject cutsceneCharacters;
 
+    public GameObject UICanvas;
+
     void Start()
     {
         activePerson = player1.GetComponent<Player_Controller>();
@@ -159,9 +161,10 @@ public class PlayerManager : MonoBehaviour
         cutSceneCamera.SetActive(true);
         cutsceneCharacters.SetActive(true);
 
-        enemy.transform.position = new Vector3(48, 28, -80);
-        enemy.GetComponent<NavMeshAgent>().enabled = false;
-        enemy.GetComponent<CharacterAnimator>().characterAnim.SetTrigger("dead");
+        enemy.SetActive(false);
+        activePerson.gameObject.SetActive(false);
+
+        UICanvas.SetActive(false);
 
         // Play the timeline, a.k.a. the cutscene
         timeline.Play();
