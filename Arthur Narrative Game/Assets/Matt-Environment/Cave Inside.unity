@@ -712,6 +712,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: b8a82ae74b86e6044b93df5a1d34b5cd, type: 3}
+    - target: {fileID: 6516049540908268171, guid: a0430c94576a6804fbaf7e382da24739, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0430c94576a6804fbaf7e382da24739, type: 3}
 --- !u!4 &68731569 stripped
@@ -13776,9 +13780,17 @@ PrefabInstance:
       value: 101
       objectReference: {fileID: 0}
     - target: {fileID: 972175991247110186, guid: a0430c94576a6804fbaf7e382da24739, type: 3}
+      propertyPath: m_Text
+      value: E
+      objectReference: {fileID: 0}
+    - target: {fileID: 972175991247110186, guid: a0430c94576a6804fbaf7e382da24739, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: b8a82ae74b86e6044b93df5a1d34b5cd, type: 3}
+    - target: {fileID: 6516049540908268171, guid: a0430c94576a6804fbaf7e382da24739, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0430c94576a6804fbaf7e382da24739, type: 3}
 --- !u!1001 &889606449
@@ -31888,9 +31900,17 @@ PrefabInstance:
       value: 119
       objectReference: {fileID: 0}
     - target: {fileID: 972175991247110186, guid: a0430c94576a6804fbaf7e382da24739, type: 3}
+      propertyPath: m_Text
+      value: W
+      objectReference: {fileID: 0}
+    - target: {fileID: 972175991247110186, guid: a0430c94576a6804fbaf7e382da24739, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: b8a82ae74b86e6044b93df5a1d34b5cd, type: 3}
+    - target: {fileID: 6516049540908268171, guid: a0430c94576a6804fbaf7e382da24739, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0430c94576a6804fbaf7e382da24739, type: 3}
 --- !u!1001 &1975313108
