@@ -41,7 +41,7 @@ public class Character_Stats : MonoBehaviour
 
         curHP -= damage;
         //Debug.Log(gameObject + " takes " + damage + " damage");
-
+        PlaySoundOnHit();
         if (curHP <= 0)
         {
             Die();
@@ -81,5 +81,10 @@ public class Character_Stats : MonoBehaviour
     public virtual void Die()
     {
         dead = true;
+    }
+
+    public virtual void PlaySoundOnHit()
+    {
+
     }
 }
