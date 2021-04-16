@@ -10,6 +10,10 @@ public class CharacterCombat : MonoBehaviour
     CharacterAnimator anim;
     ArthurSounds arthurSounds;
 
+    public GameObject armorBuffIndicator;
+    public GameObject healingBuffIndicator;
+    public GameObject damageBuffIndicator;
+
     float nextTime = 0;
     public float attackSpeed;
     private float attackCooldown = 0f;
@@ -172,10 +176,12 @@ public class CharacterCombat : MonoBehaviour
                             if (buff.amount < 0)
                                 myStats.TakePureDam(buff.amount);
                             else
+                            {
                                 myStats.Heal(buff.amount);
+                            }
                             break;
                         case StatBuffs.Damage:
-                            myStats.damage.AddModifier(buff.amount);
+                            myStats.damage.AddModifier(buff.amount); 
                             break;
                         case StatBuffs.MoveSpeed:
                             myStats.moveSpeed.AddModifier(buff.amount);
@@ -203,7 +209,11 @@ public class CharacterCombat : MonoBehaviour
                             }
                         }
                         else
+                        {
                             myStats.armor.RemoveModifier(buff.amount);
+                            if (armorBuffIndicator != null) armorBuffIndicator.SetActive(false);
+                        }
+                            
                         break;
 
 
@@ -229,7 +239,11 @@ public class CharacterCombat : MonoBehaviour
                             }
                         }
                         else
+                        {
+                            if (damageBuffIndicator != null) damageBuffIndicator.SetActive(false);
                             myStats.damage.RemoveModifier(buff.amount);
+                        }
+                            
                         break;
 
 
@@ -243,6 +257,10 @@ public class CharacterCombat : MonoBehaviour
                         }
                         else
                             myStats.moveSpeed.RemoveModifier(buff.amount);
+                        break;
+
+                    case StatBuffs.Health:
+                        if (healingBuffIndicator != null) healingBuffIndicator.SetActive(false);
                         break;
                 }
                 myStats.buffs.RemoveAt(i);

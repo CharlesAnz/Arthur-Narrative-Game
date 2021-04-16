@@ -42,9 +42,11 @@ public class Potion : Item
             {
                 case StatBuffs.Damage:
                     statsAffected.damage.AddModifier(buff.amount);
+                    if (target.damageBuffIndicator != null) target.damageBuffIndicator.SetActive(true);
                     break;
                 case StatBuffs.Armor:
                     statsAffected.armor.AddModifier(buff.amount);
+                    if (target.armorBuffIndicator != null) target.armorBuffIndicator.SetActive(true);
                     break;
                 case StatBuffs.MoveSpeed:
                     statsAffected.moveSpeed.AddModifier(buff.amount);
@@ -56,7 +58,11 @@ public class Potion : Item
                     if (buff.amount < 0)
                         statsAffected.TakePureDam(buff.amount);
                     else
+                    {
+                        if (target.healingBuffIndicator != null) target.healingBuffIndicator.SetActive(true);
                         statsAffected.Heal(buff.amount);
+                    }
+                        
                     break;
                 default:
                     break;

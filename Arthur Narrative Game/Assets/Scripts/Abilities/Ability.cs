@@ -139,9 +139,11 @@ public class Ability : ScriptableObject
             {
                 case StatBuffs.Damage:
                     statsAffected.damage.AddModifier(buff.amount);
+                    if (target.damageBuffIndicator != null) target.damageBuffIndicator.SetActive(true);
                     break;
                 case StatBuffs.Armor:
                     statsAffected.armor.AddModifier(buff.amount);
+                    if (target.armorBuffIndicator != null) target.armorBuffIndicator.SetActive(true);
                     break;
                 case StatBuffs.MoveSpeed:
                     statsAffected.moveSpeed.AddModifier(buff.amount);
@@ -153,7 +155,11 @@ public class Ability : ScriptableObject
                     if (buff.amount < 0)
                         statsAffected.TakePureDam(buff.amount);
                     else
+                    {
                         statsAffected.Heal(buff.amount);
+                        if (target.healingBuffIndicator != null) target.healingBuffIndicator.SetActive(true);
+                    }
+                        
                     break;
                 default:
                     break;

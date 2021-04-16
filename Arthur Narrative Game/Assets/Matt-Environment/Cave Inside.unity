@@ -33970,6 +33970,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5b91367176638e49b651a6da5a010c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armorBuffIndicator: {fileID: 0}
+  healingBuffIndicator: {fileID: 0}
+  damageBuffIndicator: {fileID: 0}
   attackSpeed: 1
   rooted: 0
   silenced: 0
@@ -66893,6 +66896,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5b91367176638e49b651a6da5a010c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armorBuffIndicator: {fileID: 0}
+  healingBuffIndicator: {fileID: 0}
+  damageBuffIndicator: {fileID: 0}
   attackSpeed: 1
   rooted: 0
   silenced: 0
@@ -67157,6 +67163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5b91367176638e49b651a6da5a010c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armorBuffIndicator: {fileID: 0}
+  healingBuffIndicator: {fileID: 0}
+  damageBuffIndicator: {fileID: 0}
   attackSpeed: 1
   rooted: 0
   silenced: 0
