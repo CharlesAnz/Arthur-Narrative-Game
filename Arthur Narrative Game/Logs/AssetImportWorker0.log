@@ -1,484 +1,1312 @@
 Using pre-set license
 Built from '2020.2/staging' branch; Version is '2020.2.3f1 (8ff31bc5bf5b) revision 9433883'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.906; Version 2009; 64bit' Language: 'en' Physical Memory: 16282 MB
+OS: 'Windows 10 Home; OS build 19041.867; Version 2004; 64bit' Language: 'en' Physical Memory: 32675 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\2020.2.3f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/charl/Documents/GitHub Projects/Arthur-Narrative-Game/Arthur Narrative Game
+C:/Users/mikes/Documents/GitHub/Arthur-Narrative-Game/Arthur Narrative Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62525
-Successfully changed project path to: C:/Users/charl/Documents/GitHub Projects/Arthur-Narrative-Game/Arthur Narrative Game
-C:/Users/charl/Documents/GitHub Projects/Arthur-Narrative-Game/Arthur Narrative Game
+59477
+Successfully changed project path to: C:/Users/mikes/Documents/GitHub/Arthur-Narrative-Game/Arthur Narrative Game
+C:/Users/mikes/Documents/GitHub/Arthur-Narrative-Game/Arthur Narrative Game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 32.04 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 33.09 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/charl/Documents/GitHub Projects/Arthur-Narrative-Game/Arthur Narrative Game/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/mikes/Documents/GitHub/Arthur-Narrative-Game/Arthur Narrative Game/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f11)
+    Renderer: NVIDIA GeForce RTX 3090 (ID=0x2204)
     Vendor:   
-    VRAM:     5980 MB
-    Driver:   27.21.14.6589
+    VRAM:     24348 MB
+    Driver:   27.21.14.6140
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/2020.2.3f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56604
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002305 seconds.
-Native extension for LinuxStandalone target not found
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001801 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 29.17 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 33.12 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.020 seconds
+- Completed reload, in  1.098 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000638 seconds.
+Registered in 0.000875 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.776 seconds
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1302 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 152.3 MB.
-System memory in use after: 152.3 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1761.
-Total: 1.834700 ms (FindLiveObjects: 0.143200 ms CreateObjectMapping: 0.062600 ms MarkObjects: 1.538100 ms  DeleteObjects: 0.089900 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Test Abilities/Shield Block.asset
-  artifactKey: Guid(b70acb817caac184a9eeb5a99d0befea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test Abilities/Shield Block.asset using Guid(b70acb817caac184a9eeb5a99d0befea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61aecfe455d4e3555ccdd73aed99106c') in 0.039887 seconds
-  Import took 0.041845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 956.654220 seconds.
-  path: Assets/Test Abilities/Tail Swipe.asset
-  artifactKey: Guid(e318066a48d76a94ca8f94cd2c2a5128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test Abilities/Tail Swipe.asset using Guid(e318066a48d76a94ca8f94cd2c2a5128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023b6cd51d726eee30325c5daba4f551') in 0.008338 seconds
-  Import took 0.019924 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.012481 seconds.
-  path: Assets/Test Abilities/Tail Swipe.asset
-  artifactKey: Guid(e318066a48d76a94ca8f94cd2c2a5128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test Abilities/Tail Swipe.asset using Guid(e318066a48d76a94ca8f94cd2c2a5128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023b6cd51d726eee30325c5daba4f551') in 0.003269 seconds
-  Import took 0.005420 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000656 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.776 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1278 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.7 MB.
-System memory in use after: 150.8 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1764.
-Total: 1.631500 ms (FindLiveObjects: 0.148500 ms CreateObjectMapping: 0.037500 ms MarkObjects: 1.424200 ms  DeleteObjects: 0.020600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000709 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.726 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1277 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.7 MB.
-System memory in use after: 150.8 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1766.
-Total: 2.311800 ms (FindLiveObjects: 0.202800 ms CreateObjectMapping: 0.061400 ms MarkObjects: 2.028000 ms  DeleteObjects: 0.018000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 779.177411 seconds.
-  path: Assets/Test Abilities/Test AOE Ability.asset
-  artifactKey: Guid(ffefd5183a5978848a3db6f4d4bd27c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test Abilities/Test AOE Ability.asset using Guid(ffefd5183a5978848a3db6f4d4bd27c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0388c480199dbb9881dd420969526483') in 0.019989 seconds
-  Import took 0.022769 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008124 seconds.
-  path: Assets/Test Abilities/Test AOE Ability.asset
-  artifactKey: Guid(ffefd5183a5978848a3db6f4d4bd27c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test Abilities/Test AOE Ability.asset using Guid(ffefd5183a5978848a3db6f4d4bd27c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0388c480199dbb9881dd420969526483') in 0.003100 seconds
-  Import took 0.005193 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 579.861050 seconds.
-  path: Assets/Test Abilities/Fireball.asset
-  artifactKey: Guid(2778456fe89f3374380ba05a40965fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test Abilities/Fireball.asset using Guid(2778456fe89f3374380ba05a40965fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95335c81a2e355be9006b295c941cdc6') in 0.017916 seconds
-  Import took 0.029029 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000716 seconds.
-  path: Assets/Test Abilities/Fireball.asset
-  artifactKey: Guid(2778456fe89f3374380ba05a40965fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test Abilities/Fireball.asset using Guid(2778456fe89f3374380ba05a40965fa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95335c81a2e355be9006b295c941cdc6') in 0.003893 seconds
-  Import took 0.006105 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 659.829160 seconds.
-  path: Assets/Scripts/Interactable Scripts/DragonBoss_Stats.cs
-  artifactKey: Guid(963f2d82f3b4c874fbe0242214861e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Interactable Scripts/DragonBoss_Stats.cs using Guid(963f2d82f3b4c874fbe0242214861e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab43b2c961816c3fcbe3d4b30b6f358') in 0.020401 seconds
-  Import took 0.023793 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006059 seconds.
-  path: Assets/Scripts/Interactable Scripts/DragonBoss_Stats.cs
-  artifactKey: Guid(963f2d82f3b4c874fbe0242214861e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Interactable Scripts/DragonBoss_Stats.cs using Guid(963f2d82f3b4c874fbe0242214861e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab43b2c961816c3fcbe3d4b30b6f358') in 0.002540 seconds
-  Import took 0.004991 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.624149 seconds.
-  path: Assets/Scripts/Interactable Scripts/Enemy.cs
-  artifactKey: Guid(48feec6a314f1c54599daf0fe95856d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Interactable Scripts/Enemy.cs using Guid(48feec6a314f1c54599daf0fe95856d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d98f739f680bf79e2ebef6050873db6') in 0.006293 seconds
-  Import took 0.018361 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011935 seconds.
-  path: Assets/Scripts/Interactable Scripts/Enemy.cs
-  artifactKey: Guid(48feec6a314f1c54599daf0fe95856d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Interactable Scripts/Enemy.cs using Guid(48feec6a314f1c54599daf0fe95856d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d98f739f680bf79e2ebef6050873db6') in 0.002600 seconds
-  Import took 0.004844 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000684 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.802 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1278 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.8 MB.
-System memory in use after: 151.0 MB.
-
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1770.
-Total: 1.742400 ms (FindLiveObjects: 0.164800 ms CreateObjectMapping: 0.043300 ms MarkObjects: 1.505200 ms  DeleteObjects: 0.028300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000711 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.768 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1278 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.9 MB.
-System memory in use after: 151.0 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1772.
-Total: 1.614400 ms (FindLiveObjects: 0.128400 ms CreateObjectMapping: 0.045800 ms MarkObjects: 1.427100 ms  DeleteObjects: 0.012300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000643 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.752 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1278 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.9 MB.
-System memory in use after: 151.0 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1774.
-Total: 1.681800 ms (FindLiveObjects: 0.133800 ms CreateObjectMapping: 0.045100 ms MarkObjects: 1.490100 ms  DeleteObjects: 0.011800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000670 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.737 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1278 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.9 MB.
-System memory in use after: 151.0 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1776.
-Total: 1.768300 ms (FindLiveObjects: 0.199100 ms CreateObjectMapping: 0.071600 ms MarkObjects: 1.483000 ms  DeleteObjects: 0.013400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000681 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.760 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1278 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.9 MB.
-System memory in use after: 151.0 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1778.
-Total: 2.385800 ms (FindLiveObjects: 0.182100 ms CreateObjectMapping: 0.162600 ms MarkObjects: 2.021500 ms  DeleteObjects: 0.018400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000702 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.763 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1278 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.9 MB.
-System memory in use after: 151.0 MB.
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1780.
-Total: 1.995300 ms (FindLiveObjects: 0.166800 ms CreateObjectMapping: 0.061200 ms MarkObjects: 1.749700 ms  DeleteObjects: 0.016200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001171 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
 Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.771 seconds
+- Completed reload, in  0.720 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1278 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.9 MB.
-System memory in use after: 151.0 MB.
+Unloading 1303 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.2 MB.
+System memory in use after: 160.3 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1782.
-Total: 1.872600 ms (FindLiveObjects: 0.135900 ms CreateObjectMapping: 0.041800 ms MarkObjects: 1.680500 ms  DeleteObjects: 0.013400 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1769.
+Total: 1.483100 ms (FindLiveObjects: 0.126200 ms CreateObjectMapping: 0.030000 ms MarkObjects: 1.227100 ms  DeleteObjects: 0.099000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterPBR/PurplePBR.mat
+  artifactKey: Guid(0526c5be35ba93547acf614ed1950a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterPBR/PurplePBR.mat using Guid(0526c5be35ba93547acf614ed1950a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fd0472c57f00dc6e1b584a6900594d1') in 0.149470 seconds
+  Import took 0.152724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_SpruceTrunk.mat
+  artifactKey: Guid(f7fe326e3e678744aa884039f16d78ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_SpruceTrunk.mat using Guid(f7fe326e3e678744aa884039f16d78ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b1b74c921ad62ed9fb54334c05aec24') in 0.016599 seconds
+  Import took 0.018547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_SpruceLeaves_Nature.mat
+  artifactKey: Guid(36ede47c7a6a4504c8bb7ccacbb8582b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_SpruceLeaves_Nature.mat using Guid(36ede47c7a6a4504c8bb7ccacbb8582b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdd2b1d2fb8eca108f758cbdddae22e5') in 0.011428 seconds
+  Import took 0.013200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/GreenWood2.mat
+  artifactKey: Guid(d061d3252ed0044fcb4018b060b2be02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/GreenWood2.mat using Guid(d061d3252ed0044fcb4018b060b2be02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20838f414933d5a2da1437d1be9ba99') in 0.018298 seconds
+  Import took 0.020286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Models and textures/Knight with weapon/Galahad/Materials/Paladin_MAT.mat
+  artifactKey: Guid(9dc0a040f12588d49bd87aa7e271bdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Galahad/Materials/Paladin_MAT.mat using Guid(9dc0a040f12588d49bd87aa7e271bdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '221a0225bb17d1d3e7a1a3d5fce7c803') in 0.014099 seconds
+  Import took 0.015843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumB_Mobile.mat
+  artifactKey: Guid(ef58bab276304d94bb9a343ed340560c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumB_Mobile.mat using Guid(ef58bab276304d94bb9a343ed340560c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a1682346d85e90ed764af5efdd5586') in 0.193820 seconds
+  Import took 0.195723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Shields/KnightlyShield.fbx
+  artifactKey: Guid(6fd3251a0839c42fe9fe2398c2a9e505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Shields/KnightlyShield.fbx using Guid(6fd3251a0839c42fe9fe2398c2a9e505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed5a656c899335dbc40690af2aabfce') in 0.122465 seconds
+  Import took 0.124355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/CrocodileHide.mat
+  artifactKey: Guid(3bcac000e89a04ac5a9bfdb4d51a7b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/CrocodileHide.mat using Guid(3bcac000e89a04ac5a9bfdb4d51a7b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fac76f7dba15177ea57d1a12e7a7fce2') in 0.009612 seconds
+  Import took 0.011557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Wood2.mat
+  artifactKey: Guid(ced9cc974638046d0b4b651b1b30e1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Wood2.mat using Guid(ced9cc974638046d0b4b651b1b30e1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1a29ef996fbb89bf023a09dff29d9e') in 0.015647 seconds
+  Import took 0.017618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Leather1.mat
+  artifactKey: Guid(5aca0b7d25a4347f3929bfb2d0405cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Leather1.mat using Guid(5aca0b7d25a4347f3929bfb2d0405cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43f878898bbc3a531296d84b1047e06e') in 0.012236 seconds
+  Import took 0.014093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumA.mat
+  artifactKey: Guid(f5c7d7069c1db5c4bb8cd140222a6823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumA.mat using Guid(f5c7d7069c1db5c4bb8cd140222a6823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c5db0a779ddfaee5456c699a132d2a3') in 0.038780 seconds
+  Import took 0.041343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_SpruceTrunk_Nature.mat
+  artifactKey: Guid(b6b55900a82122d4cac45581a7cd97db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_SpruceTrunk_Nature.mat using Guid(b6b55900a82122d4cac45581a7cd97db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc59226e0078de626e44b340543c050e') in 0.011581 seconds
+  Import took 0.013655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b28cfba5caedd47b8e631c15d179b48') in 0.046774 seconds
+  Import took 0.048650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Models and textures/Free_Rocks/_material/ground.mat
+  artifactKey: Guid(d67cf08569282495b9b0b750a0366fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Free_Rocks/_material/ground.mat using Guid(d67cf08569282495b9b0b750a0366fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c37ce2cf8906ee990b469138d6cf03c') in 0.019458 seconds
+  Import took 0.021655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/CleanSteel.mat
+  artifactKey: Guid(8ad2aed09e3a8451a8a6bd3483ade3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/CleanSteel.mat using Guid(8ad2aed09e3a8451a8a6bd3483ade3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5657b420828f9ab66f862da7392e880c') in 0.013999 seconds
+  Import took 0.015961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/HandlePattern2.mat
+  artifactKey: Guid(53a3e9c50875a49f6b4f485192d9093a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/HandlePattern2.mat using Guid(53a3e9c50875a49f6b4f485192d9093a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757d118ada0fb3166fc30c842d78555e') in 0.020362 seconds
+  Import took 0.022347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/WhiteWood1.mat
+  artifactKey: Guid(c3bbe76509d5844419e13831ecdbad5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/WhiteWood1.mat using Guid(c3bbe76509d5844419e13831ecdbad5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd902b00dc1c96e96c243e17ae7891c') in 0.015525 seconds
+  Import took 0.017318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b1c61b5a044c670109d5a0f44022afe') in 0.030022 seconds
+  Import took 0.032090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Leather2.mat
+  artifactKey: Guid(11554226139ba4dd1b21c9d0165fc990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Leather2.mat using Guid(11554226139ba4dd1b21c9d0165fc990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65cba820d8ff6358fb74979d12dc403b') in 0.010954 seconds
+  Import took 0.012931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Swords/Longsword.fbx
+  artifactKey: Guid(730639650fbb648b1b17c78f2f39cefb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Swords/Longsword.fbx using Guid(730639650fbb648b1b17c78f2f39cefb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496803287ba46d16a4a8e5ac3fc056c5') in 0.059296 seconds
+  Import took 0.061073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Wood4.mat
+  artifactKey: Guid(e895e32702113485a9f6ee665bc48792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Wood4.mat using Guid(e895e32702113485a9f6ee665bc48792) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbae5fac0f4a24e3e4e07cea4cf7540d') in 0.015460 seconds
+  Import took 0.017254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Models and textures/Knights/Paladin/Materials/Paladin_MAT_NewDiff.mat
+  artifactKey: Guid(b3e6f07857c01ee4aa91128342f81b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knights/Paladin/Materials/Paladin_MAT_NewDiff.mat using Guid(b3e6f07857c01ee4aa91128342f81b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cac5a614b087880e21849d3819280a0f') in 0.018668 seconds
+  Import took 0.020682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_GenericCliffB.mat
+  artifactKey: Guid(7d83b943a5802e14499a11a38ac8946d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_GenericCliffB.mat using Guid(7d83b943a5802e14499a11a38ac8946d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff5d32d84a97b453d2b27960dacaffab') in 0.043756 seconds
+  Import took 0.047057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal6.mat
+  artifactKey: Guid(f1c640412ac9f4f559ae607984b3f380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal6.mat using Guid(f1c640412ac9f4f559ae607984b3f380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c283425bd581ea4feab11aa7f7f56e43') in 0.015674 seconds
+  Import took 0.017541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal9.mat
+  artifactKey: Guid(2ae9de580486a475b800d4348f2ac41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal9.mat using Guid(2ae9de580486a475b800d4348f2ac41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '772024be835ba5b06595f2aee7017f6d') in 0.017278 seconds
+  Import took 0.019383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_GenericCliffB_Mobile.mat
+  artifactKey: Guid(9d1903eb1bcfb1d42acfbd4d8c7a90b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_GenericCliffB_Mobile.mat using Guid(9d1903eb1bcfb1d42acfbd4d8c7a90b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9897ce99260c73109b4119229f56a470') in 0.017799 seconds
+  Import took 0.019812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal3.mat
+  artifactKey: Guid(8a13124660987459291bac7cab4d6fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal3.mat using Guid(8a13124660987459291bac7cab4d6fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d40171ec577e102c5a8bf14775eb79') in 0.016426 seconds
+  Import took 0.018491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_SpruceLeaves.mat
+  artifactKey: Guid(28303f4da9d2ff541832c09ea9121e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_SpruceLeaves.mat using Guid(28303f4da9d2ff541832c09ea9121e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '834650fe4427863ee13dbb3c020c0dd1') in 0.013451 seconds
+  Import took 0.015220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Shields/FlatRoundShield.fbx
+  artifactKey: Guid(77f31d00b763d4c2786157dd486d6d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Shields/FlatRoundShield.fbx using Guid(77f31d00b763d4c2786157dd486d6d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44cd01039dc2066c6b7bf3f1b1c801a7') in 0.047799 seconds
+  Import took 0.049831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_LowRockMedium_Mobile.mat
+  artifactKey: Guid(fda213ba68a53de4da95946ef7f5dbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_LowRockMedium_Mobile.mat using Guid(fda213ba68a53de4da95946ef7f5dbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a05cb57982d883625c87b7f90379e3cd') in 0.027233 seconds
+  Import took 0.029309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/BlueWood1.mat
+  artifactKey: Guid(031f37e55cf9343bcbbebc393facb418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/BlueWood1.mat using Guid(031f37e55cf9343bcbbebc393facb418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aba9ec7d252a18f090d011f4f100faa') in 0.011336 seconds
+  Import took 0.013509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterHP/RedHP.mat
+  artifactKey: Guid(35305181e90534745b25a3b3799091a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterHP/RedHP.mat using Guid(35305181e90534745b25a3b3799091a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20effdad71bf2f85771211eac3362ba5') in 0.022555 seconds
+  Import took 0.024671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Models and textures/Knights/Lancelot/Materials/Lancelot_MAT.mat
+  artifactKey: Guid(30ee43ba3deebba48aabcf4f3c8db978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knights/Lancelot/Materials/Lancelot_MAT.mat using Guid(30ee43ba3deebba48aabcf4f3c8db978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828937d9a3c9be76fb31929514830a68') in 0.016517 seconds
+  Import took 0.018288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6ccae29825145d3355014fc0db4c6d9') in 0.015071 seconds
+  Import took 0.016855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterPBR/BluePBR.mat
+  artifactKey: Guid(5fcde950c31077243850f23d14ba9a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterPBR/BluePBR.mat using Guid(5fcde950c31077243850f23d14ba9a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0506a77d24a390fa253ef0b417f906e') in 0.031543 seconds
+  Import took 0.034628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_GenericCliffA_DiffuseMobile.mat
+  artifactKey: Guid(c38516a998ce6e94d922ad82a424e9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_GenericCliffA_DiffuseMobile.mat using Guid(c38516a998ce6e94d922ad82a424e9c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2c07f17532ac24eea4e5526bfb90bc') in 0.018097 seconds
+  Import took 0.019922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Models and textures/FreeDragons/Materials/DragonBoarPBR/RedPBR.mat
+  artifactKey: Guid(73c9ddefc022e2c4d8dc53890b1738b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/FreeDragons/Materials/DragonBoarPBR/RedPBR.mat using Guid(73c9ddefc022e2c4d8dc53890b1738b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5240076b6df2cddf102f607d6c7b5014') in 0.148801 seconds
+  Import took 0.153789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal10.mat
+  artifactKey: Guid(7b8c1c20d995f4dc08a80f0affc8cb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal10.mat using Guid(7b8c1c20d995f4dc08a80f0affc8cb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1680997fc40a0a36eca9c539f5d3a25e') in 0.017109 seconds
+  Import took 0.018933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Models and textures/Custom materials/Black smooth.mat
+  artifactKey: Guid(36018c0e5ba7488458fb09dadfabe35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Custom materials/Black smooth.mat using Guid(36018c0e5ba7488458fb09dadfabe35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec39b8cfdb9fa81ad0f9082cd869219') in 0.008943 seconds
+  Import took 0.010738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Models and textures/Knights/Tristan/Materials/Paladin_MAT.mat
+  artifactKey: Guid(c693ac580e493c84fbeba21a55e9bfe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knights/Tristan/Materials/Paladin_MAT.mat using Guid(c693ac580e493c84fbeba21a55e9bfe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad4e5967e9e1fdff93ea91556dbb873a') in 0.016373 seconds
+  Import took 0.018792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/WhiteLeather2.mat
+  artifactKey: Guid(061cbfc17e0d54d74bfe2b0b2c6a4f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/WhiteLeather2.mat using Guid(061cbfc17e0d54d74bfe2b0b2c6a4f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583714be215348a8dd4418ef9405e1e9') in 0.009813 seconds
+  Import took 0.011608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_Cave.mat
+  artifactKey: Guid(a1ecfe9351629e545834c8caa2156f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_Cave.mat using Guid(a1ecfe9351629e545834c8caa2156f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e6ea4218c34849e4995bc6202f2a34') in 0.040526 seconds
+  Import took 0.044785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_CaveTop.mat
+  artifactKey: Guid(512599429162124479bce8a91fff86a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_CaveTop.mat using Guid(512599429162124479bce8a91fff86a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20909b72f5ed1949bdff7e309b357a9') in 0.028207 seconds
+  Import took 0.031956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Wood1.mat
+  artifactKey: Guid(0de97a42db5644e2185aff18f2f29f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Wood1.mat using Guid(0de97a42db5644e2185aff18f2f29f8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289406ceab8ba4d506e4f523745b20b3') in 0.011375 seconds
+  Import took 0.013559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Swords/Claymore.fbx
+  artifactKey: Guid(6f2ad18403f814ba49314f1ff756d249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Swords/Claymore.fbx using Guid(6f2ad18403f814ba49314f1ff756d249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f496b7414f9e69c48c080fe9ec876e9') in 0.048403 seconds
+  Import took 0.050308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_GenericCliffA.mat
+  artifactKey: Guid(478e0b09975d17c428b33b74656eba2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_GenericCliffA.mat using Guid(478e0b09975d17c428b33b74656eba2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23597a38dc0ee4765894d2da06ab3419') in 0.032045 seconds
+  Import took 0.035461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal7.mat
+  artifactKey: Guid(c2cceb3264919414fa6fdb1242154805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal7.mat using Guid(c2cceb3264919414fa6fdb1242154805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8ac4fa1afd0dabbca6ea2fdf6584695') in 0.016984 seconds
+  Import took 0.019302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001227 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal5.mat
+  artifactKey: Guid(d213616f10ad849929cbf4f3339a00f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal5.mat using Guid(d213616f10ad849929cbf4f3339a00f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f3d94514939d65245c4245fe5b944d') in 0.015931 seconds
+  Import took 0.017809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ef0368f8182af43b07e47223d61fd3') in 0.060534 seconds
+  Import took 0.062484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/LeatherNormal.mat
+  artifactKey: Guid(3f589183bba78428798d17cdabc652fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/LeatherNormal.mat using Guid(3f589183bba78428798d17cdabc652fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be62d10ac2571f17e39730fef7f6f43d') in 0.219880 seconds
+  Import took 0.221653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Shields/MetalKiteShield.fbx
+  artifactKey: Guid(6379deb2f238a4f2799236b4c51478ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Shields/MetalKiteShield.fbx using Guid(6379deb2f238a4f2799236b4c51478ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a562be737b62a0ce2c32e7ed88029e8') in 0.146393 seconds
+  Import took 0.148253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/HandlePattern3.mat
+  artifactKey: Guid(ca1cfa642067148a9905d6d052df033b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/HandlePattern3.mat using Guid(ca1cfa642067148a9905d6d052df033b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3646b4e65ef243c547330d3d115c4fcb') in 0.017161 seconds
+  Import took 0.019036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Models and textures/FreeDragons/Materials/DragonBoarPBR/GreenPBR.mat
+  artifactKey: Guid(2c1ae55f713e6434eaeec26f629100bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/FreeDragons/Materials/DragonBoarPBR/GreenPBR.mat using Guid(2c1ae55f713e6434eaeec26f629100bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b28f29640ed943be2ee6d9caa41367') in 0.087831 seconds
+  Import took 0.092736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterHP/GreenHP.mat
+  artifactKey: Guid(378b1863f9b87ec46a0086912f6e8fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterHP/GreenHP.mat using Guid(378b1863f9b87ec46a0086912f6e8fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe1ea6447009f91853394614fc8d4c9') in 0.017210 seconds
+  Import took 0.019979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001142 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumC.mat
+  artifactKey: Guid(8f52d028c029b574ca501879a81d8bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumC.mat using Guid(8f52d028c029b574ca501879a81d8bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca7f9e1bafe4733f27b0a561824bf6d6') in 0.048161 seconds
+  Import took 0.051512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/BlackLeather4.mat
+  artifactKey: Guid(78a4c5a8fb80345fd9ebc03025e0994f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/BlackLeather4.mat using Guid(78a4c5a8fb80345fd9ebc03025e0994f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e61aa8189b11e5cf7a2baab861cbbf1') in 0.009143 seconds
+  Import took 0.010849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_LowRockMedium.mat
+  artifactKey: Guid(acfb34e7f1f1e034ab5611b5985295a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_LowRockMedium.mat using Guid(acfb34e7f1f1e034ab5611b5985295a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dde6ee20ea6f783f51b09a042783d87') in 0.045688 seconds
+  Import took 0.048781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/RedWood1.mat
+  artifactKey: Guid(89e1da63db5c140b086b186569b7a2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/RedWood1.mat using Guid(89e1da63db5c140b086b186569b7a2f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87fe1931df8f8e100303596a5e80d3ce') in 0.011725 seconds
+  Import took 0.079894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal1.mat
+  artifactKey: Guid(6be6abdeb515e48d289d097eda590b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal1.mat using Guid(6be6abdeb515e48d289d097eda590b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '281d80fe8630a4c7d72b0c519c442b81') in 0.015557 seconds
+  Import took 0.017411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Models and textures/FreeDragons/Materials/DragonBoarPBR/BluePBR.mat
+  artifactKey: Guid(47ea938179c096840b80ea73fa8d50e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/FreeDragons/Materials/DragonBoarPBR/BluePBR.mat using Guid(47ea938179c096840b80ea73fa8d50e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3323ff05666fc8056ceb09b504b5eb0') in 0.062516 seconds
+  Import took 0.067640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterPBR/RedPBR.mat
+  artifactKey: Guid(483bc84e9c06fb74a978565bf66ff42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterPBR/RedPBR.mat using Guid(483bc84e9c06fb74a978565bf66ff42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c598da816f17e0a836af8cd287f663') in 0.027096 seconds
+  Import took 0.030729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterPBR/GreenPBR.mat
+  artifactKey: Guid(1b51484aceb3349479b6c084713a5517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterPBR/GreenPBR.mat using Guid(1b51484aceb3349479b6c084713a5517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5ce3901f57c77b635f438250a9b112') in 0.032501 seconds
+  Import took 0.035883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_RockDetails.mat
+  artifactKey: Guid(9cf4f2921db99934bb6054905cbbb64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_RockDetails.mat using Guid(9cf4f2921db99934bb6054905cbbb64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d608bdbc025c744564984c047bad877') in 0.025770 seconds
+  Import took 0.027887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1ee09ba2a8c187ecd277ffd6712b78') in 0.063023 seconds
+  Import took 0.065051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal2.mat
+  artifactKey: Guid(1db2b34e6a70d4cbabeaf001da8f8003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal2.mat using Guid(1db2b34e6a70d4cbabeaf001da8f8003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d267ce58c832095cb9247e68df31ed1') in 0.016410 seconds
+  Import took 0.018293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/LionCenter.mat
+  artifactKey: Guid(cde3468f1323d4e86884e98929c1940d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/LionCenter.mat using Guid(cde3468f1323d4e86884e98929c1940d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d842c570e67963e67fc93acb272c8b2') in 0.012132 seconds
+  Import took 0.013964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/BlueBattered.mat
+  artifactKey: Guid(52ea4b92ae9954c35931e36b3ae948fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/BlueBattered.mat using Guid(52ea4b92ae9954c35931e36b3ae948fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ac02621dc9c929239473b5009eae04') in 0.013734 seconds
+  Import took 0.015857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Models and textures/Knights/Gawain/Materials/Paladin_MAT.mat
+  artifactKey: Guid(dd25acba1686fdc498c5e62f6936bb08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knights/Gawain/Materials/Paladin_MAT.mat using Guid(dd25acba1686fdc498c5e62f6936bb08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5022cbe98ec755197bf21daace098a23') in 0.015762 seconds
+  Import took 0.017517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/RedBattered.mat
+  artifactKey: Guid(f203ac5bf109245ceb05a110a103cc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/RedBattered.mat using Guid(f203ac5bf109245ceb05a110a103cc77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9bd63f356bf44340c4540c4791c9dd') in 0.013778 seconds
+  Import took 0.015735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Swords/Sword.fbx
+  artifactKey: Guid(a583d2f58bee942b9870479663775a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Swords/Sword.fbx using Guid(a583d2f58bee942b9870479663775a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '036c823ebcb40517d41d75448771af85') in 0.040022 seconds
+  Import took 0.042009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/LeatherHandle 1.mat
+  artifactKey: Guid(350d435dbfc7d43b089e059bbcda7bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/LeatherHandle 1.mat using Guid(350d435dbfc7d43b089e059bbcda7bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b66e121aa9dbc51e26b9b71e81baeda8') in 0.013444 seconds
+  Import took 0.015251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal8.mat
+  artifactKey: Guid(1ef0fb5569dfa4dcd88310a8bafae4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal8.mat using Guid(1ef0fb5569dfa4dcd88310a8bafae4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f560017b21be0ba13ce36a5625e91da') in 0.013526 seconds
+  Import took 0.015425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/BlackBattered.mat
+  artifactKey: Guid(177698c4c178c4d189f9ad339a37302a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/BlackBattered.mat using Guid(177698c4c178c4d189f9ad339a37302a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceea9102a79cc8f7bf70821183fe1ce4') in 0.015746 seconds
+  Import took 0.017646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterHP/GreyHP.mat
+  artifactKey: Guid(37ba4f0025b9316488ee77c4a8ec9066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterHP/GreyHP.mat using Guid(37ba4f0025b9316488ee77c4a8ec9066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c12bc0fba6440cffd32e68e30d62da') in 0.025837 seconds
+  Import took 0.027971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Models and textures/Free_Rocks/_material/rocks.mat
+  artifactKey: Guid(c25c85fb524f04ea5b7f96dd8eb6cebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Free_Rocks/_material/rocks.mat using Guid(c25c85fb524f04ea5b7f96dd8eb6cebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e5395f3ea86e906a0bb9e1a5e3eb138') in 0.077196 seconds
+  Import took 0.081385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/WhiteBattered.mat
+  artifactKey: Guid(4cd415824742f48d39edf5940f47a5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/WhiteBattered.mat using Guid(4cd415824742f48d39edf5940f47a5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e8bd4f20024e806cac17efdc461cb90') in 0.010819 seconds
+  Import took 0.012749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Models and textures/Knight with weapon/Gawain/Materials/Paladin_MAT.mat
+  artifactKey: Guid(e70b15447f49d2d4fb43edf63b2beaab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Gawain/Materials/Paladin_MAT.mat using Guid(e70b15447f49d2d4fb43edf63b2beaab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b0d2a622bef8caa8043fbb280d37a4') in 0.025833 seconds
+  Import took 0.027624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumB.mat
+  artifactKey: Guid(0a535cf27e7d7dd4d8857f6b49fbbea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumB.mat using Guid(0a535cf27e7d7dd4d8857f6b49fbbea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56eb7c62d4d75c134e74f9e28001a944') in 0.045995 seconds
+  Import took 0.048874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal12.mat
+  artifactKey: Guid(78edf4bd75bf744fb9ac21c757dfd0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal12.mat using Guid(78edf4bd75bf744fb9ac21c757dfd0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da321784cbe3c3e99fe64267a014cd27') in 0.016759 seconds
+  Import took 0.018553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Models and textures/FreeDragons/Materials/DragonBoarPBR/GoldPBR.mat
+  artifactKey: Guid(0d6b32f7a1327524f8e933d4e0c86b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/FreeDragons/Materials/DragonBoarPBR/GoldPBR.mat using Guid(0d6b32f7a1327524f8e933d4e0c86b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ba57a758652fa8d19c1d086a267e478') in 0.085770 seconds
+  Import took 0.090595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Models and textures/Knights/Paladin/Materials/Paladin_MAT.mat
+  artifactKey: Guid(7aa803e16c5779f4ba9e0d1d65b04063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knights/Paladin/Materials/Paladin_MAT.mat using Guid(7aa803e16c5779f4ba9e0d1d65b04063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d06f7cdab5e299c30a622bd61cc451') in 0.014988 seconds
+  Import took 0.017045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/BlackLeather3.mat
+  artifactKey: Guid(2866fbd704bea4f139ac4a62650d3e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/BlackLeather3.mat using Guid(2866fbd704bea4f139ac4a62650d3e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7217d8f2089c2f8c477027c2ad2c525') in 0.009031 seconds
+  Import took 0.010778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterHP/BlueHP.mat
+  artifactKey: Guid(223014bfc9b7f824c817068ce2158d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/FreeDragons/Materials/DragonSoulEaterHP/BlueHP.mat using Guid(223014bfc9b7f824c817068ce2158d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee3c67c4ae6d331f16c6b2133d724cd7') in 0.016752 seconds
+  Import took 0.018696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Shields/Buckler.fbx
+  artifactKey: Guid(a5084bd8676d745a1a7c70f4fdec30de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Shields/Buckler.fbx using Guid(a5084bd8676d745a1a7c70f4fdec30de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a193e6db425698810b88c814887009f1') in 0.036302 seconds
+  Import took 0.038529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Models and textures/Knights/Galahad/Materials/Paladin_MAT.mat
+  artifactKey: Guid(dd7810d2f430307478f35d6170a2dce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knights/Galahad/Materials/Paladin_MAT.mat using Guid(dd7810d2f430307478f35d6170a2dce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac59e61bc87408e37a7e9bcbc82c2255') in 0.015732 seconds
+  Import took 0.017517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumA _Mobile.mat
+  artifactKey: Guid(07fc53a408f46fe4c8f16f3f168693b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Toby Fredson - Rocky Hill/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumA _Mobile.mat using Guid(07fc53a408f46fe4c8f16f3f168693b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea082e98ba5d43b96370c29b193d71fc') in 0.014036 seconds
+  Import took 0.016262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal4.mat
+  artifactKey: Guid(545a89abd1f8c41d2a51557b42e0a598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal4.mat using Guid(545a89abd1f8c41d2a51557b42e0a598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610fc00bd33337227debb6d6146045b1') in 0.015828 seconds
+  Import took 0.017779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal11.mat
+  artifactKey: Guid(09f33331d6e9a482ba66aa154c14905f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Metal11.mat using Guid(09f33331d6e9a482ba66aa154c14905f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0adbdf41bf7f0df2e6b0b38615c916bf') in 0.010840 seconds
+  Import took 0.012754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/LeatherHandle.mat
+  artifactKey: Guid(46f31ef35ba81451bb18df682a74a2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/LeatherHandle.mat using Guid(46f31ef35ba81451bb18df682a74a2b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4641b9bbdbfcc00adf179f50fd084db') in 0.010379 seconds
+  Import took 0.012431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/FluerdelisCenter.mat
+  artifactKey: Guid(fe3c5a6ad3661499aa68c9c603dd87b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/FluerdelisCenter.mat using Guid(fe3c5a6ad3661499aa68c9c603dd87b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0b6fdd15954a32ab474d0a1e7d91d0') in 0.014595 seconds
+  Import took 0.016406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Swords/Broadsword.fbx
+  artifactKey: Guid(1ba1e05f3a0544e55be999543da9ce33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Swords/Broadsword.fbx using Guid(1ba1e05f3a0544e55be999543da9ce33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e50268706b144449989dda81b73bf87') in 0.112522 seconds
+  Import took 0.115006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/Wood3.mat
+  artifactKey: Guid(ed0e763fcdd524287b0728171d7dbd58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/Wood3.mat using Guid(ed0e763fcdd524287b0728171d7dbd58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ee4ac6d0ca7f3ed53440027188148f7') in 0.011896 seconds
+  Import took 0.013772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/LeatherPattern.mat
+  artifactKey: Guid(c5ca3057d69d44265a5f9934daa9c669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/LeatherPattern.mat using Guid(c5ca3057d69d44265a5f9934daa9c669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c840cf7c6860a80e4608949307ecda') in 0.015739 seconds
+  Import took 0.017935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/DarkLeather1.mat
+  artifactKey: Guid(1b8738aefd717433598505d85f10abfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/DarkLeather1.mat using Guid(1b8738aefd717433598505d85f10abfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c2228322e402ab0338e0391c4d847c') in 0.009835 seconds
+  Import took 0.011791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Materials/BlackWood2.mat
+  artifactKey: Guid(a3ce84637d9bf4402a95555af24c76be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Materials/BlackWood2.mat using Guid(a3ce84637d9bf4402a95555af24c76be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9d58d609b5537887c2985a8839e46e') in 0.011016 seconds
+  Import took 0.012872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Models and textures/To Arms! Shield and Sword/Shields/NomadShield.fbx
+  artifactKey: Guid(dd9cf0668f7194292b9c8a5a941abbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/To Arms! Shield and Sword/Shields/NomadShield.fbx using Guid(dd9cf0668f7194292b9c8a5a941abbba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '239bb1a077d6f60d0267d7b5f9271d2e') in 0.039102 seconds
+  Import took 0.041205 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 137.9 MB.
+System memory in use after: 138.0 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1816.
+Total: 1.746500 ms (FindLiveObjects: 0.176600 ms CreateObjectMapping: 0.029000 ms MarkObjects: 1.531100 ms  DeleteObjects: 0.009200 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000737 seconds.
+Registered in 0.000706 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.780 seconds
+- Completed reload, in  0.654 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1279 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.1 MB.
+System memory in use after: 163.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1819.
+Total: 1.407800 ms (FindLiveObjects: 0.129200 ms CreateObjectMapping: 0.029600 ms MarkObjects: 1.235600 ms  DeleteObjects: 0.012500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1051.937840 seconds.
+  path: Assets/Matt-Environment/Cave Entrance.unity
+  artifactKey: Guid(27326a7fdf16f204ea8b1d63d51a1ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Matt-Environment/Cave Entrance.unity using Guid(27326a7fdf16f204ea8b1d63d51a1ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05015d1fb6f1a60fcd0b467215dbf96f') in 0.012745 seconds
+  Import took 0.015351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.025426 seconds.
+  path: Assets/Models and textures/Knight with weapon/Knight 5 - Geraint.prefab
+  artifactKey: Guid(b804637e50521a74f8a525884c33c63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Knight 5 - Geraint.prefab using Guid(b804637e50521a74f8a525884c33c63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0b9cb1e2088bc49c89b1295978ff158') in 0.082757 seconds
+  Import took 0.085538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.662183 seconds.
+  path: Assets/Models and textures/Knight with weapon/Extra knight.prefab
+  artifactKey: Guid(b804637e50521a74f8a525884c33c63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Extra knight.prefab using Guid(b804637e50521a74f8a525884c33c63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e68d25317f8810e68146a67dcc10993c') in 0.022945 seconds
+  Import took 0.025777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.872655 seconds.
+  path: Assets/CUTSCENE ITEMS/Cutscene_ending.playable
+  artifactKey: Guid(732fbc16c2a057148b1609a861f21440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/Cutscene_ending.playable using Guid(732fbc16c2a057148b1609a861f21440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd529cc2191b147a4aa14fef7b2e5a3') in 0.020112 seconds
+  Import took 0.022264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.666467 seconds.
+  path: Assets/Matt-Environment/Cave Inside.unity
+  artifactKey: Guid(47c837fde43247a4d9626eab7b57f4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Matt-Environment/Cave Inside.unity using Guid(47c837fde43247a4d9626eab7b57f4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137c6121cae793f25c902f34ec13a2b8') in 0.004067 seconds
+  Import took 0.014702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 498.278699 seconds.
+  path: Assets/Models and textures/Knight with weapon/Lancelot-Sword Variant.prefab
+  artifactKey: Guid(2ed428d33a059124e939c5d107fd22b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Lancelot-Sword Variant.prefab using Guid(2ed428d33a059124e939c5d107fd22b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca96115caa03f7ef564fdb16f1a4f5c') in 0.028712 seconds
+  Import took 0.031699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.862124 seconds.
+  path: Assets/Models and textures/Knight with weapon/Tristan -Sword Variant.prefab
+  artifactKey: Guid(cad141c14686a5e4186c01bffe4575a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Tristan -Sword Variant.prefab using Guid(cad141c14686a5e4186c01bffe4575a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c3eb062595badd0707c49eabc7b671d') in 0.019028 seconds
+  Import took 0.021791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.524508 seconds.
+  path: Assets/Models and textures/Knight with weapon/Gawain-Sword Variant.prefab
+  artifactKey: Guid(2cd3dac2a00fd5a47aa8fcc8381e17ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Gawain-Sword Variant.prefab using Guid(2cd3dac2a00fd5a47aa8fcc8381e17ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9591ff24f6cefc2f83c233f22dbb445a') in 0.019184 seconds
+  Import took 0.021877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.965767 seconds.
+  path: Assets/Models and textures/Knight with weapon/Galahad-Sword Variant.prefab
+  artifactKey: Guid(1b77101ad42eac247864fcd9e9b6f08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Galahad-Sword Variant.prefab using Guid(1b77101ad42eac247864fcd9e9b6f08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd349bef4a8f1f246fcbb2d9db1d74171') in 0.025923 seconds
+  Import took 0.028551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.254698 seconds.
+  path: Assets/Models and textures/Knight with weapon/Knight 5 - Geraint.prefab
+  artifactKey: Guid(5ec4f5896313f51449a3d29f1e94008f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Knight 5 - Geraint.prefab using Guid(5ec4f5896313f51449a3d29f1e94008f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a9c5403f2f1762fafb3ae0e0416ae16') in 0.021559 seconds
+  Import took 0.024535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.752629 seconds.
+  path: Assets/Models and textures/Knight with weapon/Knight 6 - Percival.prefab
+  artifactKey: Guid(e2589a158d6c5fe4faaae1efddc88c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Knight 6 - Percival.prefab using Guid(e2589a158d6c5fe4faaae1efddc88c8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d24feaa67a46affa08f4ec742731fd7') in 0.019794 seconds
+  Import took 0.022686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.054620 seconds.
+  path: Assets/Models and textures/Knight with weapon/Knight 7 - Bors the Younger.prefab
+  artifactKey: Guid(6135d12ce3f0f3b47bbfbf8c05f1943d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Knight 7 - Bors the Younger.prefab using Guid(6135d12ce3f0f3b47bbfbf8c05f1943d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '973b390669e9de3bd134bf0be4c1ee4c') in 0.019952 seconds
+  Import took 0.022424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.553791 seconds.
+  path: Assets/Models and textures/Knight with weapon/Knight 8 - Lamorak.prefab
+  artifactKey: Guid(0bb32e7e47f648548a0fdfb1b221667a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Knight 8 - Lamorak.prefab using Guid(0bb32e7e47f648548a0fdfb1b221667a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e5837b25d98b2967c034077f9928fad') in 0.024981 seconds
+  Import took 0.027481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.560891 seconds.
+  path: Assets/Models and textures/Knight with weapon/Knight 9 - Kay.prefab
+  artifactKey: Guid(e79f7e82b3ffafb4d9430bdbb2a906d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Knight 9 - Kay.prefab using Guid(e79f7e82b3ffafb4d9430bdbb2a906d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c4e46e9226c93a2b095628e9ea7a585') in 0.018407 seconds
+  Import took 0.020847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001783 seconds.
+  path: Assets/Models and textures/Knight with weapon/Knight 9 - Kay.prefab
+  artifactKey: Guid(e79f7e82b3ffafb4d9430bdbb2a906d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Knight 9 - Kay.prefab using Guid(e79f7e82b3ffafb4d9430bdbb2a906d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c4e46e9226c93a2b095628e9ea7a585') in 0.017384 seconds
+  Import took 0.020215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.918986 seconds.
+  path: Assets/Models and textures/Knight with weapon/Knight 10 - Gareth.prefab
+  artifactKey: Guid(844fcc44c1a619b4e8e930b80776e9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Knight 10 - Gareth.prefab using Guid(844fcc44c1a619b4e8e930b80776e9d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cecbae062724ee153f32d675c97e2cc') in 0.019161 seconds
+  Import took 0.021821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.273182 seconds.
+  path: Assets/Models and textures/Knight with weapon/Knight 11 - Gaheris.prefab
+  artifactKey: Guid(2f2150b2129d0614d9535552a70541db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Knight 11 - Gaheris.prefab using Guid(2f2150b2129d0614d9535552a70541db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01c2be8b1dd8c18a69840085a94a3d9f') in 0.019923 seconds
+  Import took 0.036459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.624588 seconds.
+  path: Assets/Models and textures/Knight with weapon/Knight 12 - Bedivere.prefab
+  artifactKey: Guid(269d5e0c3e288cf41a5379a17a3fc5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Knight 12 - Bedivere.prefab using Guid(269d5e0c3e288cf41a5379a17a3fc5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe41521fdad3a1ed50804c5a33f2ff8') in 0.021800 seconds
+  Import took 0.024599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.697865 seconds.
+  path: Assets/Models and textures/Knight with weapon/Knight 13 - Palamedes.prefab
+  artifactKey: Guid(89f6938158394f543a37d103f12e23d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models and textures/Knight with weapon/Knight 13 - Palamedes.prefab using Guid(89f6938158394f543a37d103f12e23d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efb162c12b84d7bb5fe53bb410e4b33') in 0.022079 seconds
+  Import took 0.024796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.487885 seconds.
+  path: Assets/Matt-Environment/Cave Inside.unity
+  artifactKey: Guid(47c837fde43247a4d9626eab7b57f4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Matt-Environment/Cave Inside.unity using Guid(47c837fde43247a4d9626eab7b57f4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd9bdc600fde4b4d850e27c100650e51') in 0.003767 seconds
+  Import took 0.005791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5249.056040 seconds.
+  path: Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Gold_Nodes_MT_S.png
+  artifactKey: Guid(6b722c1f8285de0469918a4c5c6c83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Gold_Nodes_MT_S.png using Guid(6b722c1f8285de0469918a4c5c6c83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc0d432f8b3d8681cb89099699dfbdb3') in 0.038330 seconds
+  Import took 0.042333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Goldmine_MT_S.png
+  artifactKey: Guid(00fa4c5c5cd2a064aafb677a1aa36f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Goldmine_MT_S.png using Guid(00fa4c5c5cd2a064aafb677a1aa36f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc4a2db8a3ec7a15cef4f81efe38e51b') in 0.032186 seconds
+  Import took 0.035404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Goldmine_AO.png
+  artifactKey: Guid(668e0e70f6de2784ebeb03469d2c069a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Goldmine_AO.png using Guid(668e0e70f6de2784ebeb03469d2c069a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '977cace2710cb8bfbc89fbb2c90ccd28') in 0.034939 seconds
+  Import took 0.037555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Gold_Nodes_MT_S.png
+  artifactKey: Guid(6b722c1f8285de0469918a4c5c6c83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Gold_Nodes_MT_S.png using Guid(6b722c1f8285de0469918a4c5c6c83ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc0d432f8b3d8681cb89099699dfbdb3') in 0.009117 seconds
+  Import took 0.010935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Goldmine_E.png
+  artifactKey: Guid(7d22a7e3e1c710649943a7164d30bf54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Goldmine_E.png using Guid(7d22a7e3e1c710649943a7164d30bf54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83a020a6c27fdaeff707263255efac7a') in 0.018865 seconds
+  Import took 0.021388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Gold_Nodes_N.png
+  artifactKey: Guid(941a771c34efc69499e5ae3c77aa57e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Gold_Nodes_N.png using Guid(941a771c34efc69499e5ae3c77aa57e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '361e6a298f9f6f4b4c68a5c2a2292a1c') in 0.015199 seconds
+  Import took 0.017255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Goldmine_BC.png
+  artifactKey: Guid(f21ebc3b37fe1e7439f6f7c483dc3c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TriForge Assets/Top Down - Fantasy Forest/Textures/T_Goldmine_BC.png using Guid(f21ebc3b37fe1e7439f6f7c483dc3c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b7cac1fd26f3cb976c07188ac5619c') in 0.020996 seconds
+  Import took 0.023662 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000917 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.761 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1278 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.9 MB.
-System memory in use after: 151.0 MB.
+Unloading 1281 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 174.8 MB.
+System memory in use after: 174.8 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1784.
-Total: 2.052100 ms (FindLiveObjects: 0.321400 ms CreateObjectMapping: 0.091800 ms MarkObjects: 1.622100 ms  DeleteObjects: 0.014800 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1827.
+Total: 1.572500 ms (FindLiveObjects: 0.136000 ms CreateObjectMapping: 0.028900 ms MarkObjects: 1.267700 ms  DeleteObjects: 0.138800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1831.152392 seconds.
+  Time since last request: 900.559726 seconds.
+  path: Assets/QuickOutline/Readme.txt
+  artifactKey: Guid(5933bfd39d7a5b843a0ed821f85bca19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/QuickOutline/Readme.txt using Guid(5933bfd39d7a5b843a0ed821f85bca19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ab1e5b4cabcc9aa54a94b3589d939e3') in 0.044242 seconds
+  Import took 0.046421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 178.605191 seconds.
+  path: Assets/QuickOutline/Resources/Materials/OutlineFill.mat
+  artifactKey: Guid(311313efa011949e98b6761d652ad13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/QuickOutline/Resources/Materials/OutlineFill.mat using Guid(311313efa011949e98b6761d652ad13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6062c734499d97a01a0db7ee4a0eb7f9') in 0.045658 seconds
+  Import took 0.047888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/QuickOutline/Resources/Materials/OutlineMask.mat
+  artifactKey: Guid(106f3ff43a17d4967a2b64c7a92e49ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/QuickOutline/Resources/Materials/OutlineMask.mat using Guid(106f3ff43a17d4967a2b64c7a92e49ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c337912ad61639ac7fe18b01ecf67d38') in 0.084918 seconds
+  Import took 0.086676 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000730 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.669 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1281 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 174.8 MB.
+System memory in use after: 174.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1832.
+Total: 1.346000 ms (FindLiveObjects: 0.127500 ms CreateObjectMapping: 0.028200 ms MarkObjects: 1.178500 ms  DeleteObjects: 0.011100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2003.916890 seconds.
   path: Assets/CUTSCENE ITEMS/Cutscene_ending.playable
   artifactKey: Guid(732fbc16c2a057148b1609a861f21440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CUTSCENE ITEMS/Cutscene_ending.playable using Guid(732fbc16c2a057148b1609a861f21440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f0b4b9fae599e1bb1a52dd43dbb95e') in 0.037994 seconds
-  Import took 0.040806 seconds .
+Start importing Assets/CUTSCENE ITEMS/Cutscene_ending.playable using Guid(732fbc16c2a057148b1609a861f21440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf03c08b7deef9d8b35a6b337669cbc') in 0.055715 seconds
+  Import took 0.058862 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.937884 seconds.
-  path: Assets/CUTSCENE ITEMS/Cutscene_timeline.playable
-  artifactKey: Guid(6bcf9139bb1b4fb428f681f209589a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CUTSCENE ITEMS/Cutscene_timeline.playable using Guid(6bcf9139bb1b4fb428f681f209589a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed668012e26c38ea5d061846d9376618') in 0.041625 seconds
-  Import took 0.045577 seconds .
+  Time since last request: 19.507108 seconds.
+  path: Assets/CUTSCENE ITEMS/Dialogue Audio/Lancelot lines/Lancelot cave line 1.mp3
+  artifactKey: Guid(2b56c335eca4ae048a4c2431bfbd9878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/Dialogue Audio/Lancelot lines/Lancelot cave line 1.mp3 using Guid(2b56c335eca4ae048a4c2431bfbd9878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '239309bd65071c3e4aab646e8a884045') in 0.057328 seconds
+  Import took 0.059539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/CUTSCENE ITEMS/Dialogue Audio/Lancelot lines/Lancelot cave line 4.mp3
+  artifactKey: Guid(8fd638b16dabbc3408a253c78e62542a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/Dialogue Audio/Lancelot lines/Lancelot cave line 4.mp3 using Guid(8fd638b16dabbc3408a253c78e62542a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d3e2922882b10030c12b65f69c73fc') in 0.008558 seconds
+  Import took 0.010209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/CUTSCENE ITEMS/Dialogue Audio/Lancelot lines/Lancelot cave line 2.mp3
+  artifactKey: Guid(0a0774f651de2414ba722b1650cc316d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/Dialogue Audio/Lancelot lines/Lancelot cave line 2.mp3 using Guid(0a0774f651de2414ba722b1650cc316d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e4b7a1333c608199356ae336c5350f') in 0.008298 seconds
+  Import took 0.010354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/CUTSCENE ITEMS/Dialogue Audio/Lancelot lines/Lancelot cave line 3.mp3
+  artifactKey: Guid(95fd1d3fadccf3c4aa058e6501bb844d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/Dialogue Audio/Lancelot lines/Lancelot cave line 3.mp3 using Guid(95fd1d3fadccf3c4aa058e6501bb844d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7132f59826905ea7879325eb8a76f2df') in 0.010171 seconds
+  Import took 0.012043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 620.344118 seconds.
+  path: Assets/CUTSCENE ITEMS/Cutscene_ending.playable
+  artifactKey: Guid(732fbc16c2a057148b1609a861f21440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/Cutscene_ending.playable using Guid(732fbc16c2a057148b1609a861f21440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21eebca783e7db82df0132ca3530db98') in 0.020550 seconds
+  Import took 0.023462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 271.995480 seconds.
+  path: Assets/CUTSCENE ITEMS/Dialogue Audio/Hail, King Arthur!.mp3
+  artifactKey: Guid(564611ee5efe3f346bb0464f4091f912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/Dialogue Audio/Hail, King Arthur!.mp3 using Guid(564611ee5efe3f346bb0464f4091f912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddebe23818f64ef0ff4221c927bc7492') in 0.010171 seconds
+  Import took 0.012757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 120.570531 seconds.
+  path: Assets/Matt-Environment/Cave Inside.unity
+  artifactKey: Guid(47c837fde43247a4d9626eab7b57f4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Matt-Environment/Cave Inside.unity using Guid(47c837fde43247a4d9626eab7b57f4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e693dd19a9c293465eedfe070ae6e7') in 0.004235 seconds
+  Import took 0.006340 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000653 seconds.
+Registered in 0.000991 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.749 seconds
+- Completed reload, in  0.724 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1278 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.9 MB.
-System memory in use after: 151.0 MB.
+Unloading 1279 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 174.6 MB.
+System memory in use after: 174.8 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1786.
-Total: 1.649500 ms (FindLiveObjects: 0.156300 ms CreateObjectMapping: 0.041100 ms MarkObjects: 1.433900 ms  DeleteObjects: 0.017200 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1837.
+Total: 1.566000 ms (FindLiveObjects: 0.145100 ms CreateObjectMapping: 0.029000 ms MarkObjects: 1.378200 ms  DeleteObjects: 0.012400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.281144 seconds.
+  path: Assets/CUTSCENE ITEMS/Dialogue Audio/Arthur lines/Arthur cave line 1.mp3
+  artifactKey: Guid(fc60f4625ba3f5f46afe39324b0fac73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/Dialogue Audio/Arthur lines/Arthur cave line 1.mp3 using Guid(fc60f4625ba3f5f46afe39324b0fac73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daf8da4b93efcbb76b470c39c0fb1d26') in 0.061188 seconds
+  Import took 0.063538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 318.760894 seconds.
+  path: Assets/CUTSCENE ITEMS/Cutscene_ending.playable
+  artifactKey: Guid(732fbc16c2a057148b1609a861f21440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/Cutscene_ending.playable using Guid(732fbc16c2a057148b1609a861f21440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5888616307bc9976ab18992b52c02771') in 0.036492 seconds
+  Import took 0.039321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 202.204874 seconds.
+  path: Assets/CUTSCENE ITEMS/Dialogue Audio/Arthur lines/Arthur cave line 2.mp3
+  artifactKey: Guid(71d682ecedffa5543a751e3bd0f18460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/Dialogue Audio/Arthur lines/Arthur cave line 2.mp3 using Guid(71d682ecedffa5543a751e3bd0f18460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f4a86238a9005d7a576aae93d7504d') in 0.008876 seconds
+  Import took 0.011144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 393.498835 seconds.
+  path: Assets/CUTSCENE ITEMS/Cutscene_ending.playable
+  artifactKey: Guid(732fbc16c2a057148b1609a861f21440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/Cutscene_ending.playable using Guid(732fbc16c2a057148b1609a861f21440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7184882681c67763d6365a44d7508f60') in 0.017925 seconds
+  Import took 0.020898 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000585 seconds.
+Registered in 0.001286 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.728 seconds
+- Completed reload, in  0.678 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1278 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 150.9 MB.
-System memory in use after: 151.0 MB.
+Unloading 1279 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 174.7 MB.
+System memory in use after: 174.8 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1788.
-Total: 1.507200 ms (FindLiveObjects: 0.150000 ms CreateObjectMapping: 0.036900 ms MarkObjects: 1.306700 ms  DeleteObjects: 0.012600 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1840.
+Total: 1.432000 ms (FindLiveObjects: 0.129200 ms CreateObjectMapping: 0.029400 ms MarkObjects: 1.259300 ms  DeleteObjects: 0.013300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1607.115384 seconds.
+  path: Assets/CUTSCENE ITEMS/Dialogue Audio/Lancelot lines/Lancelot cave line 5.mp3
+  artifactKey: Guid(b5d99c366fe2f6a4aaa48dcbc6836fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CUTSCENE ITEMS/Dialogue Audio/Lancelot lines/Lancelot cave line 5.mp3 using Guid(b5d99c366fe2f6a4aaa48dcbc6836fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd38f19aeed8d0c117e2eb7fae6f77fa6') in 0.053846 seconds
+  Import took 0.056260 seconds .
 
