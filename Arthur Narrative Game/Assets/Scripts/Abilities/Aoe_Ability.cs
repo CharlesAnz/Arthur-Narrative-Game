@@ -23,7 +23,7 @@ public class Aoe_Ability : Ability
     {
         base.Use(user);
 
-        if (!Setup(user)) return;
+        if (!Conditions(user)) return;
 
         if (selfOrigin) origin = user.transform.position;
 

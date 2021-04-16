@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29ae035edc32de447921400b0ecd43ed, type: 3}
-  m_Name: Shield Block
+  m_Name: Ddraig's Protection
   m_EditorClassIdentifier: 
-  name: Shield Block
+  name: Ddraig's Protection
   description: Raise armor by 10 for 3 seconds
   icon: {fileID: 0}
   buffList:
   - amount: 10
     affects: 1
     duration: 5
-    durationTimer: -0.109589614
+    durationTimer: -0.02480594
     ramping: 0
   cc_Effects: []
   projectile: {fileID: 0}
@@ -34,5 +34,6 @@ MonoBehaviour:
   cooldown: 6
   animatorTrigger: ability2
   castTime: 0.5
-  cooldownTimer: -0.48376232
+  cooldownTimer: -28.581951
   targetType: 0
+  targetHit: {fileID: 0}
