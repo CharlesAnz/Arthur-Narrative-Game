@@ -211,9 +211,8 @@ public class CharacterCombat : MonoBehaviour
                         else
                         {
                             myStats.armor.RemoveModifier(buff.amount);
-                            if (armorBuffIndicator != null) armorBuffIndicator.SetActive(false);
                         }
-                            
+                        if (armorBuffIndicator != null) armorBuffIndicator.SetActive(false);
                         break;
 
 
@@ -240,10 +239,9 @@ public class CharacterCombat : MonoBehaviour
                         }
                         else
                         {
-                            if (damageBuffIndicator != null) damageBuffIndicator.SetActive(false);
                             myStats.damage.RemoveModifier(buff.amount);
                         }
-                            
+                        if (damageBuffIndicator != null) damageBuffIndicator.SetActive(false);
                         break;
 
 

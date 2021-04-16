@@ -11,7 +11,7 @@ public class Targeted_Ability : Ability
 
         Vector3 point = Vector3.zero;
 
-        if (!Setup(user)) return;
+        if (!Conditions(user)) return;
 
         if (targetType == TargetType.Self)
         {

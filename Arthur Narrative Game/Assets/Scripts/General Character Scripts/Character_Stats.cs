@@ -25,6 +25,7 @@ public class Character_Stats : MonoBehaviour
         {
             ability.SetCam(Camera.main);
             ability.cooldownTimer = 0;
+            ability.listenersAdded = false;
         }
         curHP = maxHP.GetValue();
     }

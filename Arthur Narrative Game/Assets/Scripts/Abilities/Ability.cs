@@ -12,6 +12,8 @@ public class Ability : ScriptableObject
     protected GameObject abilityUser = null;
     public Sprite icon = null;
 
+    public bool listenersAdded = false;
+
     public List<BufforDebuff> buffList = new List<BufforDebuff>();
 
     public List<CC_Effect> cc_Effects = new List<CC_Effect>();
@@ -63,8 +65,21 @@ public class Ability : ScriptableObject
         displacePos = interactor.transform.position;
     }
 
+    private void SetupListeners()
+    {
+        if (listenersAdded == true) return;
+
+        if (doesDamage) OnAbilityUse.AddListener(Damage);
+        if (doesHealing) OnAbilityUse.AddListener(Heal);
+        if (buffList.Count > 0) OnAbilityUse.AddListener(addBuff);
+        if (cc_Effects.Count > 0) OnAbilityUse.AddListener(addCC_Effect);
+        if (displacement.distance != 0) OnAbilityUse.AddListener(addDisplacement);
+
+        listenersAdded = true;
+    }
+
     //Checks if the cooldown is below, if not then nothing happens
-    protected bool Setup(GameObject interactor)
+    protected bool Conditions(GameObject interactor)
     {
         CharacterCombat combat = interactor.GetComponent<CharacterCombat>();
         CharacterAnimator anim = abilityUser.GetComponent<CharacterAnimator>();
@@ -95,12 +110,8 @@ public class Ability : ScriptableObject
         combat.CastTime = castTime;
         combat.SetAttackCooldown(castTime); //+ (1f / combat.attackSpeed));
 
-        if (doesDamage) OnAbilityUse.AddListener(Damage);
-        if (doesHealing) OnAbilityUse.AddListener(Heal);
-        if (buffList.Count > 0) OnAbilityUse.AddListener(addBuff);
-        if (cc_Effects.Count > 0) OnAbilityUse.AddListener(addCC_Effect);
-        if (displacement.distance != 0) OnAbilityUse.AddListener(addDisplacement);
 
+        SetupListeners();
 
         return true;
     }
