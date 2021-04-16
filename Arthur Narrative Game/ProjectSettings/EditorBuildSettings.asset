@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Matt-Environment/Cave Entrance.unity
+    guid: 27326a7fdf16f204ea8b1d63d51a1ba2
+  - enabled: 1
+    path: Assets/Matt-Environment/Cave Inside.unity
+    guid: 47c837fde43247a4d9626eab7b57f4bd
   m_configObjects: {}
