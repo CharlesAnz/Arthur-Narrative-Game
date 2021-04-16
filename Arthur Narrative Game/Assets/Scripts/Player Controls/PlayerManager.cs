@@ -31,6 +31,7 @@ public class PlayerManager : MonoBehaviour
     public bool gameOver = false;
     public PlayableDirector timeline;
     public GameObject cutSceneCamera;
+    public GameObject cutsceneCharacters;
 
     void Start()
     {
@@ -156,6 +157,7 @@ public class PlayerManager : MonoBehaviour
         gameOver = true;
 
         cutSceneCamera.SetActive(true);
+        cutsceneCharacters.SetActive(true);
 
         enemy.transform.position = new Vector3(48, 28, -80);
         enemy.GetComponent<NavMeshAgent>().enabled = false;
