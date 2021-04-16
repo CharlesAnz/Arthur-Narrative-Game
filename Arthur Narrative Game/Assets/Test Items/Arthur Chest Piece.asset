@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d30695d1541592c4d9616ccdf7223db7, type: 3}
-  m_Name: Purple Chest Piece
+  m_Name: Arthur Chest Piece
   m_EditorClassIdentifier: 
-  name: Purple Breastplate
+  name: Arthur Chest Piece
   icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  color: {r: 0, g: 0.297235, b: 1, a: 1}
+  color: {r: 0, g: 0.1254902, b: 0.83921576, a: 1}
   isDefault: 0
   equipSlot: 1
-  armorMod: 5
+  armorMod: 3
   damageMod: 0
