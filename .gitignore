@@ -7,7 +7,7 @@
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
-/[Ll]ogs/
+[Ll]ogs/
 /[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
@@ -60,3 +60,4 @@ crashlytics-build.properties
 
 *.log
 Arthur Narrative Game/Logs/AssetImportWorker0.log
+Arthur Narrative Game/Logs/AssetImportWorker0-prev.log
