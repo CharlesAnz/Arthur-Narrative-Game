@@ -65222,7 +65222,7 @@ MonoBehaviour:
   gameOver: 0
   timeline: {fileID: 4600355098339371194}
   cutSceneCamera: {fileID: 1429567975}
-  cutsceneCharacters: {fileID: 0}
+  cutsceneCharacters: {fileID: 1718440662}
 --- !u!1 &5517983026632005400
 GameObject:
   m_ObjectHideFlags: 0
