@@ -9,9 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 047ccc293b4730d4fb2133f4e32499f0, type: 3}
-  m_Name: Purple thing
+  m_Script: {fileID: 11500000, guid: d30695d1541592c4d9616ccdf7223db7, type: 3}
+  m_Name: Arthur Leg Armor
   m_EditorClassIdentifier: 
-  name: Purple thing
+  name: Arthur Leg Armor
   icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  color: {r: 0, g: 0.1254902, b: 0.83921576, a: 1}
   isDefault: 0
+  equipSlot: 2
+  armorMod: 2
+  damageMod: 1
