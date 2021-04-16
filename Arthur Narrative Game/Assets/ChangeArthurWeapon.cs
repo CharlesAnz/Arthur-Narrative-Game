@@ -21,6 +21,8 @@ public class ChangeArthurWeapon : MonoBehaviour
             other.GetComponent<NavMeshAgent>().SetDestination(transform.position + (transform.forward * -7));
 
             gameObject.GetComponent<BoxCollider>().isTrigger = false;
+
+            MusicManager.instance.StartLoop();
         }
     }
 

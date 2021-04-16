@@ -24,6 +24,7 @@ public class DragonBoss_Stats : Character_Stats
     {
         base.Die();
         playerManager.WinCondtion(gameObject);
+        MusicManager.instance.StopLoop();
     }
     public override void PlaySoundOnHit()
     {
