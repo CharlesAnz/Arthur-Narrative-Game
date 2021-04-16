@@ -13,6 +13,7 @@ public class Enemy_Controller : MonoBehaviour
     CharacterCombat combat;
     Character_Stats stats;
     PlayerManager playerManager;
+    DragonSounds dragonSounds;
 
     public GameObject spawnfireBreath;
     GameObject spawnedfire;
@@ -32,6 +33,7 @@ public class Enemy_Controller : MonoBehaviour
         combat = GetComponent<CharacterCombat>();
         stats = GetComponent<Character_Stats>();
         enemyInteractor = GetComponent<Enemy>();
+        dragonSounds = GetComponent<DragonSounds>();
 
         agent.stoppingDistance = enemyInteractor.radius;
 
@@ -66,6 +68,7 @@ public class Enemy_Controller : MonoBehaviour
         {
             spawnedfire = Instantiate(spawnfireBreath, transform.position + (transform.forward * 5), Quaternion.Euler(new Vector3(90, 0, 0)), gameObject.transform);
             spawnedfire.transform.localScale = new Vector3(5, 5, 5);
+            dragonSounds.PlaySound(2);
         }
 
         if (firebreathActive < 0 && spawnedfire != null) Destroy(spawnedfire.gameObject);
@@ -187,6 +190,7 @@ public class Enemy_Controller : MonoBehaviour
                 Targeted_Ability ability = (Targeted_Ability)stats.abilities[2];
                 ability.FindTarget(target.GetComponent<CharacterCombat>());
                 ability.SetProjectileSpawnPos(new Vector3(transform.localPosition.x, transform.localPosition.y + 8, transform.localPosition.z + 8));
+                dragonSounds.PlaySound(1);
             }
             FaceTarget(target.position);
             stats.abilities[2].Use(gameObject);

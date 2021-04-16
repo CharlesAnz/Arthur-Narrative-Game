@@ -8,6 +8,7 @@ public class CharacterCombat : MonoBehaviour
 {
     Character_Stats myStats;
     CharacterAnimator anim;
+    ArthurSounds arthurSounds;
 
     float nextTime = 0;
     public float attackSpeed;
@@ -37,6 +38,7 @@ public class CharacterCombat : MonoBehaviour
         myStats = GetComponent<Character_Stats>();
         attackSpeed = myStats.attackSpeed.GetValue();
         anim = GetComponent<CharacterAnimator>();
+        arthurSounds = GetComponentInChildren<ArthurSounds>();
     }
 
     private void Update()
@@ -79,6 +81,9 @@ public class CharacterCombat : MonoBehaviour
 
             //InCombat = true;
             lastAttackTime = Time.time;
+
+            if (arthurSounds != null)
+                arthurSounds.PlaySound(1);
         }
     }
 
@@ -88,12 +93,16 @@ public class CharacterCombat : MonoBehaviour
     {
         //tells target's stats that they take damage equal myStats damage variable
         targetStats.TakeDam(myStats.damage.GetValue() + mod);
+        if (arthurSounds != null)
+            arthurSounds.PlaySound(0);
     }
 
     public void AbilityHeal(Character_Stats targetStats, float healAmount)
     {
         //tells target's stats that they heal for healAmount HP
         targetStats.Heal(healAmount);
+        if (arthurSounds != null)
+            arthurSounds.PlaySound(3);
     }
 
 
@@ -250,6 +259,9 @@ public class CharacterCombat : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         stats.TakeDam(myStats.damage.GetValue());
+
+        if (arthurSounds != null)
+            arthurSounds.PlaySound(0);
     }
 
     public void UseAbility(CharacterCombat target, Ability ability)

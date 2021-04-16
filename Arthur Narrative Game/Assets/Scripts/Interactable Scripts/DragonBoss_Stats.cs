@@ -5,10 +5,12 @@ using UnityEngine;
 public class DragonBoss_Stats : Character_Stats
 {
     PlayerManager playerManager;
+    DragonSounds dragonsounds;
 
     private void Start()
     {
         playerManager = PlayerManager.instance;
+        dragonsounds = GetComponent<DragonSounds>();
 
         foreach (Ability ability in abilities)
         {
@@ -22,5 +24,10 @@ public class DragonBoss_Stats : Character_Stats
     {
         base.Die();
         playerManager.WinCondtion(gameObject);
+    }
+    public override void PlaySoundOnHit()
+    {
+        base.PlaySoundOnHit();
+        dragonsounds.PlaySound(0);
     }
 }
