@@ -58,15 +58,22 @@ public class PlayerManager : MonoBehaviour
        
         activePersonCombat = player1.GetComponent<CharacterCombat>();
         
+        if(playerHealthBar != null)
+        {
+            playerHealthBar.SetMaxHP((int)activePersonCombat.GetMyStats().maxHP.GetValue());
+            playerHealthBar.SetCurHP((int)activePersonCombat.GetMyStats().curHP);
+            playerHealthBar.SetNameTxt(activePerson.gameObject.name);
+        }
 
-        playerHealthBar.SetMaxHP((int)activePersonCombat.GetMyStats().maxHP.GetValue());
-        playerHealthBar.SetCurHP((int)activePersonCombat.GetMyStats().curHP);
-        playerHealthBar.SetNameTxt(activePerson.gameObject.name);
+        if(targetHealthBar != null)
+        {
+            targetHealthBar.SetNameTxt(" ");
+            targetHealthBar.SetMaxHP(1);
+            targetHealthBar.SetCurHP(0);
+            targetHealthBar.gameObject.SetActive(false);
+        }
 
-        targetHealthBar.SetNameTxt(" ");
-        targetHealthBar.SetMaxHP(1);
-        targetHealthBar.SetCurHP(0);
-        targetHealthBar.gameObject.SetActive(false);
+       
 
         timeline = GetComponent<PlayableDirector>();
     }
@@ -75,7 +82,8 @@ public class PlayerManager : MonoBehaviour
     {
         if (gameOver) return;
         
-        playerHealthBar.SetCurHP((int)activePerson.GetComponent<CharacterCombat>().GetMyStats().curHP);
+        if (playerHealthBar != null)
+            playerHealthBar.SetCurHP((int)activePerson.GetComponent<CharacterCombat>().GetMyStats().curHP);
 
         if (activePerson.focus != null)
         {
