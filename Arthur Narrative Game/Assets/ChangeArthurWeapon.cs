@@ -6,6 +6,8 @@ using UnityEngine.Playables;
 
 public class ChangeArthurWeapon : MonoBehaviour
 {
+    public float timeTillNextScene;
+
     public GameObject activePerson;
 
     public GameObject sword;
@@ -17,6 +19,7 @@ public class ChangeArthurWeapon : MonoBehaviour
     public GameObject cutsceneCameras;
     public GameObject cutsceneObjects;
     public GameObject UICanvas;
+    public GameObject self;
 
     private double timeKeeper;
 
@@ -36,29 +39,51 @@ public class ChangeArthurWeapon : MonoBehaviour
             cutsceneObjects.SetActive(true);
 
             timeline.Play();
+            StartCoroutine(StartGameAfterCutsceneEnds(timeTillNextScene));
 
-            if(timeline.state == PlayState.Paused && (timeKeeper+Time.deltaTime)>=timeline.duration)
-            {
-                dragonBoss.SetActive(true);
-                cutsceneCameras.SetActive(false);
-                cutsceneObjects.SetActive(false);
+            //if (timeline.state == PlayState.Paused && (timeKeeper + Time.deltaTime) >= timeline.duration)
+            //{
+            //    dragonBoss.SetActive(true);
+            //    cutsceneCameras.SetActive(false);
+            //    cutsceneObjects.SetActive(false);
 
-                sword.SetActive(true);
-                torch.SetActive(false);
-                UICanvas.SetActive(true);
-                activePerson.SetActive(true);
+            //    sword.SetActive(true);
+            //    torch.SetActive(false);
+            //    UICanvas.SetActive(true);
+            //    activePerson.SetActive(true);
 
-                other.transform.position = transform.position + (transform.forward * -6);
+            //    other.transform.position = transform.position + (transform.forward * -6);
 
-                other.GetComponent<NavMeshAgent>().SetDestination(transform.position + (transform.forward * -7));
+            //    other.GetComponent<NavMeshAgent>().SetDestination(transform.position + (transform.forward * -7));
 
-                gameObject.GetComponent<BoxCollider>().isTrigger = false;
+            //    gameObject.GetComponent<BoxCollider>().isTrigger = false;
 
-                MusicManager.instance.StartLoop();
-            }
+            //    MusicManager.instance.StartLoop();
+            //}
         }
     }
 
+    IEnumerator StartGameAfterCutsceneEnds(float timeTillNextScene)
+    {
+        yield return new WaitForSeconds(timeTillNextScene);
+        dragonBoss.SetActive(true);
+        cutsceneCameras.SetActive(false);
+        cutsceneObjects.SetActive(false);
+
+        sword.SetActive(true);
+        torch.SetActive(false);
+        UICanvas.SetActive(true);
+        activePerson.SetActive(true);
+
+        activePerson.transform.position = transform.position + (transform.forward * -6);
+
+        activePerson.GetComponent<NavMeshAgent>().SetDestination(transform.position + (transform.forward * -7));
+
+        gameObject.GetComponent<BoxCollider>().isTrigger = false;
+
+        MusicManager.instance.StartLoop();
+        self.SetActive(false);
+    }
 
     private void OnDrawGizmosSelected()
     {
