@@ -2,27 +2,60 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Playables;
 
 public class ChangeArthurWeapon : MonoBehaviour
 {
-    public GameObject sword;
+    public GameObject activePerson;
 
+    public GameObject sword;
     public GameObject torch;
 
+    public GameObject dragonBoss;
+    public GameObject gameplayFog;
+    public PlayableDirector timeline;
+    public GameObject cutsceneCameras;
+    public GameObject cutsceneObjects;
+    public GameObject UICanvas;
+
+    private double timeKeeper;
+
+    private void Start()
+    {
+        timeline = GetComponent<PlayableDirector>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
-            sword.SetActive(true);
-            torch.SetActive(false);
+            activePerson.SetActive(false);
+            dragonBoss.SetActive(false);
+            gameplayFog.SetActive(false);
+            UICanvas.SetActive(false);
+            cutsceneCameras.SetActive(true);
+            cutsceneObjects.SetActive(true);
 
-            other.transform.position = transform.position + (transform.forward * -6);
+            timeline.Play();
 
-            other.GetComponent<NavMeshAgent>().SetDestination(transform.position + (transform.forward * -7));
+            if(timeline.state == PlayState.Paused && (timeKeeper+Time.deltaTime)>=timeline.duration)
+            {
+                dragonBoss.SetActive(true);
+                cutsceneCameras.SetActive(false);
+                cutsceneObjects.SetActive(false);
 
-            gameObject.GetComponent<BoxCollider>().isTrigger = false;
+                sword.SetActive(true);
+                torch.SetActive(false);
+                UICanvas.SetActive(true);
+                activePerson.SetActive(true);
 
-            MusicManager.instance.StartLoop();
+                other.transform.position = transform.position + (transform.forward * -6);
+
+                other.GetComponent<NavMeshAgent>().SetDestination(transform.position + (transform.forward * -7));
+
+                gameObject.GetComponent<BoxCollider>().isTrigger = false;
+
+                MusicManager.instance.StartLoop();
+            }
         }
     }
 
