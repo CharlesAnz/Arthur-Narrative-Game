@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sword Cleave
   m_EditorClassIdentifier: 
   name: Sword Cleave
-  description: 'Cleaves cone in front of arthur '
+  description: 'Cleaves cone in front of Arthur '
   icon: {fileID: 0}
   listenersAdded: 0
   buffList:
@@ -35,7 +35,7 @@ MonoBehaviour:
   cooldown: 3
   animatorTrigger: ability1
   castTime: 2.44
-  cooldownTimer: -35.21239
+  cooldownTimer: -37.19535
   targetType: 2
   areaSize: 3
   aoeType: 2

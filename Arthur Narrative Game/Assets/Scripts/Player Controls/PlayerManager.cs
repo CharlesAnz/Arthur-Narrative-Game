@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Playables;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -32,6 +34,9 @@ public class PlayerManager : MonoBehaviour
     public PlayableDirector timeline;
     public GameObject cutSceneCamera;
     public GameObject cutsceneCharacters;
+
+    public float timeTillNextScene;
+    public string titleScreen = "Start Screen";
 
     public GameObject UICanvas;
 
@@ -179,5 +184,14 @@ public class PlayerManager : MonoBehaviour
 
         // Calls ShakeCamera function to shake the cinemachine camera. Values are intensity and time
         CinemachineShake.Instance.ShakeCamera(5f, 2.0f);
+
+        StartCoroutine(FinishGame(timeTillNextScene));
     }
+
+    IEnumerator FinishGame(float timeTillNextScene)
+    {
+        yield return new WaitForSeconds(timeTillNextScene);
+        SceneManager.LoadScene(titleScreen);
+    }
+
 }
