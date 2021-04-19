@@ -70,8 +70,8 @@ public class Player_Stats : Character_Stats
 
     public override void Die()
     {
-        base.Die();
         if (dead) return;
+        base.Die();
         GetComponent<CharacterAnimator>().characterAnim.SetTrigger("death");
         playerManager.LoseCondition();
     }
