@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class DragonBoss_Stats : Character_Stats
 {
@@ -54,12 +55,13 @@ public class DragonBoss_Stats : Character_Stats
             armor.RemoveModifier(mod);
         }
 
+        
         GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
         GetComponent<CharacterAnimator>().characterAnim.ResetTrigger(abilities[0].animatorTrigger);
         GetComponent<CharacterAnimator>().characterAnim.ResetTrigger(abilities[1].animatorTrigger);
         GetComponent<CharacterAnimator>().characterAnim.ResetTrigger(abilities[2].animatorTrigger);
         GetComponent<CharacterAnimator>().characterAnim.SetTrigger("reset");
-        
+        GetComponent<NavMeshAgent>().SetDestination(startPos);
 
         curHP = maxHP.GetValue();
 
