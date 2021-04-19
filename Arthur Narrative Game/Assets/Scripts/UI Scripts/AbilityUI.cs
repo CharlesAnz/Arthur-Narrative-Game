@@ -63,4 +63,15 @@ public class AbilityUI : MonoBehaviour
 
         }
     }
+
+    public void SlotAbilityCasted(KeyCode key)
+    {
+        foreach(AbilitySlot slot in slots)
+        {
+            if(slot.activationKey == key)
+            {
+                slot.UseAbility();
+            }
+        }
+    }
 }

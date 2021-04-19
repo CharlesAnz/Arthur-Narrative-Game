@@ -38,6 +38,8 @@ public class AbilitySlot : MonoBehaviour
         icon.sprite = ability.icon;
         icon.enabled = true;
 
+        icon.GetComponentInChildren<Text>().text = activationKey.ToString();
+
         description.text = newAbility.description;
 
         abilitybutton = GetComponentInChildren<Button>();

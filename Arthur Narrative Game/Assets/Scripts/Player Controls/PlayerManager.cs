@@ -51,7 +51,6 @@ public class PlayerManager : MonoBehaviour
             ability.cooldownTimer = 0;
         }
 
-
         if (player2 != null)
         {
             player2.GetComponent<Player_Controller>().activeCharacter = false;
@@ -148,17 +147,26 @@ public class PlayerManager : MonoBehaviour
             }
         }
 
-
+        AbilityUI abilityUI = UICanvas.GetComponent<AbilityUI>();
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            activePerson.GetComponent<Player_Stats>().abilities[0].Use(activePerson.gameObject);
+            abilityUI.SlotAbilityCasted(KeyCode.Q);
+            //activePerson.GetComponent<Player_Stats>().abilities[0].Use(activePerson.gameObject);
         }
 
         if (Input.GetKeyDown(KeyCode.W))
-            activePerson.GetComponent<Player_Stats>().abilities[1].Use(activePerson.gameObject);
+        {
+            abilityUI.SlotAbilityCasted(KeyCode.W);
+            //activePerson.GetComponent<Player_Stats>().abilities[1].Use(activePerson.gameObject);
+        }
+
 
         if (Input.GetKeyDown(KeyCode.E))
-            activePerson.GetComponent<Player_Stats>().abilities[2].Use(activePerson.gameObject);
+        {
+            abilityUI.SlotAbilityCasted(KeyCode.E);
+            //activePerson.GetComponent<Player_Stats>().abilities[2].Use(activePerson.gameObject);
+        }
+            
     }
 
 
