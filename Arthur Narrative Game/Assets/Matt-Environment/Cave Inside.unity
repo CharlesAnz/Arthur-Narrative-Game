@@ -93299,9 +93299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 963f2d82f3b4c874fbe0242214861e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curHP: 0
+  curHP: 300
   maxHP:
-    baseValue: 10
+    baseValue: 300
   damage:
     baseValue: 5
   armor:
@@ -93649,7 +93649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f55113a9dbabf14d81ef4bddb7ff6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curHP: 75
+  curHP: 150
   maxHP:
     baseValue: 150
   damage:

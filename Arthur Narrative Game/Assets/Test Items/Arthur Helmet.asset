@@ -17,5 +17,5 @@ MonoBehaviour:
   color: {r: 0, g: 0.1254902, b: 0.83921576, a: 1}
   isDefault: 0
   equipSlot: 0
-  armorMod: 0
+  armorMod: 1
   damageMod: 3

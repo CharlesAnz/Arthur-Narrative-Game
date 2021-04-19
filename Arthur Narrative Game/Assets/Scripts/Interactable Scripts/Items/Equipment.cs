@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Equipment", menuName = "Inventory/Equipment")]
 public class Equipment : Item
 {
     public EquipmentSlot equipSlot;
+
+    public List<Stat> statMods = new List<Stat>();
 
     public int armorMod;
     public int damageMod;

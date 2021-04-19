@@ -76,7 +76,12 @@ public class ChangeArthurWeapon : MonoBehaviour
         UICanvas.SetActive(true);
         activePerson.SetActive(true);
 
-        activePerson.transform.position = transform.position + (transform.forward * -6);
+        activePerson.transform.position = transform.position + (transform.forward * -7);
+
+        activePerson.transform.position = new Vector3(
+            activePerson.transform.position.x,
+            30f,
+            activePerson.transform.position.z);
 
         activePerson.GetComponent<NavMeshAgent>().SetDestination(transform.position + (transform.forward * -7));
 

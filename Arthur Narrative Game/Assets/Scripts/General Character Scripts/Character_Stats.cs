@@ -27,6 +27,12 @@ public class Character_Stats : MonoBehaviour
             ability.cooldownTimer = 0;
             ability.listenersAdded = false;
         }
+        maxHP.statName = "maxHP";
+        damage.statName = "damage";
+        armor.statName = "armor";
+        moveSpeed.statName = "moveSpeed";
+        attackSpeed.statName = "attackspeed";
+
         curHP = maxHP.GetValue();
     }
 
