@@ -11,8 +11,6 @@ public class Potion : Item
     [SerializeField]
     private bool doesHealing;
 
-    private UnityEvent<CharacterCombat> OnPotionUse;
-
     public List<BufforDebuff> buffList = new List<BufforDebuff>();
 
     public override void Use(GameObject interactor)
@@ -20,8 +18,8 @@ public class Potion : Item
         base.Use(interactor);
 
         user = interactor;
-        if (doesHealing) OnPotionUse.AddListener(Heal);
-        if (buffList != null) OnPotionUse.AddListener(addBuff);
+        if (doesHealing) Heal(interactor.GetComponent<CharacterCombat>());
+        if (buffList.Count > 0) addBuff(interactor.GetComponent<CharacterCombat>());
 
         RemoveFromInventory();
     }

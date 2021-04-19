@@ -12,7 +12,7 @@ public class Ability : ScriptableObject
     protected GameObject abilityUser = null;
     public Sprite icon = null;
 
-    public bool listenersAdded = false;
+    public bool listenersAdded;
 
     public List<BufforDebuff> buffList = new List<BufforDebuff>();
 
@@ -76,6 +76,7 @@ public class Ability : ScriptableObject
         if (displacement.distance != 0) OnAbilityUse.AddListener(addDisplacement);
 
         listenersAdded = true;
+        Debug.Log("Setup completed");
     }
 
     //Checks if the cooldown is below, if not then nothing happens
@@ -112,7 +113,7 @@ public class Ability : ScriptableObject
 
 
         SetupListeners();
-
+        Debug.Log("Setup completed");
         return true;
     }
 

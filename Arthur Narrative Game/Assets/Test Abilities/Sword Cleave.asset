@@ -15,6 +15,7 @@ MonoBehaviour:
   name: Sword Cleave
   description: 'Cleaves cone in front of arthur '
   icon: {fileID: 0}
+  listenersAdded: 0
   buffList:
   - amount: -4
     affects: 1
@@ -22,7 +23,9 @@ MonoBehaviour:
     durationTimer: 8.496827
     ramping: 0
   cc_Effects: []
+  projectile: {fileID: 0}
   delay: 1.3
+  maxDistance: 0
   displacement:
     pushOrPull: 0
     distance: 0
@@ -32,10 +35,9 @@ MonoBehaviour:
   cooldown: 3
   animatorTrigger: ability1
   castTime: 2.44
-  cooldownTimer: -11.671631
+  cooldownTimer: -35.21239
   targetType: 2
   areaSize: 3
   aoeType: 2
-  origin: {x: 3.7789416, y: 0.027201355, z: -1.9927939}
   selfOrigin: 1
   targets: []

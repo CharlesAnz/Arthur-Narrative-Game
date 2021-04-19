@@ -159,8 +159,25 @@ public class CharacterCombat : MonoBehaviour
 
             buff.durationTimer -= Time.deltaTime;
 
-            //if the buff is a ramping effect that adds every second, then update the stat every second here
-            if (buff.ramping)
+            switch (buff.affects)
+            {
+                case StatBuffs.Armor:
+                    if (armorBuffIndicator != null) armorBuffIndicator.SetActive(true);
+                    break;
+
+                case StatBuffs.Damage:
+                    if (damageBuffIndicator != null) damageBuffIndicator.SetActive(true);
+                    break;
+
+                case StatBuffs.Health:
+                    if (healingBuffIndicator != null) healingBuffIndicator.SetActive(true);
+                    break;
+            }
+        
+        
+
+        //if the buff is a ramping effect that adds every second, then update the stat every second here
+        if (buff.ramping)
             {
                 if (Time.time >= nextTime)
                 {
