@@ -16,7 +16,10 @@ public class Player_Stats : Character_Stats
         foreach (Ability ability in abilities)
         {
             ability.SetCam(Camera.main);
+            ability.cooldownTimer = 0;
+            ability.listenersAdded = false;
         }
+        curHP = maxHP.GetValue();
     }
 
     void OnEquipmentChanged(Equipment newItem, Equipment oldItem)

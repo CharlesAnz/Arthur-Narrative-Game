@@ -17,6 +17,7 @@ public class InventorySlot : MonoBehaviour
         item = newItem;
 
         icon.sprite = item.icon;
+        icon.color = item.color;
         icon.enabled = true;
         removeButton.interactable = true;
     }
@@ -27,6 +28,7 @@ public class InventorySlot : MonoBehaviour
         item = null;
 
         icon.sprite = null;
+        icon.color = Color.white;
         icon.enabled = false;
         removeButton.interactable = false;
     }
