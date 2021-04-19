@@ -15,6 +15,7 @@ MonoBehaviour:
   name: Tail Swipe
   description: Dragon swipes tail and knocks back anyone in the area
   icon: {fileID: 0}
+  listenersAdded: 0
   buffList: []
   cc_Effects: []
   projectile: {fileID: 0}
@@ -26,10 +27,10 @@ MonoBehaviour:
   doesDamage: 1
   doesHealing: 0
   abilityValue: 25
-  cooldown: 45
+  cooldown: 60
   animatorTrigger: tailSwipe
   castTime: 2
-  cooldownTimer: 33.294285
+  cooldownTimer: -39.74673
   targetType: 1
   areaSize: 8
   aoeType: 1

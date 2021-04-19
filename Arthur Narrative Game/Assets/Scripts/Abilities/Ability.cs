@@ -43,8 +43,7 @@ public class Ability : ScriptableObject
     [SerializeField]
     private float cooldown;
 
-    [SerializeField]
-    protected string animatorTrigger;
+    public string animatorTrigger;
 
     public float castTime;
 

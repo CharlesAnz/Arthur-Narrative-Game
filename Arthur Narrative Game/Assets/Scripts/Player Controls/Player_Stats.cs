@@ -5,6 +5,8 @@ public class Player_Stats : Character_Stats
     EquipmentManager equipManager;
     PlayerManager playerManager;
 
+    public Transform resetPos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,32 @@ public class Player_Stats : Character_Stats
             damage.RemoveModifier(oldItem.damageMod);
         }
 
+    }
+
+    public void ResetStats()
+    {
+        foreach (Ability ability in abilities)
+        {
+            ability.cooldownTimer = 0;
+        }
+
+        for (int i = 0; i < buffs.Count; i++)
+        {
+            buffs[i].durationTimer = 0;
+        }
+
+        GetComponent<Player_Controller>().RemoveFocus();
+        GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
+        GetComponent<CharacterAnimator>().characterAnim.ResetTrigger(abilities[0].animatorTrigger);
+        GetComponent<CharacterAnimator>().characterAnim.ResetTrigger(abilities[1].animatorTrigger);
+        GetComponent<CharacterAnimator>().characterAnim.ResetTrigger(abilities[2].animatorTrigger);
+        GetComponent<CharacterAnimator>().characterAnim.SetTrigger("reset");
+
+        curHP = maxHP.GetValue();
+
+        transform.position = resetPos.position;
+
+        dead = false;
     }
 
     public override void Die()

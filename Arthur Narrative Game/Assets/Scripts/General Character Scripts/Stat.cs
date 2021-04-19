@@ -34,4 +34,9 @@ public class Stat
         if (modifier != 0)
             mods.Remove(modifier);
     }
+
+    public List<float> GetMods()
+    {
+        return mods;
+    }
 }

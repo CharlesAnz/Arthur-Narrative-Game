@@ -121,9 +121,6 @@ public class Enemy_Controller : MonoBehaviour
                                 
                                 if (locationsTraveled >= 4) locationsTraveled = 1;
 
-                                stats.armor.AddModifier(3);
-                                stats.damage.AddModifier(2);
-
                                 if (myAbilities[1].GetType().Equals(typeof(Aoe_Ability)))
                                 {
                                     Aoe_Ability ability = (Aoe_Ability)myAbilities[1];
@@ -131,6 +128,9 @@ public class Enemy_Controller : MonoBehaviour
                                 }
 
                                 myAbilities[1].Use(gameObject);
+
+                                stats.armor.AddModifier(3);
+                                stats.damage.AddModifier(2);
 
                                 combat.CastTime += 2f;
                             }
@@ -175,7 +175,7 @@ public class Enemy_Controller : MonoBehaviour
                 currentDestination = Vector3.zero;
                 agent.speed = 2;
                 GetComponent<CharacterAnimator>().characterAnim.SetTrigger("land");
-                enemyInteractor.radius = 4f;
+                enemyInteractor.radius = 8.5f;
                 retreating = false;
                 
             }

@@ -172,10 +172,15 @@ public class PlayerManager : MonoBehaviour
 
     public void LoseCondition()
     {
-        gameOver = true;
+        //Call these when you need to reset the characters to restart the fight
+        activePerson.GetComponent<Player_Stats>().ResetStats();
+        FindObjectOfType<DragonBoss_Stats>().ResetStats();
+
+        //yes technically the game is over but setting gameOver = true causes problems here
+        //gameOver = true;
     }
 
-    public void WinCondtion(GameObject enemy)
+    public void WinCondition(GameObject enemy)
     {
         gameOver = true;
 

@@ -15,6 +15,7 @@ MonoBehaviour:
   name: Fireball
   description: Shoots fireball at targeted character
   icon: {fileID: 0}
+  listenersAdded: 0
   buffList:
   - amount: -4
     affects: 2
@@ -34,6 +35,6 @@ MonoBehaviour:
   cooldown: 30
   animatorTrigger: fireBall
   castTime: 1.15
-  cooldownTimer: 27.294159
+  cooldownTimer: -39.74673
   targetType: 1
   targetHit: {fileID: 0}
