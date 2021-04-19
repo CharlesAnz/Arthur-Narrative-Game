@@ -170,7 +170,7 @@ public class CharacterCombat : MonoBehaviour
                     break;
 
                 case StatBuffs.Health:
-                    if (healingBuffIndicator != null) healingBuffIndicator.SetActive(true);
+                    if (healingBuffIndicator != null && buff.amount > 0) healingBuffIndicator.SetActive(true);
                     break;
             }
         
