@@ -66,6 +66,7 @@ public class ChangeArthurWeapon : MonoBehaviour
     IEnumerator StartGameAfterCutsceneEnds(float timeTillNextScene)
     {
         yield return new WaitForSeconds(timeTillNextScene);
+        CinemachineShake.Instance.ShakeCamera(13f, 9.414f);
         dragonBoss.SetActive(true);
         cutsceneCameras.SetActive(false);
         cutsceneObjects.SetActive(false);
