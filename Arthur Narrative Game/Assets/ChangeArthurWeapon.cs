@@ -80,7 +80,7 @@ public class ChangeArthurWeapon : MonoBehaviour
 
         activePerson.transform.position = new Vector3(
             activePerson.transform.position.x,
-            30f,
+            40f,
             activePerson.transform.position.z);
 
         activePerson.GetComponent<NavMeshAgent>().SetDestination(transform.position + (transform.forward * -7));

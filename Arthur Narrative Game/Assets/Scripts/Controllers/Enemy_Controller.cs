@@ -66,7 +66,12 @@ public class Enemy_Controller : MonoBehaviour
 
         if(firebreathActive > 0 && firebreathActive < 1.6f && spawnedfire == null) 
         {
-            spawnedfire = Instantiate(spawnfireBreath, transform.position + (transform.forward * 5), Quaternion.Euler(new Vector3(90, 0, 0)), gameObject.transform);
+            Vector3 arthurpos = new Vector3(playerManager.activePerson.transform.position.x, -1000, playerManager.activePerson.transform.position.z);
+            Vector3 direction = (arthurpos - transform.position);
+            Quaternion lookRotation = Quaternion.LookRotation(direction);
+
+            spawnedfire = Instantiate(spawnfireBreath, transform.position + (transform.forward * 5), lookRotation);
+
             spawnedfire.transform.localScale = new Vector3(5, 5, 5);
             dragonSounds.PlaySound(2);
         }
@@ -223,6 +228,7 @@ public class Enemy_Controller : MonoBehaviour
              transform.position + (transform.forward * 5),
             new Vector3(8, 8, 8));
 
+        Gizmos.DrawWireSphere(transform.position, 30);
     }
 
     private void OnDrawGizmos()

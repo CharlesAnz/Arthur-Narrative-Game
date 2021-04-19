@@ -15,11 +15,12 @@ MonoBehaviour:
   name: Dragon's Breath
   description: Shoots cone of flame in front of character
   icon: {fileID: 0}
+  listenersAdded: 1
   buffList:
   - amount: -3
     affects: 4
     duration: 3
-    durationTimer: -0.00021243282
+    durationTimer: 0.7988513
     ramping: 1
   cc_Effects: []
   projectile: {fileID: 0}
@@ -34,7 +35,7 @@ MonoBehaviour:
   cooldown: 10
   animatorTrigger: fireBreath
   castTime: 2.35
-  cooldownTimer: 2.5465252
+  cooldownTimer: 0.2215786
   targetType: 1
   areaSize: 30
   aoeType: 2

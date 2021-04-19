@@ -18,6 +18,7 @@ public class DragonBoss_Stats : Character_Stats
         {
             ability.SetCam(Camera.main);
             ability.cooldownTimer = 0;
+            ability.listenersAdded = false;
         }
         curHP = maxHP.GetValue();
 

@@ -91,7 +91,10 @@ public class Aoe_Ability : Ability
                     {
                         case TargetType.Ally:
                             if (colliderCombat.tag == "Ally" || colliderCombat.tag == "Player")
+                            {
                                 targets.Add(colliderCombat);
+                                Debug.Log("hit: " + colliderCombat.name);
+                            }
 
                             break;
 
