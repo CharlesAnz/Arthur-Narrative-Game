@@ -39,6 +39,8 @@ public class PlayerManager : MonoBehaviour
     public string titleScreen = "Start Screen";
 
     public GameObject UICanvas;
+    public GameObject VideoPlayer;
+    public GameObject YouDiedCanvas;
 
     void Start()
     {
@@ -178,6 +180,11 @@ public class PlayerManager : MonoBehaviour
 
         //yes technically the game is over but setting gameOver = true causes problems here
         //gameOver = true;
+        //activePerson.gameObject.SetActive(false);
+        YouDiedCanvas.SetActive(true);
+        VideoPlayer.SetActive(true);
+        MusicManager.instance.StopLoop();
+        StartCoroutine(RestartBossFight());
     }
 
     public void WinCondition(GameObject enemy)
@@ -199,6 +206,18 @@ public class PlayerManager : MonoBehaviour
         CinemachineShake.Instance.ShakeCamera(5f, 2.0f);
 
         StartCoroutine(FinishGame(timeTillNextScene));
+    }
+
+    IEnumerator RestartBossFight()
+    {
+        yield return new WaitForSeconds(7);
+        YouDiedCanvas.SetActive(false);
+        VideoPlayer.SetActive(false);
+        MusicManager.instance.StartLoop();
+
+        ////Call these when you need to reset the characters to restart the fight
+        //activePerson.GetComponent<Player_Stats>().ResetStats();
+        //FindObjectOfType<DragonBoss_Stats>().ResetStats();
     }
 
     IEnumerator FinishGame(float timeTillNextScene)
