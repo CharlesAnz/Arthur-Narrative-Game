@@ -228,6 +228,7 @@ public class Enemy_Controller : MonoBehaviour
              transform.position + (transform.forward * 5),
             new Vector3(8, 8, 8));
 
+        Gizmos.DrawWireSphere(transform.position, 30);
     }
 
     private void OnDrawGizmos()

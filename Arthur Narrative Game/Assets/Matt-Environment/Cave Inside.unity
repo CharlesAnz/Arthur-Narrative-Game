@@ -45664,7 +45664,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 192598433}
   m_HandleRect: {fileID: 0}
   m_Direction: 1
-  m_MinValue: 34
+  m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 1
   m_Value: 100
@@ -46385,7 +46385,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1374821772}
   m_HandleRect: {fileID: 0}
   m_Direction: 0
-  m_MinValue: 34
+  m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 1
   m_Value: 100
@@ -90421,7 +90421,7 @@ MonoBehaviour:
     baseValue: 700
   damage:
     statName: 
-    baseValue: 5
+    baseValue: 15
   armor:
     statName: 
     baseValue: 3
