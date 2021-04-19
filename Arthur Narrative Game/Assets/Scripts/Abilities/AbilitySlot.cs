@@ -8,11 +8,28 @@ public class AbilitySlot : MonoBehaviour
 
     public Player_Controller playerController;
 
+    public Button abilitybutton;
+    Image cooldownUI;
+
+    private bool onCooldown;
+
     public KeyCode activationKey;
 
     Ability ability;
 
+    private void Update()
+    {
+        if(onCooldown)
+        {
+            cooldownUI.fillAmount += 1 / ability.GetCooldown() * Time.deltaTime;
 
+            if(ability.cooldownTimer <= 0)
+            {
+                cooldownUI.fillAmount = 1;
+                onCooldown = false;
+            }
+        }
+    }
     //Adds item to inventory slot
     public void AddAbility(Ability newAbility)
     {
@@ -22,6 +39,14 @@ public class AbilitySlot : MonoBehaviour
         icon.enabled = true;
 
         description.text = newAbility.description;
+
+        abilitybutton = GetComponentInChildren<Button>();
+
+        abilitybutton.onClick.AddListener(UseAbility);
+
+        cooldownUI = abilitybutton.GetComponent<Image>();
+
+        cooldownUI.fillAmount = 1;
     }
 
     //clears inventory slot
@@ -40,6 +65,8 @@ public class AbilitySlot : MonoBehaviour
         if (ability != null)
         {
             ability.Use(playerController.gameObject);
+            onCooldown = true;
+            cooldownUI.fillAmount = 0;
         }
     }
 }

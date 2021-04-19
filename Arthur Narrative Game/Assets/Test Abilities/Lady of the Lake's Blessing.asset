@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Lady of the Lake's Blessing
   description: Heals Arthur for 10 HP and then 5 HP per sec for 5 seconds
-  icon: {fileID: 0}
+  icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   listenersAdded: 0
   buffList:
   - amount: 5
     affects: 4
     duration: 5
-    durationTimer: 2.616098
+    durationTimer: 2.945526
     ramping: 1
   cc_Effects: []
   projectile: {fileID: 0}
@@ -32,9 +32,9 @@ MonoBehaviour:
   doesDamage: 0
   doesHealing: 1
   abilityValue: 10
-  cooldown: 8
+  cooldown: 15
   animatorTrigger: ability3
   castTime: 1.45
-  cooldownTimer: -35.21239
+  cooldownTimer: -7.465851
   targetType: 0
   targetHit: {fileID: 0}

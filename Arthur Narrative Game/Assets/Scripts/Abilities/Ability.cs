@@ -41,7 +41,7 @@ public class Ability : ScriptableObject
     protected float abilityValue;
 
     [SerializeField]
-    protected float cooldown;
+    private float cooldown;
 
     [SerializeField]
     protected string animatorTrigger;
@@ -249,6 +249,11 @@ public class Ability : ScriptableObject
     public void SetProjectileSpawnPos(Vector3 pos)
     {
         projectileSpawnPos = pos;
+    }
+
+    public float GetCooldown()
+    {
+        return cooldown;
     }
 
 
