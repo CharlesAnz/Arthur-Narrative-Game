@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Sword Cleave
   m_EditorClassIdentifier: 
   name: Sword Cleave
-  description: 'Cleaves cone in front of arthur '
-  icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  listenersAdded: 1
+  description: 'Cleaves cone in front of Arthur '
+  icon: {fileID: 0}
+  listenersAdded: 0
   buffList:
   - amount: -4
     affects: 1
