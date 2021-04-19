@@ -4239,11 +4239,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 1ca7ab0651b934a4a84b7df3bba0fa9a, type: 3}
+  m_Clip: {fileID: 8300000, guid: 69aa00b5582a3ea4eb204bdc85d3a31a, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
   m_ClipProperties:
-    volume: 1
+    volume: 0.5
 --- !u!114 &-3980125754721888927
 MonoBehaviour:
   m_ObjectHideFlags: 1
