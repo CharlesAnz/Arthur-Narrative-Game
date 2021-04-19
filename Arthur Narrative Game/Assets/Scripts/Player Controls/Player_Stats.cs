@@ -54,6 +54,7 @@ public class Player_Stats : Character_Stats
         }
 
         GetComponent<Player_Controller>().RemoveFocus();
+        GetComponent<Player_Movement>().MovetoPoint(resetPos.position);
         GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
         GetComponent<CharacterAnimator>().characterAnim.ResetTrigger(abilities[0].animatorTrigger);
         GetComponent<CharacterAnimator>().characterAnim.ResetTrigger(abilities[1].animatorTrigger);
@@ -70,6 +71,7 @@ public class Player_Stats : Character_Stats
     public override void Die()
     {
         base.Die();
+        if (dead) return;
         GetComponent<CharacterAnimator>().characterAnim.SetTrigger("death");
         playerManager.LoseCondition();
     }

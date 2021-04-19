@@ -175,8 +175,8 @@ public class PlayerManager : MonoBehaviour
     public void LoseCondition()
     {
         //Call these when you need to reset the characters to restart the fight
-        activePerson.GetComponent<Player_Stats>().ResetStats();
-        FindObjectOfType<DragonBoss_Stats>().ResetStats();
+        //activePerson.GetComponent<Player_Stats>().ResetStats();
+        //FindObjectOfType<DragonBoss_Stats>().ResetStats();
 
         //yes technically the game is over but setting gameOver = true causes problems here
         //gameOver = true;
@@ -216,8 +216,8 @@ public class PlayerManager : MonoBehaviour
         MusicManager.instance.StartLoop();
 
         ////Call these when you need to reset the characters to restart the fight
-        //activePerson.GetComponent<Player_Stats>().ResetStats();
-        //FindObjectOfType<DragonBoss_Stats>().ResetStats();
+        activePerson.GetComponent<Player_Stats>().ResetStats();
+        FindObjectOfType<DragonBoss_Stats>().ResetStats();
     }
 
     IEnumerator FinishGame(float timeTillNextScene)
