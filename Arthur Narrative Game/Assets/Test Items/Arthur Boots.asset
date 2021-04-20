@@ -18,5 +18,5 @@ MonoBehaviour:
   isDefault: 0
   equipSlot: 5
   statMods: []
-  armorMod: 2
+  armorMod: 1
   damageMod: 2

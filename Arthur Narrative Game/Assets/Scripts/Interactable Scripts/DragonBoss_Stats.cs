@@ -42,19 +42,24 @@ public class DragonBoss_Stats : Character_Stats
             buffs[i].durationTimer = 0;
         }
 
-        List<float> damageMods =  damage.GetMods();
+        List<float> damageMods = damage.GetMods();
         List<float> armorMods = armor.GetMods();
 
-        foreach(float mod in damageMods)
+        if (damageMods != null)
         {
-            damage.RemoveModifier(mod);
+            for (int y = 0; y < damageMods.Count; y++)
+            {
+                damage.RemoveModifier(damageMods[y]);
+            }
         }
 
-        foreach (float mod in armorMods)
+        if (armorMods != null)
         {
-            armor.RemoveModifier(mod);
+            for (int x = 0; x < armorMods.Count; x++)
+            {
+                damage.RemoveModifier(armorMods[x]);
+            }
         }
-
         
         GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
         GetComponent<CharacterAnimator>().characterAnim.ResetTrigger(abilities[0].animatorTrigger);
