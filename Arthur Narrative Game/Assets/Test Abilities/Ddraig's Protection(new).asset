@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29ae035edc32de447921400b0ecd43ed, type: 3}
-  m_Name: Ddraig's Protection
+  m_Name: Ddraig's Protection(new)
   m_EditorClassIdentifier: 
-  name: Ddraig's Protection
   description: Raise armor by 10 for 3 seconds
   icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  listenersAdded: 0
+  listenersAdded: 1
   buffList:
   - amount: 10
     affects: 1
     duration: 5
-    durationTimer: -0.0012909006
+    durationTimer: 3.2970006
     ramping: 0
   cc_Effects: []
   projectile: {fileID: 0}
@@ -33,8 +32,8 @@ MonoBehaviour:
   doesHealing: 0
   abilityValue: 0
   cooldown: 7
+  targetType: 0
   animatorTrigger: ability2
   castTime: 0.5
-  cooldownTimer: -7.465851
-  targetType: 0
+  cooldownTimer: -1.7029989
   targetHit: {fileID: 0}

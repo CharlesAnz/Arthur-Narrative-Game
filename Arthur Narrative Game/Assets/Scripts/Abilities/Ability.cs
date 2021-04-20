@@ -6,8 +6,6 @@ using UnityEngine.AI;
 
 public class Ability : ScriptableObject
 {
-    new public string name = "New Ability";
-
     public string description = "ability does thing";
     protected GameObject abilityUser = null;
     public Sprite icon = null;
@@ -21,7 +19,7 @@ public class Ability : ScriptableObject
     [SerializeField]
     protected GameObject projectile;
 
-    [SerializeField]
+   [SerializeField]
     protected float delay;
 
     [SerializeField]
@@ -29,10 +27,6 @@ public class Ability : ScriptableObject
 
     [SerializeField]
     protected CC_Displacement displacement;
-
-    protected Vector3 displacePos;
-
-    protected Vector3 projectileSpawnPos;
 
     [SerializeField]
     protected bool doesDamage, doesHealing;
@@ -43,19 +37,36 @@ public class Ability : ScriptableObject
     [SerializeField]
     private float cooldown;
 
+    [SerializeField]
+    protected TargetType targetType;
+
+    protected Vector3 displacePos;
+
+    protected Vector3 projectileSpawnPos;
+
+    /*
+    public float delay;
+    public GameObject projectile;
+    public float maxDistance;
+    public CC_Displacement displacement;
+    public bool doesDamage, doesHealing;
+    public float abilityValue;
+    public float cooldown;
+    public TargetType targetType;
+    */
+
     public string animatorTrigger;
+
 
     public float castTime;
 
     //[HideInInspector]
     public float cooldownTimer = 0;
 
-    [SerializeField]
-    protected TargetType targetType;
 
     protected Camera cam;
 
-    protected UnityEvent<CharacterCombat> OnAbilityUse;
+    protected UnityEvent<CharacterCombat> OnAbilityUse = new UnityEvent<CharacterCombat>();
 
     public virtual void Use(GameObject interactor)
     {
@@ -70,8 +81,16 @@ public class Ability : ScriptableObject
 
         if (doesDamage) OnAbilityUse.AddListener(Damage);
         if (doesHealing) OnAbilityUse.AddListener(Heal);
-        if (buffList.Count > 0) OnAbilityUse.AddListener(addBuff);
-        if (cc_Effects.Count > 0) OnAbilityUse.AddListener(addCC_Effect);
+        if (buffList != null)
+        {
+            if(buffList.Count > 0)
+                OnAbilityUse.AddListener(addBuff);
+        }
+        if (cc_Effects != null)
+        {
+            if (cc_Effects.Count > 0)
+                OnAbilityUse.AddListener(addCC_Effect); 
+        }
         if (displacement.distance != 0) OnAbilityUse.AddListener(addDisplacement);
 
         listenersAdded = true;

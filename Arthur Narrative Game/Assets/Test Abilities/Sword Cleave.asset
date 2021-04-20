@@ -35,7 +35,7 @@ MonoBehaviour:
   cooldown: 10
   animatorTrigger: ability1
   castTime: 2.44
-  cooldownTimer: -1.8933399
+  cooldownTimer: 2.5255363
   targetType: 2
   areaSize: 3
   aoeType: 2

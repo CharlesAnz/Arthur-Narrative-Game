@@ -33667,6 +33667,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891841695}
   m_CullTransparentMesh: 1
+--- !u!1 &892024427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892024428}
+  - component: {fileID: 892024430}
+  - component: {fileID: 892024429}
+  m_Layer: 5
+  m_Name: Arthur Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &892024428
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892024427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1855027662}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -130.66545, y: 238}
+  m_SizeDelta: {x: 705.4852, y: 87.4434}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &892024429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892024427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 54
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 54
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &892024430
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892024427}
+  m_CullTransparentMesh: 1
 --- !u!1 &893093390 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: a583d2f58bee942b9870479663775a8d, type: 3}
@@ -78924,6 +79003,7 @@ RectTransform:
   - {fileID: 1236496150}
   - {fileID: 1195144382}
   - {fileID: 1629214720}
+  - {fileID: 892024428}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -90665,7 +90745,7 @@ MonoBehaviour:
     baseValue: 3
   moveSpeed:
     statName: 
-    baseValue: 12
+    baseValue: 5
   attackSpeed:
     statName: 
     baseValue: 0.5
@@ -90951,6 +91031,7 @@ MonoBehaviour:
     m_Bits: 8
   focus: {fileID: 0}
   activeCharacter: 0
+  posText: {fileID: 892024429}
 --- !u!4 &1727665144831003457
 Transform:
   m_ObjectHideFlags: 0
@@ -91011,7 +91092,7 @@ MonoBehaviour:
   curHP: 150
   maxHP:
     statName: 
-    baseValue: 150
+    baseValue: 250
   damage:
     statName: 
     baseValue: 10
@@ -91020,14 +91101,14 @@ MonoBehaviour:
     baseValue: 2
   moveSpeed:
     statName: 
-    baseValue: 6
+    baseValue: 7
   attackSpeed:
     statName: 
     baseValue: 0.68
   dead: 0
   abilities:
   - {fileID: 11400000, guid: 02c4826ee3f87bb4ba584d3f739331cb, type: 2}
-  - {fileID: 11400000, guid: b70acb817caac184a9eeb5a99d0befea, type: 2}
+  - {fileID: 11400000, guid: 0aaee8a03d5121f409c9281066e3756a, type: 2}
   - {fileID: 11400000, guid: 0fff3658ba305a9478c1efb3b9b4eaec, type: 2}
   buffs: []
   resetPos: {fileID: 1135067802}
@@ -91122,7 +91203,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.9999999
+  m_Height: 3
   m_BaseOffset: 1.4
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4

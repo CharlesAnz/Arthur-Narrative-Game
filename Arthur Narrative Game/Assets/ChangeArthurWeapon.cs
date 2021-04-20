@@ -76,15 +76,19 @@ public class ChangeArthurWeapon : MonoBehaviour
         UICanvas.SetActive(true);
         activePerson.SetActive(true);
 
-        activePerson.transform.position = transform.position + (transform.forward * -7);
-
-        activePerson.transform.position = new Vector3(
+        //activePerson.transform.position = transform.position + (transform.forward * -7);
+        activePerson.transform.position = activePerson.GetComponent<Player_Stats>().resetPos.position;
+        /*
+        Vector3 newpos = new Vector3(
             activePerson.transform.position.x,
-            40f,
+            40.0f,
             activePerson.transform.position.z);
+
+        activePerson.transform.position = newpos;
 
         activePerson.GetComponent<NavMeshAgent>().SetDestination(transform.position + (transform.forward * -7));
 
+        */
         gameObject.GetComponent<BoxCollider>().isTrigger = false;
 
         MusicManager.instance.StartLoop();

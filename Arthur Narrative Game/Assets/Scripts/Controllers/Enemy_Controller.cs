@@ -164,7 +164,7 @@ public class Enemy_Controller : MonoBehaviour
     {
         //target.GetComponent<CharacterAnimator>().characterAnim.SetBool("attacking", false);
 
-        agent.speed = 6;
+        agent.speed = 7;
         enemyInteractor.radius = 0.1f;
         GetComponent<CharacterAnimator>().characterAnim.SetBool("basicAttack", false);
 
@@ -178,7 +178,7 @@ public class Enemy_Controller : MonoBehaviour
             if (distance <= agent.stoppingDistance)
             {
                 currentDestination = Vector3.zero;
-                agent.speed = 2;
+                agent.speed = 5;
                 GetComponent<CharacterAnimator>().characterAnim.SetTrigger("land");
                 enemyInteractor.radius = 8.5f;
                 retreating = false;

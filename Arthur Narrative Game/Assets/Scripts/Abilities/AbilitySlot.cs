@@ -66,9 +66,13 @@ public class AbilitySlot : MonoBehaviour
     {
         if (ability != null)
         {
+            if (ability.cooldownTimer < 0)
+            {
+                onCooldown = true;
+                cooldownUI.fillAmount = 0;
+            }
             ability.Use(playerController.gameObject);
-            onCooldown = true;
-            cooldownUI.fillAmount = 0;
+            
         }
     }
 }

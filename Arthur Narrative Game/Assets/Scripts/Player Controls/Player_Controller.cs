@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
 //[RequireComponent(typeof(Player_Movement))]
@@ -16,6 +17,8 @@ public class Player_Controller : MonoBehaviour
 
     Player_Movement movement;
 
+    public Text posText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +31,13 @@ public class Player_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        posText.text = transform.position.ToString();
+        if (transform.position.y <= 0)
+        {
+            Vector3 newpos = new Vector3(transform.position.x, 40.0f, transform.position.z);
+            transform.position = newpos;
+        }
+        
         if (activeCharacter == false && focus == null)
         {
             movement.FollowTarget(playerManager.activePerson.gameObject, 3);

@@ -19,6 +19,16 @@ public class Character_Stats : MonoBehaviour
 
     public List<BufforDebuff> buffs = new List<BufforDebuff>();
 
+    private void Awake()
+    {
+        foreach (Ability ability in abilities)
+        {
+            ability.SetCam(Camera.main);
+            ability.cooldownTimer = 0;
+            ability.listenersAdded = false;
+        }
+    }
+
     private void Start()
     {
         foreach (Ability ability in abilities)
