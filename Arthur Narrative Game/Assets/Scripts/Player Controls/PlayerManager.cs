@@ -30,6 +30,8 @@ public class PlayerManager : MonoBehaviour
 
     private CharacterCombat activePersonCombat;
 
+    public DragonBoss_Stats dragonBoss;
+
     public bool gameOver = false;
     public PlayableDirector timeline;
     public GameObject cutSceneCamera;
@@ -46,7 +48,7 @@ public class PlayerManager : MonoBehaviour
     {
         activePerson = player1.GetComponent<Player_Controller>();
         player1.GetComponent<Player_Controller>().activeCharacter = true;
-
+        dragonBoss = FindObjectOfType<DragonBoss_Stats>();
         
         foreach (Ability ability in player1.GetComponent<Player_Stats>().abilities)
         {
@@ -217,7 +219,7 @@ public class PlayerManager : MonoBehaviour
 
         ////Call these when you need to reset the characters to restart the fight
         activePerson.GetComponent<Player_Stats>().ResetStats();
-        FindObjectOfType<DragonBoss_Stats>().ResetStats();
+        dragonBoss.ResetStats();
     }
 
     IEnumerator FinishGame(float timeTillNextScene)

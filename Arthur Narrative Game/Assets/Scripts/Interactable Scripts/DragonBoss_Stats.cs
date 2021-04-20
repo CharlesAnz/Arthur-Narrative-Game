@@ -62,10 +62,10 @@ public class DragonBoss_Stats : Character_Stats
         GetComponent<CharacterAnimator>().characterAnim.ResetTrigger(abilities[2].animatorTrigger);
         GetComponent<CharacterAnimator>().characterAnim.SetTrigger("reset");
         GetComponent<NavMeshAgent>().SetDestination(startPos);
-
+        GetComponent<NavMeshAgent>().Warp(startPos);
         curHP = maxHP.GetValue();
 
-        transform.position = startPos;
+        //transform.position = startPos;
     }
 
     public override void Die()

@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Heals Arthur for 10 HP and then 5 HP per sec for 5 seconds
   icon: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  listenersAdded: 0
+  listenersAdded: 1
   buffList:
   - amount: 5
     affects: 4
-    duration: 5
-    durationTimer: 1.2303294
+    duration: 10
+    durationTimer: -0.048357956
     ramping: 1
   cc_Effects: []
   projectile: {fileID: 0}
@@ -30,10 +30,10 @@ MonoBehaviour:
     distance: 0
   doesDamage: 0
   doesHealing: 1
-  abilityValue: 30
+  abilityValue: 40
   cooldown: 15
   targetType: 0
   animatorTrigger: ability3
   castTime: 1.45
-  cooldownTimer: -45.635063
+  cooldownTimer: 2.448711
   targetHit: {fileID: 0}

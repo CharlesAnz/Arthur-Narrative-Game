@@ -77,7 +77,9 @@ public class ChangeArthurWeapon : MonoBehaviour
         activePerson.SetActive(true);
 
         //activePerson.transform.position = transform.position + (transform.forward * -7);
-        activePerson.transform.position = activePerson.GetComponent<Player_Stats>().resetPos.position;
+        //activePerson.transform.position = activePerson.GetComponent<Player_Stats>().resetPos.position;
+
+        activePerson.GetComponent<NavMeshAgent>().Warp(activePerson.GetComponent<Player_Stats>().resetPos.position);
         /*
         Vector3 newpos = new Vector3(
             activePerson.transform.position.x,

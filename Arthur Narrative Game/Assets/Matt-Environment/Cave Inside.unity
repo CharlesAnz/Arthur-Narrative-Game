@@ -20829,7 +20829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff8f2a5740f6a75449edb0df2215ab48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.36
+      value: -3.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ff8f2a5740f6a75449edb0df2215ab48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -37101,7 +37101,7 @@ VideoPlayer:
   - 1
   m_Url: 
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
@@ -44057,7 +44057,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135067801}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.96}
+  m_LocalPosition: {x: 0, y: -0.22, z: -0.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 157348675}
@@ -91040,7 +91040,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727665144831003582}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 49.7, y: 28.05, z: 162.9}
+  m_LocalPosition: {x: 49.7, y: 29.49, z: 162.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1090567715}
@@ -91089,10 +91089,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f55113a9dbabf14d81ef4bddb7ff6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curHP: 150
+  curHP: 300
   maxHP:
     statName: 
-    baseValue: 250
+    baseValue: 300
   damage:
     statName: 
     baseValue: 10
@@ -91184,7 +91184,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -2.05, z: 0}
 --- !u!195 &1727665144831003581
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -91204,7 +91204,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 3
-  m_BaseOffset: 1.4
+  m_BaseOffset: 3
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!1 &1727665144831003582
@@ -92460,6 +92460,7 @@ MonoBehaviour:
   playerHealthBar: {fileID: 1236496152}
   targetHealthBar: {fileID: 1195144384}
   activePerson: {fileID: 0}
+  dragonBoss: {fileID: 1245723129405070249}
   gameOver: 0
   timeline: {fileID: 4600355098339371194}
   cutSceneCamera: {fileID: 1429567975}

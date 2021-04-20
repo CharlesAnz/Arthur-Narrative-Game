@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 public class Player_Stats : Character_Stats
 {
@@ -63,7 +64,8 @@ public class Player_Stats : Character_Stats
 
         curHP = maxHP.GetValue();
 
-        transform.position = resetPos.position;
+        GetComponent<NavMeshAgent>().Warp(GetComponent<Player_Stats>().resetPos.position);
+        //transform.position = resetPos.position;
 
         dead = false;
     }
